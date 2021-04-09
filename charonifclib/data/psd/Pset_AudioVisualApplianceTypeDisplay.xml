@@ -1,0 +1,233 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_AudioVisualApplianceTypeDisplay</Name>
+  <Definition>An audio-visual display is a device that renders video from a screen.  HISTORY: Added in IFC2x4.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcAudioVisualAppliance/DISPLAY</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcAudioVisualAppliance/DISPLAY</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="eea5a5651b1c4ab8b583dcfbfb66a67c">
+      <Name>DisplayType</Name>
+      <Definition>Indicates the type of display.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_AudioVisualDisplayType">
+            <EnumItem>CRT</EnumItem>
+            <EnumItem>DLP</EnumItem>
+            <EnumItem>LCD</EnumItem>
+            <EnumItem>LED</EnumItem>
+            <EnumItem>PLASMA</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET.</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">画面種類</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">画面の種類を示す。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="f7715f0130754002a0dd06bd0e9d6146">
+      <Name>NominalSize</Name>
+      <Definition>Indicates the diagonal screen size.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">画面公称サイズ</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">画面の対角線サイズを示す。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="6921f47431bc40a3a05c1754033851b7">
+      <Name>DisplayWidth</Name>
+      <Definition>Indicates the physical width of the screen (only the display surface).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">画面幅</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">画面の幅を示す。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="1f7c9c1f98044d2483042a63bb76596a">
+      <Name>DisplayHeight</Name>
+      <Definition>Indicates the physical height of the screen (only the display surface).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">画面高さ</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">画面の高さを示す。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="2f4cbe753d3a4bb4b248fd0c753a6139">
+      <Name>Brightness</Name>
+      <Definition>Indicates the display brightness.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcIlluminanceMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">明るさ</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">明るさ示す。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="c4523b6f77aa44cf988ff605b28f1e6a">
+      <Name>ContrastRatio</Name>
+      <Definition>Indicates the display contrast ratio.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">コントラスト比</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">コントラスト比を示す。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="7a348fe2cdcf460ebfc9a7dd2bc7315a">
+      <Name>RefreshRate</Name>
+      <Definition>Indicates the display refresh frequency.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcFrequencyMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">リフレッシュレート</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">リフレッシュレート周波数範囲を示す。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="6f98295bc06a4924bd0605c91514ee80">
+      <Name>TouchScreen</Name>
+      <Definition>Indicates touchscreen support.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_AudioVisualDisplayTouchScreen">
+            <EnumItem>SINGLETOUCH</EnumItem>
+            <EnumItem>MULTITOUCH</EnumItem>
+            <EnumItem>NONE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">タッチスクリーン</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">タッチスクリーンのサポートを示す。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="c772ffcdaf684cb7a9bcb5a3f03be584">
+      <Name>VideoResolutionWidth</Name>
+      <Definition>Indicates the number of horizontal pixels, e.g. 1920.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcInteger" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">水平解像度</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">水平方向のピクセル数を示す。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="7b3cf810ff0148cfbb341096ceafffe6">
+      <Name>VideoResolutionHeight</Name>
+      <Definition>Indicates the number of vertical pixels, e.g. 1080.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcInteger" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">垂直解像度</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">垂直方向のピクセル数を示す。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="3a6857567fb244508e3129ebc47e6220">
+      <Name>VideoResolutionMode</Name>
+      <Definition>Indicates video resolution modes.</Definition>
+      <PropertyType>
+        <TypePropertyTableValue />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">解像度モード</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">解像度モードを示す。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="994e9e9a263640b3931da89eb09415bd">
+      <Name>VideoScaleMode</Name>
+      <Definition>Indicates video scaling modes.</Definition>
+      <PropertyType>
+        <TypePropertyTableValue />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">ビデオスケールモード</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">ビデオスケーリングモードを示す。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="e8ca8dddfd8a4154ac3fc61866e39ea7">
+      <Name>VideoCaptionMode</Name>
+      <Definition>Indicates video closed captioning modes.</Definition>
+      <PropertyType>
+        <TypePropertyTableValue />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">ビデオキャプションモード</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">クローズドキャプションモードを示す。(字幕機能）</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="2211dafa211f4b588745277a2e7459f7">
+      <Name>AudioMode</Name>
+      <Definition>Indicates audio sound modes and corresponding labels, if applicable.</Definition>
+      <PropertyType>
+        <TypePropertyTableValue />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">オーディオモード</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">オーディオサウンドモードの設定。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="ja-JP">画面からビデオ映像を送出する機器。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

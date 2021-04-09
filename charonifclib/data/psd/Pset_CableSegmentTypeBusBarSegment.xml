@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_CableSegmentTypeBusBarSegment</Name>
+  <Definition>Properties specific to busbar cable segments.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcCableSegment/BUSBARSEGMENT</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcCableSegment/BUSBARSEGMENT</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="a5d685cc097b461da2b2b3a6dd152c51">
+      <Name>IsHorizontalBusbar</Name>
+      <Definition>Indication of whether the busbar occurrences are routed horizontally (= TRUE) or vertically (= FALSE).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">水平母線</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">母線は、水平方向にルーティングされるかどうかを示す（= TRUE）または垂直方向に（= FALSE）を返します。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="ja-JP">busbarケーブルの性質、性能。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

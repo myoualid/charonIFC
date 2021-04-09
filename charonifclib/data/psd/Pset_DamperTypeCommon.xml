@@ -1,0 +1,356 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_DamperTypeCommon</Name>
+  <Definition>Damper type common attributes.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcDamper</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcDamper</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="c69cd2bf7a3a41479c3d5ec1ee504999">
+      <Name>Reference</Name>
+      <Definition>Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcIdentifier" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">参照記号</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">このプロジェクトにおける参照記号(例：A-1)。分類コードではなく内部で使用されるプロジェクトタイプとして使用されるもの。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="082ce7bfa84b41ff8845ac885a20e05e">
+      <Name>Status</Name>
+      <Definition>Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_Status">
+            <EnumItem>NEW</EnumItem>
+            <EnumItem>EXISTING</EnumItem>
+            <EnumItem>DEMOLISH</EnumItem>
+            <EnumItem>TEMPORARY</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">状態</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">要素（主にリノベーションまたは改修プロジェクトにおいて）の状態。 状態は、「新規(New)」－新しく追加される要素。「既存」－要素は存在し、かつ残りもの。「破壊」－要素は存在したが、廃棄されるもの。「一時的」－一時的に存在する要素（一時的にサポートしている構造のようなもの）。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="4fea638eb305484799ccfdb93d4414e1">
+      <Name>Operation</Name>
+      <Definition>The operational mechanism for the damper operation.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_DamperOperation">
+            <EnumItem>AUTOMATIC</EnumItem>
+            <EnumItem>MANUAL</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="ac7c7d0190854b9588816b64ddf695b1">
+      <Name>Orientation</Name>
+      <Definition>The intended orientation for the damper as specified by the manufacturer.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_DamperOrientation">
+            <EnumItem>VERTICAL</EnumItem>
+            <EnumItem>HORIZONTAL</EnumItem>
+            <EnumItem>VERTICALORHORIZONTAL</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="6148eb7a0b9a4077bf4770b6e6152c5f">
+      <Name>BladeMaterial</Name>
+      <Definition>The material from which the damper blades are constructed.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="">
+          <DataType type="IfcMaterialDefinition" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="cd4e4bb54fd143b7ac106682ede17c6a">
+      <Name>BladeThickness</Name>
+      <Definition>The thickness of the damper blade.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="08b339e458fc4f98b0890994337f5c35">
+      <Name>SealMaterial</Name>
+      <Definition>The material from which the damper seals are constructed.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="">
+          <DataType type="IfcMaterialDefinition" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="3fddac0493714aa98016b5d02a6209e6">
+      <Name>BladeAction</Name>
+      <Definition>Blade action.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_DamperBladeAction">
+            <EnumItem>FOLDINGCURTAIN</EnumItem>
+            <EnumItem>PARALLEL</EnumItem>
+            <EnumItem>OPPOSED</EnumItem>
+            <EnumItem>SINGLE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="055539da12f442beacd83575b3079b73">
+      <Name>BladeShape</Name>
+      <Definition>Blade shape. Flat means triple V-groove.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_DamperBladeShape">
+            <EnumItem>FLAT</EnumItem>
+            <EnumItem>FABRICATEDAIRFOIL</EnumItem>
+            <EnumItem>EXTRUDEDAIRFOIL</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="9c13715150fc4df5ba0c5f11aab09e70">
+      <Name>BladeEdge</Name>
+      <Definition>Blade edge.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_DamperBladeEdge">
+            <EnumItem>CRIMPED</EnumItem>
+            <EnumItem>UNCRIMPED</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="3314469c9ff54e468163de41b2c48cd0">
+      <Name>NumberofBlades</Name>
+      <Definition>Number of blades.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcInteger" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="3dcbbd8acdd343d0a49b00f8598702da">
+      <Name>FaceArea</Name>
+      <Definition>Face area open to the airstream.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcAreaMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="a8469ddd0a344fac8ff664ee0408a936">
+      <Name>MaximumAirFlowRate</Name>
+      <Definition>Maximum allowable air flow rate.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcVolumetricFlowRateMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="2dda9ae5f78145d3b9adb0b35d763354">
+      <Name>TemperatureRange</Name>
+      <Definition>Temperature range.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure" />
+        </TypePropertyBoundedValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="7dd8ac9327a948a3b5d8a4601fd3e4d0">
+      <Name>MaximumWorkingPressure</Name>
+      <Definition>Maximum working pressure.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPressureMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="8936379b65ad46c99fde0ad3933676c2">
+      <Name>TemperatureRating</Name>
+      <Definition>Temperature rating.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="89343851868b4870bb36773fda28c0af">
+      <Name>NominalAirFlowRate</Name>
+      <Definition>Nominal air flow rate.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcVolumetricFlowRateMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="707f318ca1ac4cf694bce69c5e300d2a">
+      <Name>OpenPressureDrop</Name>
+      <Definition>Total pressure drop across damper.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPressureMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="948099b72b234839b29ed410f2496045">
+      <Name>LeakageFullyClosed</Name>
+      <Definition>Leakage when fully closed.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcVolumetricFlowRateMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="7e05fbd9679440119f2db3f2f2ec0cc7">
+      <Name>LossCoefficentCurve</Name>
+      <Definition>Loss coefficient – blade position angle curve; ratio of pressure drop to velocity pressure versus blade angle; C = f (blade angle position).</Definition>
+      <PropertyType>
+        <TypePropertyTableValue />
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="6abea3853527499c96b71dbd0e285a6a">
+      <Name>LeakageCurve</Name>
+      <Definition>Leakage versus pressure drop; Leakage = f (pressure).</Definition>
+      <PropertyType>
+        <TypePropertyTableValue />
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="3748450e8d544cae9103c6057dd4348e">
+      <Name>RegeneratedSoundCurve</Name>
+      <Definition>Regenerated sound versus air flow rate.</Definition>
+      <PropertyType>
+        <TypePropertyTableValue />
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="5fc315a6603f4eeeaf3867aa1e02efe7">
+      <Name>FrameType</Name>
+      <Definition>The type of frame used by the damper (e.g., Standard, Single Flange, Single Reversed Flange, Double Flange, etc.).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="7318b8442bc446a4b2137fa05560ef8d">
+      <Name>FrameDepth</Name>
+      <Definition>The length (or depth) of the damper frame.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="e075869243684ea88dc09b727fb43d7e">
+      <Name>FrameMaterial</Name>
+      <Definition>The material from which the damper frame is constructed.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="">
+          <DataType type="IfcMaterialDefinition" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="96d71d79eb9b44618afca476855a82fa">
+      <Name>FrameThickness</Name>
+      <Definition>The thickness of the damper frame material.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="c80cd97bdd0042379fe049ee4a2c80da">
+      <Name>CloseOffRating</Name>
+      <Definition>Close off rating.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPressureMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="ja-JP">ダンパー型の共通プロパティ属性設定。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

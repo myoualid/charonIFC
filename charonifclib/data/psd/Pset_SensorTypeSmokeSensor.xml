@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_SensorTypeSmokeSensor</Name>
+  <Definition>A device that senses or detects smoke. HISTORY: PressureSensorSensorSetPoint (error in previous release) changed to SetPointConcentration. Range, accuracy and time constant deleted.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcSensor/SMOKESENSOR</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSensor/SMOKESENSOR</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="8aa1f5b5f87c448d9ba4010c14109dd0">
+      <Name>CoverageArea</Name>
+      <Definition>The floor area that is covered by the sensor (typically measured as a circle whose center is at the location of the sensor).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcAreaMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">測定範囲</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">センサでカバーされている床面積。(通常、センターがセンサの位置にある円として測定される)</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="6adc1ebd96e14c2fa210442c043c4937">
+      <Name>SetPointConcentration</Name>
+      <Definition>The smoke concentration value to be sensed. Use IfcPropertyBoundedValue.SetPointValue to set the set point value.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcPositiveRatioMeasure" />
+        </TypePropertyBoundedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">煙濃度設定値</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">感知される煙濃度。
+セットポイント値を置くために、IfcPropertyBoundedValue.SetPointValueを使用する。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="6058088ff9f24f449aee85f0cf0eb7d0">
+      <Name>HasBuiltInAlarm</Name>
+      <Definition>Indicates whether the smoke sensor is included as an element within a smoke alarm/sensor unit (TRUE) or not (FALSE).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">煙警報器に含まれているか</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">煙センサーが煙警報センサユニットの中に要素として含まれているか(TRUE)、否か(FALSE)を識別する。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="ja-JP">煙を感知または検出するデバイス。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

@@ -1,0 +1,154 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_BoilerPHistory</Name>
+  <Definition>Boiler performance history common attributes.
+WaterQuality attribute deleted in IFC2x2 Pset Addendum: Use IfcWaterProperties instead. CombustionProductsMaximulLoad and CombustionProductsPartialLoad attributes deleted in IFC2x2 Pset Addendum: Use IfcProductsOfCombustionProperties instead.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcBoiler</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcBoiler</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="26b22480515f43fdae195e696da113cf">
+      <Name>EnergySourceConsumption</Name>
+      <Definition>Energy consumption.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcEnergyMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">エネルギ消費量</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">エネルギ消費量</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="108a93aee9c140829bded8072ad5601a">
+      <Name>OperationalEfficiency</Name>
+      <Definition>Operational efficiency: boiler output divided by total energy input (electrical and fuel).</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcNormalisedRatioMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">運転効率</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">運転効率：
+全入力エネルギ（電力または燃料）でボイラ出力を割る</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="0c4797cd35564591b8c4f9afa022fe1b">
+      <Name>CombustionEfficiency</Name>
+      <Definition>Combustion efficiency under nominal condition.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcNormalisedRatioMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">燃焼効率</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">設計条件での燃焼効率</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="3932968443f541ed9cb9ed462b601c0a">
+      <Name>WorkingPressure</Name>
+      <Definition>Boiler working pressure.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcPressureMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">作動圧力</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">ボイラ運転圧力</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="1fc0fd322a7f4ab399dfbca23f370009">
+      <Name>CombustionTemperature</Name>
+      <Definition>Average combustion chamber temperature.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcThermodynamicTemperatureMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">燃焼温度</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">燃焼室平均温度</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="c550ae63ee354a0b8557c31e5517289c">
+      <Name>PartLoadRatio</Name>
+      <Definition>Ratio of the real to the nominal capacity.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcNormalisedRatioMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">部分負荷比</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">設計容量との比</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="c523584e50b6467e867ef5fd4198c333">
+      <Name>Load</Name>
+      <Definition>Boiler real load.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcPowerMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">負荷</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">ボイラ実負荷</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="1e58e2cdb0284e9d9f827539fd141712">
+      <Name>PrimaryEnergyConsumption</Name>
+      <Definition>Boiler primary energy source consumption (i.e., the fuel consumed for changing the thermodynamic state of the fluid).</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcPowerMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">一次エネルギ消費量</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">ボイラ一次エネルギ消費量（つまり流体の熱力学状態変更のために消費された燃料）</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="43e408601dae46c286a2834df0f68563">
+      <Name>AuxiliaryEnergyConsumption</Name>
+      <Definition>Boiler secondary energy source consumption (i.e., the electricity consumed by electrical devices such as fans and pumps).</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcPowerMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">補助エネルギ消費量</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">ボイラ補助エネルギ消費量（つまりファンおよびポンプのような電気装置によって消費される電気）</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="ja-JP">ボイラ性能履歴共通属性：
+WaterQuality（水質属性）はIFC2ｘ２Psetの付録で削除された：代わりにIfcWaterPropertiesを使う。
+CombustionProductsMaximulLoad と CombustionProductsPartialLoadはIFC2ｘ２Psetの付録で削除された：代わりにIfcProductsOfCombustionPropertiesを使う</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

@@ -1,0 +1,240 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_BoilerTypeCommon</Name>
+  <Definition>Boiler type common attributes.
+SoundLevel attribute deleted in IFC2x2 Pset Addendum: Use IfcSoundProperties instead. PrimaryEnergySource and AuxiliaryEnergySource attributes deleted in IFC2x2 Pset Addendum: Use IfcEnergyProperties, IfcFuelProperties, etc. instead.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcBoiler</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcBoiler</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="22c60f924dbe43128d68c490db352897">
+      <Name>Reference</Name>
+      <Definition>Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcIdentifier" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">参照記号</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">このプロジェクトにおける参照記号(例：A-1)。分類コードではなく内部で使用されるプロジェクトタイプとして使用されるもの。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="99c98904b3784138a0f168244e83744e">
+      <Name>Status</Name>
+      <Definition>Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_Status">
+            <EnumItem>NEW</EnumItem>
+            <EnumItem>EXISTING</EnumItem>
+            <EnumItem>DEMOLISH</EnumItem>
+            <EnumItem>TEMPORARY</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">状態</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">要素（主にリノベーションまたは改修プロジェクトにおいて）の状態。 状態は、「新規(New)」－新しく追加される要素。「既存」－要素は存在し、かつ残りもの。「破壊」－要素は存在したが、廃棄されるもの。「一時的」－一時的に存在する要素（一時的にサポートしている構造のようなもの）。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="c2cacd3a9ecf46b88524b37edc4a40f3">
+      <Name>PressureRating</Name>
+      <Definition>Nominal pressure rating of the boiler as rated by the agency having jurisdiction.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPressureMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">常用圧力</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">管轄組織により設定されたボイラの常用圧力</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="33ca9daf69df480581d10cd60cfa1efe">
+      <Name>OperatingMode</Name>
+      <Definition>Identifies the operating mode of the boiler.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_BoilerOperatingMode">
+            <EnumItem>FIXED</EnumItem>
+            <EnumItem>TWOSTEP</EnumItem>
+            <EnumItem>MODULATING</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">動作モード</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">ボイラの動作モードのID　（固定、２段階、比例．．．）</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="9a61ba8fec8f41cfabe8cdaf84236b55">
+      <Name>HeatTransferSurfaceArea</Name>
+      <Definition>Total heat transfer area of the vessel.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcAreaMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">伝熱面積</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">容器の伝熱部面積の合計</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="a0486c7414224e28b4d25b81b4b0e101">
+      <Name>NominalPartLoadRatio</Name>
+      <Definition>Allowable part load ratio range.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcReal" />
+        </TypePropertyBoundedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">設計部分負荷比率</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">許容部分負荷比範囲</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="b2e0fb41a003492b8bac805d9c216a8f">
+      <Name>WaterInletTemperatureRange</Name>
+      <Definition>Allowable water inlet temperature range.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure" />
+        </TypePropertyBoundedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">入口水温範囲</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">入口水温範囲</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="12a88cc169084efb899d09d1973aecd5">
+      <Name>WaterStorageCapacity</Name>
+      <Definition>Water storage capacity.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcVolumeMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">缶内水量</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">缶内水量</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="03c6c542f7c9407e9f3dca46bcb53e55">
+      <Name>IsWaterStorageHeater</Name>
+      <Definition>This is used to identify if the boiler has storage capacity (TRUE). If FALSE, then there is no storage capacity built into the boiler, such as an instantaneous hot water heater.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">給湯タンク有無</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">給湯用の缶体があればTRUE、（瞬間湯沸かし器のように）ボイラにタンクがなければFALSE</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="ac6ae0f6c7bc43ce9d2f8d82fd78c597">
+      <Name>PartialLoadEfficiencyCurves</Name>
+      <Definition>Boiler efficiency as a function of the partial load factor; E = f (partialLaodfactor).</Definition>
+      <PropertyType>
+        <TypePropertyTableValue />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">部分負荷効率曲線</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">部分負荷係数の関数としてのボイラ効率　　E=f(部分負荷率）</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="65932350a7bf465b87d5be58aaa3db31">
+      <Name>OutletTemperatureRange</Name>
+      <Definition>Allowable outlet temperature of either the water or the steam.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure" />
+        </TypePropertyBoundedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">出口温度範囲</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">水または蒸気のどちらかの許容出口温度</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="4130a76d767c49c8bba12b420cc1d2c0">
+      <Name>NominalEnergyConsumption</Name>
+      <Definition>Nominal fuel consumption rate required to produce the total boiler heat output.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPowerMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">設計エネルギー消費量</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">ボイラ最大能力時の設計燃料消費量</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="60da3a78c826444d8fc1391278aca6bb">
+      <Name>EnergySource</Name>
+      <Definition>Enumeration defining the energy source or fuel cumbusted to generate heat.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_EnergySource">
+            <EnumItem>COAL</EnumItem>
+            <EnumItem>COAL_PULVERIZED</EnumItem>
+            <EnumItem>ELECTRICITY</EnumItem>
+            <EnumItem>GAS</EnumItem>
+            <EnumItem>OIL</EnumItem>
+            <EnumItem>PROPANE</EnumItem>
+            <EnumItem>WOOD</EnumItem>
+            <EnumItem>WOOD_CHIP</EnumItem>
+            <EnumItem>WOOD_PELLET</EnumItem>
+            <EnumItem>WOOD_PULVERIZED</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">エネルギ種別</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">加熱に使用する燃料のエネルギ種類　（石炭、石炭粉末、電気、ガス、油、プロパン、木材、木材チップ、木材ペレット、木粉、他）</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="ja-JP">ボイラ型共通属性を設定します。
+SoundLevel属性はIFC2x2 psetの付録で削除された：IfcSoundPropertiesを代わりに使用します。
+一次エネルギ源と補助エネルギ源属性はIFC2x2 psetの付録で削除された：IfcEnergyProperties,IfcFuelProperties等を代わりに使用</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

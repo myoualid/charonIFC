@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_CableCarrierSegmentTypeCableTraySegment</Name>
+  <Definition>An (typically) open carrier segment onto which cables are laid. 
+HISTORY: IFC2x4 - NominalLength deleted. To be handled as a quantity measure</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcCableCarrierSegment/CABLETRAYSEGMENT</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcCableCarrierSegment/CABLETRAYSEGMENT</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="4f42d6e5f2474d5b8e954af60dd3cf33">
+      <Name>NominalWidth</Name>
+      <Definition>The nominal width of the segment.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">公称幅</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">呼び幅寸法。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="8c2d88f4e2e949609ce01ae661fbdbd0">
+      <Name>NominalHeight</Name>
+      <Definition>The nominal height of the segment.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">公称高</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">呼び高寸法。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="57bce69c40e14364ad91db9aa562b5d5">
+      <Name>HasCover</Name>
+      <Definition>Indication of whether the cable tray has a cover (=TRUE) or not (= FALSE). By default, this value should be set to FALSE..</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">カバー</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">カバー付かどうか。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="ja-JP">典型的な開放型ケーブルキャリアに関するプロパティセット定義。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

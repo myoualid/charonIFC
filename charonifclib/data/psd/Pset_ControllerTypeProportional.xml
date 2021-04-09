@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_ControllerTypeProportional</Name>
+  <Definition>Properties for signal handling for an proportional controller taking setpoint and feedback inputs and creating a single valued output. HISTORY: In IFC 2x4, SignalFactor1, SignalFactor2 and SignalFactor3 changed to ProportionalConstant, IntegralConstant and DerivativeConstant.  SignalTime1 and SignalTime2 changed to SignalTimeIncrease and SignalTimeDecrease.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcController/PROPORTIONAL</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcController/PROPORTIONAL</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="22102af3f77649dcbfac555c3ac64d63">
+      <Name>ControlType</Name>
+      <Definition>The type of signal modification.
+PROPORTIONAL: Output is proportional to the control error. The gain of a proportional control (Kp) will have the effect of reducing the rise time and reducing , but never eliminating, the steady-state error of the variable controlled. 
+PROPORTIONALINTEGRAL: Part of the output is proportional to the control error and part is proportional to the time integral of the control error. Adding the gain of an integral control (Ki) will have the effect of eliminating the steady-state error of the variable controlled, but it may make the transient response worse. 
+PROPORTIONALINTEGRALDERIVATIVE: Part of the output is proportional to the control error, part is proportional to the time integral of the control error and part is proportional to the time derivative of the control error. Adding the gain of a derivative control (Kd) will have the effect of increasing the stability of the system, reducing the overshoot, and improving the transient response of the variable controlled.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_ControllerProportionalType">
+            <EnumItem>PROPORTIONAL</EnumItem>
+            <EnumItem>PROPORTIONALINTEGRAL</EnumItem>
+            <EnumItem>PROPORTIONALINTEGRALDERIVATIVE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="677fa9d5a76f4e09937f9cebefea829b">
+      <Name>Labels</Name>
+      <Definition>Table mapping values to labels, where such labels indicate transition points such as 'Hi', 'Lo', 'HiHi', or 'LoLo'.</Definition>
+      <PropertyType>
+        <TypePropertyTableValue />
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="26e2df861b864fa2bee788c3e3f6ad38">
+      <Name>Range</Name>
+      <Definition>The physical range of values.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcReal" />
+        </TypePropertyBoundedValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="22c8bef9f46c4580bac84654ef66bea1">
+      <Name>Value</Name>
+      <Definition>The expected range and default value.  While the property data type is IfcReal (to support all cases including when the units are unknown), a unit may optionally be provided to indicate the measure and unit.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcReal" />
+        </TypePropertyBoundedValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="326e1f0bac0e40f084ec137d8609e9ca">
+      <Name>ProportionalConstant</Name>
+      <Definition>The proportional gain factor of the controller (usually referred to as Kp).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcReal" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="54cdb61f11314a779af115959c198bea">
+      <Name>IntegralConstant</Name>
+      <Definition>The integral gain factor of the controller (usually referred to as Ki).  Asserted where ControlType is PROPORTIONALINTEGRAL or PROPORTIONALINTEGRALDERIVATIVE.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcReal" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="5e0203825782471fa77153219161fc6e">
+      <Name>DerivativeConstant</Name>
+      <Definition>The derivative gain factor of the controller (usually referred to as Kd).  Asserted where ControlType is PROPORTIONALINTEGRALDERIVATIVE.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcReal" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="8d79c5e90a11481b965df412050fd37d">
+      <Name>SignalTimeIncrease</Name>
+      <Definition>Time factor used for exponential increase.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcTimeMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="ed4e8865f59a46a7903c0105394c5ce4">
+      <Name>SignalTimeDecrease</Name>
+      <Definition>Time factor used for exponential decrease.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcTimeMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases />
+</PropertySetDef>

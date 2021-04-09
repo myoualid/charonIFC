@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_ProtectiveDeviceBreakerUnitTypeMotorProtection</Name>
+  <Definition>A coherent set of attributes representing different capacities of a a motor protection device, defined in accordance with IEC 60947. Note - A protective device may be associated with different instances of this Pset.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcProtectiveDevice</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcProtectiveDevice</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="413ed96530004baf8b1fc745e98af23f">
+      <Name>PerformanceClasses</Name>
+      <Definition>A set of designations of performance classes for the breaker unit for which the data of this instance is valid. A breaker unit being a motor protection device may be
+constructed for different levels of breaking capacities. A maximum of 7 different
+performance classes may be provided. Examples of performance classes that may be specified include B, C, N, S, H, L, V.</Definition>
+      <PropertyType>
+        <TypePropertyListValue>
+          <ListValue>
+            <DataType type="IfcLabel" />
+          </ListValue>
+        </TypePropertyListValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">能力クラス</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">モータ保護を行う開閉装置は、能力が違う最大7種類がある。名称の例として、B, C, N, S, H, L, Vが含まれる。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="b3703165cfd94153a3fac677c77d1091">
+      <Name>VoltageLevel</Name>
+      <Definition>The voltage levels for which the data of the instance is valid. More than one value may be selected in the enumeration.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_VoltageLevels">
+            <EnumItem>U230</EnumItem>
+            <EnumItem>U400</EnumItem>
+            <EnumItem>U440</EnumItem>
+            <EnumItem>U525</EnumItem>
+            <EnumItem>U690</EnumItem>
+            <EnumItem>U1000</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">電圧レベル</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">電圧レベルを選択。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="3f428faf19fe4845bfe8451a6feb8a00">
+      <Name>ICU60947</Name>
+      <Definition>The ultimate breaking capacity in [A] for a circuit breaker or motor protection device tested in accordance with the IEC 60947 series.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricCurrentMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">ICU60947</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">IECの60947シリーズに基づいてテスト配線用遮断機またはモータ保護装置のための遮断容量を[A]で設定。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="50e08b9392cc4cd4868ac10f9957d6f0">
+      <Name>ICS60947</Name>
+      <Definition>The service breaking capacity in [A] for a circuit breaker or motor protection device tested in accordance with the IEC 60947 series.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricCurrentMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">ICS60947</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">IECの60947シリーズに基づいてテスト配線用遮断機またはモータ保護装置のための遮断容量サービスを[A]で設定。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="674d2c6b3f2f4979b53165065bbe659d">
+      <Name>ICW60947</Name>
+      <Definition>The thermal withstand current in [A] for a circuit breaker or motor protection device tested in accordance with the IEC 60947 series. The value shall be related to 1 s.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricCurrentMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">ICW60947</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">IEC60947シリーズに基づいてテストした配線遮断機またはモータ保護装置のための電流[A]に耐える温度。
+ 値は、1sで与えられる。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="73cee174c01d4d8eb09989a5e1a7670c">
+      <Name>ICM60947</Name>
+      <Definition>The making capacity in [A] for a circuit breaker or motor protection device tested in accordance with the IEC 60947 series.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricCurrentMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">ICM60947</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">IECの60947シリーズに基づいてテストした配線遮断機またはモータ保護装置のためので作る能力[A]。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="ja-JP">AAのモータ保護装置の異なる容量を表す属性の一貫したセットは、IEC60947に基づいて定義されています。
+ 注-保護装置は、このプロセッサセットの別のインスタンスに関連付けられている可能性があります。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

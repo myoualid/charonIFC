@@ -1,0 +1,56 @@
+#!/usr/bin/env python
+# -*- Mode: Python; coding: utf-8; indent-tabs-mode: nil; tab-width: 4 -*-
+### BEGIN LICENSE
+# Copyright (C) 2017 <Davide Vescovini> <davide.vescovini@gmail.com>
+# This program is free software: you can redistribute it and/or modify it 
+# under the terms of the GNU General Public License version 3, as published 
+# by the Free Software Foundation.
+# 
+# This program is distributed in the hope that it will be useful, but 
+# WITHOUT ANY WARRANTY; without even the implied warranties of 
+# MERCHANTABILITY, SATISFACTORY QUALITY, or FITNESS FOR A PARTICULAR 
+# PURPOSE.  See the GNU General Public License for more details.
+# 
+# You should have received a copy of the GNU General Public License along 
+# with this program.  If not, see <http://www.gnu.org/licenses/>.
+### END LICENSE
+
+###
+# This program use the Open Source software IfcOpenShell
+# see <http://ifcopenshell.org/> an open source ([LGPL]) software 
+# library for working with the Industry Foundation Classes ([IFC]) 
+# file format. 
+# Currently supported IFC releases are [IFC2x3 TC1] and [IFC4 Add1].
+# A pre-compiled version of this program is distributed with a copy of
+# this software.
+# For more information, see
+# * [http://ifcopenshell.org](http://ifcopenshell.org)  
+# * [http://academy.ifcopenshell.org](http://academy.ifcopenshell.org)
+###
+
+################################################################################
+############# IMPORTAZIONE MODULI ##############################################
+################################################################################
+from __future__ import print_function
+#from __future__ import unicode_literals
+
+import sys
+
+################################################################################
+############# MAIN PROGRAM START ###############################################
+################################################################################
+
+if __name__ == "__main__":
+  # if the program is invoked without arguments open the GUI
+  if len(sys.argv) < 2:
+      # try to import the GUI
+      try:
+          import charonifclib.gui as gui
+      except ImportError:
+          raise ImportError("Unable to import the GUI, use the command line.")
+      gui.main()
+  # else use the command line
+  else:
+      import charonifclib.cli as cli
+      # run the CLI
+      cli.main()

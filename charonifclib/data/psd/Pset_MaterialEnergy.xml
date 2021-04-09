@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_MaterialEnergy</Name>
+  <Definition>A set of extended material properties for energy calculation purposes.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcMaterial</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcMaterial</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="2bf79e9155fb4d8c937f31be955bc7b6">
+      <Name>ViscosityTemperatureDerivative</Name>
+      <Definition>Viscosity temperature derivative.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcReal" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="c7c3d5ab896e45c39068cd9e8f8b565b">
+      <Name>MoistureCapacityThermalGradient</Name>
+      <Definition>Thermal gradient coefficient for moisture capacity. Based on water vapor density.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcReal" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="47beadf562cc458c801796a036212684">
+      <Name>ThermalConductivityTemperatureDerivative</Name>
+      <Definition>Thermal conductivity temperature derivative.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcReal" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="06cda26e753949e9a5dff45d1008324e">
+      <Name>SpecificHeatTemperatureDerivative</Name>
+      <Definition>Specific heat temperature derivative.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcReal" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="ff43c9d69c9f4991bbbc02f2f1105621">
+      <Name>VisibleRefractionIndex</Name>
+      <Definition>Index of refraction (visible) defines the "bending" of the sola! r ray in the visible spectrum when it passes from one medium into another.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcReal" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="c23dca6c93724c36b10fe00f44e8b468">
+      <Name>SolarRefractionIndex</Name>
+      <Definition>Index of refraction (solar) defines the "bending" of the solar ray when it passes from one medium into another.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcReal" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="f823bad6522441a9925b7f0558401227">
+      <Name>GasPressure</Name>
+      <Definition>Fill pressure (e.g. for between-pane gas fills): the pressure exerted by a mass of gas confined in a constant volume.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPressureMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases />
+</PropertySetDef>

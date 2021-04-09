@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_FurnitureTypeChair</Name>
+  <Definition>A set of specific properties for furniture type chair. HISTORY: First issued in IFC Release R1.5. Renamed from Pset_Chair</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcFurniture/CHAIR</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcFurniture/CHAIR</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="0df46fd4ca0b4c4c9e9eb11ff756c8e8">
+      <Name>SeatingHeight</Name>
+      <Definition>The value of seating height if the chair height is not adjustable.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="052511d339d24088bf0130ea00bc079c">
+      <Name>HighestSeatingHeight</Name>
+      <Definition>The value of seating height of high level if the chair height is adjustable.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="99d5f1d23ae4407db880682ad505df7a">
+      <Name>LowestSeatingHeight</Name>
+      <Definition>The value of seating height of low level if the chair height is adjustable.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases />
+</PropertySetDef>

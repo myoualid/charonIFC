@@ -1,0 +1,17 @@
+Source: charonifc
+Section: python
+Priority: optional
+Maintainer: Davide Vescovini <davide.vescovini@gmail.com>
+Build-Depends: debhelper (>= 10), dh-python, python, python3, python-wxgtk4.0
+# python-all, python-setuptools, python3-all, python3-setuptools
+Standards-Version: 4.1.2
+Homepage: https://launchpad.net/charonifc
+X-Python-Version: >= 2.6
+X-Python3-Version: >= 3.2
+#Testsuite: autopkgtest-pkg-python
+
+Package: charonifc
+Architecture: any
+Depends: ${python:Depends}, ${python3:Depends}, ${misc:Depends}, python-pysqlite2
+Suggests: pandoc
+Description: A library to extract information from an IFC file to produce Technical Documentation like Specifications and Bill of Quantities.

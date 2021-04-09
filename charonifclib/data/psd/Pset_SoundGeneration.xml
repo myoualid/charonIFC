@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_SoundGeneration</Name>
+  <Definition>Common definition to capture the properties of sound typically used within the context of building services and flow distribution systems.  This property set is instantiated multiple times on an object for each frequency band.  HISTORY: New property set in IFC Release 2x4.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcDistributionFlowElement</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcDistributionFlowElement</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="4ca81915f95841928465a9c5ada0870e">
+      <Name>SoundCurve</Name>
+      <Definition>Table of sound frequencies and sound power measured in decibels at a reference power of 1 picowatt(10^(-12) watt) for the referenced octave band frequency.</Definition>
+      <PropertyType>
+        <TypePropertyTableValue />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">音響（騒音？）曲線</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">オクターブバンド1pW（10^(-12)の音の強さを基準とする音の周波数とデシベル単位で計測した音のエネルギーの一覧表。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="ja-JP">建物管理・空気の搬送システムに関連する設備の騒音性能指標。周波数バンド（帯域幅）１HZにおけるある音の強さの倍数で表示する。履歴：IFC2x4に新たに定義された。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

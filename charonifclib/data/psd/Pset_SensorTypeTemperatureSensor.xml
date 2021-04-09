@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_SensorTypeTemperatureSensor</Name>
+  <Definition>A device that senses or detects temperature. HISTORY: TemperatureSensorSensorSetPoint changed to SetPointTemperature. Range, accuracy and time constant deleted.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcSensor/TEMPERATURESENSOR</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSensor/TEMPERATURESENSOR</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="4db8cc2a47f24bedb4bcffb8e1046a0e">
+      <Name>TemperatureSensorType</Name>
+      <Definition>Enumeration that Identifies the types of temperature sensor that can be specified.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_TemperatureSensorType">
+            <EnumItem>HIGHLIMIT</EnumItem>
+            <EnumItem>LOWLIMIT</EnumItem>
+            <EnumItem>OUTSIDETEMPERATURE</EnumItem>
+            <EnumItem>OPERATINGTEMPERATURE</EnumItem>
+            <EnumItem>ROOMTEMPERATURE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">温度センサータイプ</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">明示された温度センサーのタイプを識別する一覧。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="962b27b28c63491ea4d7041932db8c0d">
+      <Name>SetPointTemperature</Name>
+      <Definition>The temperature value to be sensed. Use IfcPropertyBoundedValue.SetPointValue to set the set point value.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure" />
+        </TypePropertyBoundedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">温度設定値</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">感知される温度。
+セットポイント値を置くために、IfcPropertyBoundedValue.SetPointValueを使用する。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="ja-JP">温度を感知または検出するデバイス。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

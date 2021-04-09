@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_DistributionChamberElementTypeSump</Name>
+  <Definition>Recess or small chamber into which liquid is drained to facilitate its removal.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcDistributionChamberElement/SUMP</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcDistributionChamberElement/SUMP</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="e6d631d1a3b84612aa275493f9ce6ffb">
+      <Name>Length</Name>
+      <Definition>The length of the sump.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">長さ</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">排水チャンバーの長さ。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="90432c925f574ea29db7e93d5ef612ca">
+      <Name>Width</Name>
+      <Definition>The width of the sump.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">幅</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">排水チャンバーの幅。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="a4845e8c5a5a477c871ef64089e750c9">
+      <Name>InvertLevel</Name>
+      <Definition>The lowest point in the cross section of the sump.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">最大深さ</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">断面の最も低い部分の深さ（地面から）。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="ja-JP">排水チャンバー（ピット）に関する属性情報。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

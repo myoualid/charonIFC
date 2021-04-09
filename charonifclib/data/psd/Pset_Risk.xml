@@ -1,0 +1,205 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_Risk</Name>
+  <Definition>An indication of exposure to mischance, peril, menace, hazard or loss. 
+
+HISTORY: Extended in IFC2x3
+
+There are various types of risk that may be encountered and there may be several instances of Pset_Risk associated in an instance of an IfcProcess.
+Specification of this property set incorporates the values of the Incom risk analysis matrix (satisfying AS/NZS 4360) together with additional identified requirements.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcProcess</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcProcess</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="41d9808819f743a3930d42af981f30af">
+      <Name>RiskType</Name>
+      <Definition>Identifies the predefined types of risk from which the type required may be set.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_RiskType">
+            <EnumItem>BUSINESS</EnumItem>
+            <EnumItem>HAZARD</EnumItem>
+            <EnumItem>HEALTHANDSAFETY</EnumItem>
+            <EnumItem>INSURANCE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="df08790abb6d4172a4591c3eccb68cab">
+      <Name>NatureOfRisk</Name>
+      <Definition>An indication of the generic nature of the risk that might be encountered. 
+
+NOTE: It is anticipated that there will be a local agreement that constrains the values that might be assigned to this property. An example might be 'Fall'  or 'Fall of grille unit' causing injury and damage to person and property.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="90b26890f1e74297bcd9d9d28f83e297">
+      <Name>SubNatureOfRisk1</Name>
+      <Definition>A first subsidiary value that might be assigned to designate a more specific type of risk.
+
+NOTE: Nature of risk may be identified in various ways depending upon the place where risk assessment takes place and according to local agreement. This property set allows for a generic nature of risk and up to two subsidiary natures. An example might be 'causing injury and damage'.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="d9e5d474d9244f3aa6f6f096a2dfef56">
+      <Name>SubNatureOfRisk2</Name>
+      <Definition>A second subsidiary value that might be assigned to designate a more specific type of risk. An example might be 'o person and property'.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="c1fe6368224c443582092f13261cf8cf">
+      <Name>RiskCause</Name>
+      <Definition>A value that may be assigned to capture the cause or trigger for the risk. An example might be 'poor fixing'.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcText" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="352314acb7b8432bbb1fd8c0974f6ed5">
+      <Name>AssessmentOfRisk</Name>
+      <Definition>Likelihood of risk event occurring.
+
+Note  that assessment of risk may frequently be associated with the physical location of the object for which the risk is assessed.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_RiskAssessment">
+            <EnumItem>ALMOSTCERTAIN</EnumItem>
+            <EnumItem>VERYLIKELY</EnumItem>
+            <EnumItem>LIKELY</EnumItem>
+            <EnumItem>VERYPOSSIBLE</EnumItem>
+            <EnumItem>POSSIBLE</EnumItem>
+            <EnumItem>SOMEWHATPOSSIBLE</EnumItem>
+            <EnumItem>UNLIKELY</EnumItem>
+            <EnumItem>VERYUNLIKELY</EnumItem>
+            <EnumItem>RARE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="eac3e940303a429ebc82374aa5b835e1">
+      <Name>RiskConsequence</Name>
+      <Definition>Indicates the level of severity of the consequences that the risk would have in case it happens.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_RiskConsequence">
+            <EnumItem>CATASTROPHIC</EnumItem>
+            <EnumItem>SEVERE</EnumItem>
+            <EnumItem>MAJOR</EnumItem>
+            <EnumItem>CONSIDERABLE</EnumItem>
+            <EnumItem>MODERATE</EnumItem>
+            <EnumItem>SOME</EnumItem>
+            <EnumItem>MINOR</EnumItem>
+            <EnumItem>VERYLOW</EnumItem>
+            <EnumItem>INSIGNIFICANT</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="1b769dbd9992491686e488ce4a63f7ad">
+      <Name>RiskRating</Name>
+      <Definition>A general rating of the risk that may be determined from a combination of the risk assessment and risk consequence.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_RiskRating">
+            <EnumItem>CRITICAL</EnumItem>
+            <EnumItem>VERYHIGH</EnumItem>
+            <EnumItem>HIGH</EnumItem>
+            <EnumItem>CONSIDERABLE</EnumItem>
+            <EnumItem>MODERATE</EnumItem>
+            <EnumItem>SOME</EnumItem>
+            <EnumItem>LOW</EnumItem>
+            <EnumItem>VERYLOW</EnumItem>
+            <EnumItem>INSIGNIFICANT</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="da56661b88824f2680cc71bdf45af9a4">
+      <Name>RiskOwner</Name>
+      <Definition>A determination of who is the owner of the risk by reference to principal roles of organizations within a project. Determination of the specific organization should be by reference to instances of IfcActorRole assigned to instances of IfcOrganization (if assigned).</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_RiskOwner">
+            <EnumItem>DESIGNER</EnumItem>
+            <EnumItem>SPECIFIER</EnumItem>
+            <EnumItem>CONSTRUCTOR</EnumItem>
+            <EnumItem>INSTALLER</EnumItem>
+            <EnumItem>MAINTAINER</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="844c25aeb4a14b808c2a42025bd59581">
+      <Name>AffectsSurroundings</Name>
+      <Definition>Indicates wether the risk affects only to the person assigned to that task (FALSE) or if it can also affect to the people in the surroundings (TRUE).
+
+For example, the process of painting would affect all the people in the vicinity of the process.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="a0f997c28bf5450b997a5d4ab4867b14">
+      <Name>PreventiveMeassures</Name>
+      <Definition>Identifies preventive measures to be taken to mitigate risk.</Definition>
+      <PropertyType>
+        <TypePropertyListValue>
+          <ListValue>
+            <DataType type="IfcText" />
+          </ListValue>
+        </TypePropertyListValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases />
+</PropertySetDef>

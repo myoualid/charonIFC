@@ -1,0 +1,154 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_SwitchingDeviceTypeCommon</Name>
+  <Definition>A switching device is a device designed to make or break the current in one or more electric circuits.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcSwitchingDevice</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSwitchingDevice</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="464e88f8cf794bd987235b06ef595a16">
+      <Name>Reference</Name>
+      <Definition>Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcIdentifier" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">参照</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">このプロジェクト (例． 'A-1'　タイプなど)で指定された参照ID。認められた分類体系の分類参照が存在しない場合に適用される。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="868221ec412249d8b8b5e41418777ff2">
+      <Name>Status</Name>
+      <Definition>Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_Status">
+            <EnumItem>NEW</EnumItem>
+            <EnumItem>EXISTING</EnumItem>
+            <EnumItem>DEMOLISH</EnumItem>
+            <EnumItem>TEMPORARY</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">状態</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">要素（主にリノベーションまたは改修プロジェクトにおいて）の状態。 状態は、「新規(New)」－新しく追加される要素。「既存」－要素は存在し、かつ残りもの。「破壊」－要素は存在したが、廃棄されるもの。「一時的」－一時的に存在する要素（一時的にサポートしている構造のようなもの）。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="e569b91e11144ab1bd5c2b5aad8f799e">
+      <Name>NumberOfGangs</Name>
+      <Definition>Number of gangs/buttons on this switch.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcInteger" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">ボタン数</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">スイッチのボタン数</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="5887da86d8b04cb997b8ababadc1b277">
+      <Name>SwitchFunction</Name>
+      <Definition>Indicates types of switches which differs in functionality.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_SwitchFunctionType">
+            <EnumItem>ONOFFSWITCH</EnumItem>
+            <EnumItem>INTERMEDIATESWITCH</EnumItem>
+            <EnumItem>DOUBLETHROWSWITCH</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">スイッチタイプ</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">機能ごとに異なるスイッチのタイプを示す</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="8ea7a1c6a1cb49ff98ad3bc4ba165856">
+      <Name>HasLock</Name>
+      <Definition>Indication of whether a switching device has a key operated lock (=TRUE) or not (= FALSE).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">ロックの可否</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">スイッチ装置がキー操作でロックする場合は（TRUE)、そうでない場合は（FALSE)を表す。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="db8f59b24c6c4fc8ba559a5e4f4b00d6">
+      <Name>IsIlluminated</Name>
+      <Definition>An indication of whether there is an illuminated indicator to show that the switch is on (=TRUE) or not (= FALSE).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">自照型</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">イルミネーション型（自照型）表示機でスイッチのオン（TRUE）やオフ（FALSE）を示す。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="cdd77ffab52c48baa1b9a8f35650b1a5">
+      <Name>Legend</Name>
+      <Definition>A text inscribed or applied to the switch as a legend to indicate purpose or function.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">凡例</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">目的または機能を示す凡例など、スイッチに適用されるテキスト。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="c44ab640d02c4efbb7611a53f1945c90">
+      <Name>SetPoint</Name>
+      <Definition>Indicates the setpoint and label.  For toggle switches, there are two positions, 0 for off and 1 for on.  For dimmer switches, the values may indicate the fully-off and full-on positions, where missing integer values in between are interpolated.   For selector switches, the range indicates the available positions.  
+An IfcTable may be attached (using IfcMetric and IfcPropertyConstraintRelationship) containing columns of the specified header names and types:
+'Position' (IfcInteger): The discrete setpoint level.
+'Sink' (IfcLabel): The Name of the switched input port (IfcDistributionPort with FlowDirection=SINK).
+'Source' (IfcLabel): The Name of the switched output port (IfcDistributionPort with FlowDirection=SOURCE).
+'Ratio' (IfcNormalizedRatioMeasure): The ratio of power at the setpoint where 0.0 is off and 1.0 is fully on.</Definition>
+      <PropertyType>
+        <TypePropertyTableValue />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">設定ポイント</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">設定ポイントと範囲を示す。トグルスイッチは2つのポジションがある：0 は オフ(OFF)、1 は オン(ON)。ディマースイッチは、全閉(fully-off) または　全開(fully-on) の他に、その間で取得可能な値をオプションで示す。選択型スイッチは選択可能なポジションの範囲を示す。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="ja-JP">IEC 441-14-01の定義: 
+切換装置は、1つ以上の電気回路で電流を遮断するように設計された装置です。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

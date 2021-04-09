@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_AirTerminalBoxPHistory</Name>
+  <Definition>Air terminal box performance history attributes.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcAirTerminalBox</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcAirTerminalBox</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="a30cfe3b26b7462ba36213f0359cb314">
+      <Name>DamperPosition</Name>
+      <Definition>Control damper position, ranging from 0 to 1.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcNormalisedRatioMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">ダンパ開度</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">制御ダンパの開度（０～１）</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="0196f674f20d42f6bd9d8265765952d7">
+      <Name>AtmosphericPressure</Name>
+      <Definition>Ambient atmospheric pressure.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcPressureMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">大気圧</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">周囲大気圧</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="46f0bb27363e467583c1547f17f6e04b">
+      <Name>Sound</Name>
+      <Definition>Sound performance.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcSoundPressureMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">騒音</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">騒音性能</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="e8e28a060a4744d4ab23d2c39030682c">
+      <Name>AirflowCurve</Name>
+      <Definition>Air flowrate versus damper position relationship;airflow = f ( valve position).</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcVolumetricFlowRateMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">流量曲線</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">ダンパ開度と風量の関係　　風量＝f(開度)</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="ja-JP">ターミナルボックス性能履歴の属性。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

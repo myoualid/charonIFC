@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_FilterTypeWaterFilter</Name>
+  <Definition>Water filter type attributes.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcFilter/WATERFILTER</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcFilter/WATERFILTER</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="aceaae8c83614a68aa1029be07f21b8f">
+      <Name>WaterFilterType</Name>
+      <Definition>Further qualifies the type of water filter.  Filtration removes undissolved matter; Purification removes dissolved matter; Softening replaces dissolved matter.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_FilterWaterFilterType">
+            <EnumItem>FILTRATION_DIATOMACEOUSEARTH</EnumItem>
+            <EnumItem>
+FILTRATION_SAND</EnumItem>
+            <EnumItem>
+PURIFICATION_DEIONIZING</EnumItem>
+            <EnumItem>
+PURIFICATION_REVERSEOSMOSIS</EnumItem>
+            <EnumItem>
+SOFTENING_ZEOLITE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases />
+</PropertySetDef>

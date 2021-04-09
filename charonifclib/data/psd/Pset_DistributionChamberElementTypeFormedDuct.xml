@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_DistributionChamberElementTypeFormedDuct</Name>
+  <Definition>Space formed in the ground for the passage of pipes, cables, ducts.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcDistributionChamberElement/FORMEDDUCT</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcDistributionChamberElement/FORMEDDUCT</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="f3187ff4221c4294b94cffbdffbe0581">
+      <Name>ClearWidth</Name>
+      <Definition>The width of the formed space in the duct.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">幅員</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">ダクトスペースの幅。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="d49ca17c774c429cbb31db165f714675">
+      <Name>ClearDepth</Name>
+      <Definition>The depth of the formed space in the duct.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">深さ</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">ダクトスペースの深さ。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="81b68e5f43cf4385b14f3887f3adc003">
+      <Name>WallThickness</Name>
+      <Definition>The thickness of the duct wall construction
+NOTE: It is assumed that chamber walls will be constructed at a single thickness.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">壁の厚さ</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">ダクトスペース壁の厚さ。
+注：ダクトスペースの壁は単層と仮定する</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="d04a493ffdc446c2b9eafe07852e3310">
+      <Name>BaseThickness</Name>
+      <Definition>The thickness of the duct base construction
+NOTE: It is assumed that duct base will be constructed at a single thickness.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">基部の厚さ</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">ダクト基部の厚さ。
+注：ダクトス基部は単一の高さであると仮定する。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="ffc881047bd142c59ecba6af5f36bf3a">
+      <Name>AccessCoverLoadRating</Name>
+      <Definition>The load rating of the access cover (which may be a value or an alphanumerically defined class rating).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcText" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">アクセス（点検）カバーの耐荷重</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">アクセス（点検）カバーの耐荷重（数字或いはアルファベットで定義する）。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="ja-JP">BS6100 100 3410より定義：　地中に配管、配線、ダクトを設置するためのダクトスペース。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

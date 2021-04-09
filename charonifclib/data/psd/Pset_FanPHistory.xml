@@ -1,0 +1,153 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_FanPHistory</Name>
+  <Definition>Fan performance history attributes.
+Sound attribute deleted in IFC2x2 Pset Addendum: Use IfcSoundProperties instead.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcFan</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcFan</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="140605980c29472fa7fa3a7bff06b648">
+      <Name>FanRotationSpeed</Name>
+      <Definition>Fan rotation speed.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcRotationalFrequencyMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">回転速度</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">回転速度</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="1f960059653a4b2090e0e55149a8ec48">
+      <Name>WheelTipSpeed</Name>
+      <Definition>Fan blade tip speed, typically defined as the linear speed of the tip of the fan blade furthest from the shaft.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcLinearVelocityMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">ホイール先端速度</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">ファンブレード先端速度
+通常、軸から最も遠いファンブレードの先端の直線速度として定義されている</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="e56cffe10a1e4d75b18408155ab34e29">
+      <Name>FanEfficiency</Name>
+      <Definition>Fan mechanical efficiency.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcNormalisedRatioMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">Fan効率</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">ファン機械効率</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="32eb72175f434a178b35990f7b7e20da">
+      <Name>OverallEfficiency</Name>
+      <Definition>Total efficiency of motor and fan.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcNormalisedRatioMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">全体効率</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">モーターとファンの全体効率</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="213bb53466bf4e5393a7f6cccbe9148d">
+      <Name>FanPowerRate</Name>
+      <Definition>Fan power consumption.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcPowerMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">Fan効率動力量</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">ファン消費電力</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="fd3a7a66e5f241789926cf27cad09968">
+      <Name>ShaftPowerRate</Name>
+      <Definition>Fan shaft power.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcPowerMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">軸動力量</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">ファン軸動力</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="e57ac9bdba294468aa0c9780abde5587">
+      <Name>DischargeVelocity</Name>
+      <Definition>The speed at which air discharges from the fan through the fan housing discharge opening.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcLinearVelocityMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">吐出速度</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">ファン吐出口からの吐出風速</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="a87c79a7ab0740cfbb0103fa3a779396">
+      <Name>DischargePressureLoss</Name>
+      <Definition>Fan discharge pressure loss associated with the discharge arrangement.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcPressureMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">吐出圧力損失</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">吐出部に関連した吐出圧力損失</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="d7d15e2c402c4a45b1e009073d481d73">
+      <Name>DrivePowerLoss</Name>
+      <Definition>Fan drive power losses associated with the type of connection between the motor and the fan wheel.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcPowerMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">駆動電力損失</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">ファン駆動力損失は、モータとファンホイールとの間の接続の種類に関連付けられている。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="ja-JP">Fan性能履歴属性
+Sound属性はIFC2x2付録で削除された。： IfcSoundPropertiesを代わりに使う</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

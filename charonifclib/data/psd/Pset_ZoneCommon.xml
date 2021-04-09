@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_ZoneCommon</Name>
+  <Definition>Properties common to the definition of all occurrences of IfcZone.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcZone</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcZone</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="30eac96457c3425394706efbcb8cd217">
+      <Name>Reference</Name>
+      <Definition>Reference ID for this specified type in this project (e.g. type 'A-1'). Used to store the non-classification driven internal project type.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcIdentifier" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="fr-FR">Reference</NameAlias>
+        <NameAlias lang="ja-JP">参照記号</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="fr-FR">Référence à l'identifiant d'un type spécifié dans le contexte de ce projet (exemple : "type A1"). A fournir s'il n'y a pas de référence à une classification en usage.</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">このプロジェクトにおける参照記号(例：A-1)。分類コードではなく内部で使用されるプロジェクトタイプとして使用されるもの。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="28fecb30be2a40c69fb0703be83c5e9f">
+      <Name>IsExternal</Name>
+      <Definition>Indication whether the element is designed for use in the exterior (TRUE) or not (FALSE). If (TRUE) it is an external zone at the outside of the building.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">外部区分</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">外部の部材かどうかを示すブーリアン値。もしTRUEの場合、外部の部材で建物の外側に面している。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="e46e79127254467fab1435fce14121bf">
+      <Name>GrossPlannedArea</Name>
+      <Definition>Total planned gross area for the zone. Used for programming the zone.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcAreaMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">計画グロス面積</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">計画されたグロス面積。ゾーン計画の際に使用。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="c0ec9d3bf8f649b9be1a1a3ea965d058">
+      <Name>NetPlannedArea</Name>
+      <Definition>Total planned net area for the zone. Used for programming the zone.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcAreaMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">計画ネット面積</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">計画されたネット面積。ゾーン計画の際に使用。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="b8879791ed344e68b3c962b1ec9827e6">
+      <Name>PubliclyAccessible</Name>
+      <Definition>Indication whether this space (in case of e.g., a toilet) is designed to serve as a publicly accessible space, e.g., for a public toilet (TRUE) or not (FALSE).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="fr-FR">AccessibleAuPublic</NameAlias>
+        <NameAlias lang="ja-JP">公共アクセス可能性</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="fr-FR">Indique si la zone est un espace accessible au public (VRAI) ou non (FAUX).</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">この空間が公共アクセス空間かどうかを示すブーリアン値。例：公共トイレの場合（TRUE）。そうでなければ（FALSE）。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="cfc673adf0b9445ba03d6ce1c2285184">
+      <Name>HandicapAccessible</Name>
+      <Definition>Indication whether this space (in case of e.g., a toilet) is designed to serve as an accessible space for handicapped people, e.g., for a public toilet (TRUE) or not (FALSE). This information is often used to declare the need for access for the disabled and for special design requirements of this space.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="fr-FR">AccesHandicapes</NameAlias>
+        <NameAlias lang="ja-JP">ハンディキャップアクセス可能性</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="fr-FR">Indique si l'élément est conçu pour être accessible aux handicapés (VRAI) ou non (FAUX). Cette information est souvent utilisée pour déclarer la nécessité d'un accès pour handicapés ou pour des contraintes spéciales de conception.</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">この空間がハンディキャップ者向けの空間かどうかを示す（TRUE）。例：公共トイレの場合。そうでなければ（FALSE）。この情報は、障害者向け利用の必要性や特別なデザインの必要性を示すために利用される。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="fr-FR">Définition de l'IAI : propriétés communes à la définition de toutes les instances de la classe IfcZone</PsetDefinitionAlias>
+    <PsetDefinitionAlias lang="ja-JP">IfcZoneに関する共通プロパティセット定義。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

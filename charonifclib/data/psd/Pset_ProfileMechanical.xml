@@ -1,0 +1,288 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_ProfileMechanical</Name>
+  <Definition>This is a collection of mechanical properties that are applicable to virtually all profile classes. Most of these properties are especially used in structural analysis.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcProfileDef</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcProfileDef</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="072f6f4eecec4347a307e6b8657aa4dc">
+      <Name>MassPerLength</Name>
+      <Definition>Mass per length, i.e. mass of a beam with a unit length of extrusion. For example measured in kg/m.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcMassPerLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="1c34279196694e1b9392b6a408ca2edc">
+      <Name>CrossSectionArea</Name>
+      <Definition>Area of the profile. For example measured in mm2. If given, the value of the cross section area shall be greater than zero.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcAreaMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="e783acd99cbc41c587145627b9aa81f4">
+      <Name>Perimeter</Name>
+      <Definition>Perimeter of the profile for calculating the surface area. For example measured in mm.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="682cbd9a125b4ae6852dc1c99e9c4514">
+      <Name>MinimumPlateThickness</Name>
+      <Definition>This value may be needed for stress analysis and to handle buckling problems. It can also be derived from the given profile geometry or classification and therefore it is only an optional feature allowing for an explicit description. For example measured in mm.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="a5f63caa032a4d768135025e5b8a2970">
+      <Name>MaximumPlateThickness</Name>
+      <Definition>This value may be needed for stress analysis and to handle buckling problems. It can also be derived from the given profile geometry or classification and therefore it is only an optional feature allowing for an explicit description. For example measured in mm.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="1c6633bed0794e0d9f0162abcb3d6cb6">
+      <Name>CentreOfGravityInX</Name>
+      <Definition>Location of the profile's centre of gravity (geometric centroid), measured along xp.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="60fc0ce1ab1f434ea866a8aa71654cb1">
+      <Name>CentreOfGravityInY</Name>
+      <Definition>Location of the profile's centre of gravity (geometric centroid), measured along yp.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="254630221dd84dfc96320fa15044c20f">
+      <Name>ShearCentreZ</Name>
+      <Definition>Location of the profile's shear centre, measured along zs.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="587ca7c85e4641038043e91aae89449a">
+      <Name>ShearCentreY</Name>
+      <Definition>Location of the profile's shear centre, measured along ys.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="190ea97e719945bfa6e738cbd4f4e27f">
+      <Name>MomentOfInertiaY</Name>
+      <Definition>Moment of inertia about ys (second moment of area, about ys). For example measured in mm4.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcMomentOfInertiaMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="52e16b545c834b7a803193d6bd8e1ba7">
+      <Name>MomentOfInertiaZ</Name>
+      <Definition>Moment of inertia about zs (second moment of area, about zs). For example measured in mm4</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcMomentOfInertiaMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="90f2b5744295471ebb7305d431d24f76">
+      <Name>MomentOfInertiaYZ</Name>
+      <Definition>Moment of inertia about ys and zs (product moment of area). For example measured in mm4.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcMomentOfInertiaMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="236ec06124214fadbb7655f4e19b6f26">
+      <Name>TorsionalConstantX</Name>
+      <Definition>Torsional constant about xs. For example measured in mm4.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcMomentOfInertiaMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="7169c13acc7d4340ae46150d3c86e590">
+      <Name>WarpingConstant</Name>
+      <Definition>Warping constant of the profile for torsional action. For example measured in mm6.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcWarpingConstantMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="8a142765d70d47a1b82effbccf2cb25b">
+      <Name>ShearDeformationAreaZ</Name>
+      <Definition>Area of the profile for calculating the shear deformation due to a shear force parallel to zs. For example measured in mm². If given, the shear deformation area zs shall be non-negative.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcAreaMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="39826544f7ad420f8f807dca3ea3d932">
+      <Name>ShearDeformationAreaY</Name>
+      <Definition>Area of the profile for calculating the shear deformation due to a shear force parallel to ys. For example measured in mm². If given, the shear deformation area ys shall be non-negative.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcAreaMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="0873550e7b874ae5b7df7dbdcc350eac">
+      <Name>MaximumSectionModulusY</Name>
+      <Definition>Bending resistance about the ys axis at the point with maximum zs ordinate. For example measured in mm³.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcSectionModulusMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="15325a018d2747b69ccfe3d2961a5f2d">
+      <Name>MinimumSectionModulusY</Name>
+      <Definition>Bending resistance about the ys axis at the point with minimum zs ordinate. For example measured in mm³.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcSectionModulusMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="038714b3ed1c43e0a7ff160bebcd616a">
+      <Name>MaximumSectionModulusZ</Name>
+      <Definition>Bending resistance about the zs axis at the point with maximum ys ordinate. For example measured in mm³.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcSectionModulusMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="e2172073322e4fb7abc7f01903462602">
+      <Name>MinimumSectionModulusZ</Name>
+      <Definition>Bending resistance about the zs axis at the point with minimum ys ordinate. For example measured in mm³.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcSectionModulusMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="ffef1ea5336342689ba86efc4a9a5990">
+      <Name>TorsionalSectionModulus</Name>
+      <Definition>Torsional resistance (about xs). For example measured in mm³.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcSectionModulusMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="a61cab4535424f32848fc2c142c47af1">
+      <Name>ShearAreaZ</Name>
+      <Definition>Area of the profile for calculating the shear stress due to shear force parallel to the section analysis axis zs. For example measured in mm². If given, the shear area zs shall be non-negative.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcAreaMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="03da4c16541545f5b0afba4c11cc496b">
+      <Name>ShearAreaY</Name>
+      <Definition>Area of the profile for calculating the shear stress due to shear force parallel to the section analysis axis ys. For example measured in mm². If given, the shear area ys shall be non-negative.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcAreaMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="691c628a4ab341ef966fcc12c57f41c4">
+      <Name>PlasticShapeFactorY</Name>
+      <Definition>Ratio of plastic versus elastic bending moment capacity about the section analysis axis ys. A dimensionless value.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="5478f9db93f5425e816d413dabd101ab">
+      <Name>PlasticShapeFactorZ</Name>
+      <Definition>Ratio of plastic versus elastic bending moment capacity about the section analysis axis zs. A dimensionless value.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases />
+</PropertySetDef>

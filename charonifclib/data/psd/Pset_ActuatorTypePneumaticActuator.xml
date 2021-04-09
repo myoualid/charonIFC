@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_ActuatorTypePneumaticActuator</Name>
+  <Definition>A device that pneumatically actuates a control element</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcActuator/PNEUMATICACTUATOR</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcActuator/PNEUMATICACTUATOR</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="e4e6129a49c24b76958a861b3f22f2fb">
+      <Name>InputPressure</Name>
+      <Definition>Maximum input control air pressure requirement.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPressureMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">入力圧力</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">最大制御空気圧。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="fa1d652eeceb416b96bdd8ea3806e8fb">
+      <Name>InputFlowrate</Name>
+      <Definition>Maximum input control air flowrate requirement.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcVolumetricFlowRateMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">入力流量</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">最大制御空気流量。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="ja-JP">制御要素を空気圧で作動させるデバイス。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_FlowInstrumentTypeThermometer</Name>
+  <Definition>A device that reads and displays a temperature value at a point.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcFlowInstrument/THERMOMETER</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcFlowInstrument/THERMOMETER</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="d412f9a9a38c46cfbe7eb35c04d667dc">
+      <Name>ThermometerType</Name>
+      <Definition>Identifies the means by which temperature is displayed.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_ThermometerType">
+            <EnumItem>DIAL</EnumItem>
+            <EnumItem>DIGITAL</EnumItem>
+            <EnumItem>STEM</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">温度計タイプ</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">温度が表示される手段を識別する。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="5f13fbc233fb454e8cc45361d7379dde">
+      <Name>DisplaySize</Name>
+      <Definition>The physical size of the display. In the case of a stem thermometer, this will be the length of the stem. For a dial thermometer, it will be the diameter of the dial.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">表示サイズ</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">表示のサイズ。 棒温度計の場合では、軸の長さになる。 ダイヤル温度計に関しては、ダイヤルの直径になる。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="ja-JP">温度を測定し表示するデバイス。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

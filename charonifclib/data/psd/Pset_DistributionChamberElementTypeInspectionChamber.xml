@@ -1,0 +1,220 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_DistributionChamberElementTypeInspectionChamber</Name>
+  <Definition>Chamber constructed on a drain, sewer or pipeline and with a removable cover, that permits visible inspection.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcDistributionChamberElement/INSPECTIONCHAMBER</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcDistributionChamberElement/INSPECTIONCHAMBER</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="7f80bd91940f4d2e9ddae97173b246a8">
+      <Name>ChamberLengthOrRadius</Name>
+      <Definition>Length or, in the event of the shape being circular in plan, the radius of the chamber.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">チャンバー（バイブスペース？）の長さあるいは半径</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">チャンバーの長さあるいは円形チャンバーの半径。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="6e66968c373443e6b88d30b73b234690">
+      <Name>ChamberWidth</Name>
+      <Definition>Width, in the event of the shape being non circular in plan.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">チャンバー（バイブスペース？）の幅</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">非円形チャンバーの幅。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="f0c5bc5795c340bdae4603d9bedfc373">
+      <Name>InvertLevel</Name>
+      <Definition>Level of the lowest part of the cross section as measured from ground level.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">最大深さ</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">断面の最も低い部分の深さ（地面から）。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="dcebbc6976334318b57c95db0fed4277">
+      <Name>SoffitLevel</Name>
+      <Definition>Level of the highest internal part of the cross section as measured from ground level.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">最小深さ</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">断面の最も高い部分の深さ（地面から）。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="8590445c22704cf2802b24835d2125ff">
+      <Name>WallMaterial</Name>
+      <Definition>The material from which the wall of the chamber is constructed.
+NOTE: It is assumed that chamber walls will be constructed of a single material.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="">
+          <DataType type="IfcMaterialDefinition" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">壁の材質</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">ダクトスペース壁の材質。
+注：ダクトスペースの壁は単層と仮定する</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="5cb8122e5d7b4764b8a7cf9c5f9d796f">
+      <Name>WallThickness</Name>
+      <Definition>The thickness of the chamber wall construction
+NOTE: It is assumed that chamber walls will be constructed at a single thickness.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">壁厚さ</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">ダクトスペース壁の厚さ。
+注：ダクトスペースの壁は単層と仮定する</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="422c7bf1c50f4156bda4b0de124aa264">
+      <Name>BaseMaterial</Name>
+      <Definition>The material from which the base of the chamber is constructed.
+NOTE: It is assumed that chamber base will be constructed of a single material.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="">
+          <DataType type="IfcMaterialDefinition" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">床の材質</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">ダクトスペース床面の材質。
+注：ダクトスペースの床は単層と仮定する</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="9d31a0dfd0c34783b62e8f12af151eb7">
+      <Name>BaseThickness</Name>
+      <Definition>The thickness of the chamber base construction
+NOTE: It is assumed that chamber base will be constructed at a single thickness.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">床の厚さ</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">ダクトスペース床面の厚さ。
+注：ダクトスペースの床は単層と仮定する</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="e78acb3801df448e82ce1be6b717e6a6">
+      <Name>WithBackdrop</Name>
+      <Definition>Indicates whether the chamber has a backdrop or tumbling bay (TRUE) or not (FALSE).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">バックドロップ付け</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">ダクトスペースはバックドロップ或いは堰付けかどうか（TRUE或いはFALSE）。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="0c671d307dfb4a42bd3d4337df714efa">
+      <Name>AccessCoverMaterial</Name>
+      <Definition>The material from which the access cover to the chamber is constructed.
+NOTE: It is assumed that chamber walls will be constructed of a single material.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="">
+          <DataType type="IfcMaterialDefinition" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">アクセス（点検）カバーの材質</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">アクセス（点検）カバーの材質。
+注：バイブスペースの壁は単層と仮定する</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="179dd5bb748146ad933db4a0eab0c442">
+      <Name>AccessLengthOrRadius</Name>
+      <Definition>The length of the chamber access cover or, where the plan shape of the cover is circular, the radius.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">アクセス（点検）カバーの長さ或いは半径</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">アクセス（点検）カバーの長さ、或いは円形カバーの半径。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="53e599cbcbc04416b3ad77d65ae32c6f">
+      <Name>AccessWidth</Name>
+      <Definition>The width of the chamber access cover where the plan shape of the cover is not circular.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">アクセス（点検）カバーの幅</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">アクセス（点検）カバーの幅。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="e9f3ac90efa847feb441365bedf1e82b">
+      <Name>AccessCoverLoadRating</Name>
+      <Definition>The load rating of the access cover (which may be a value or an alphanumerically defined class rating).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcText" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">アクセス（点検）カバーの耐荷重</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">アクセス（点検）カバーの耐荷重（数字或いはアルファベットで定義する）。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="ja-JP">排水、下水管の上にある・点検用可移動カバー付けパイプスペース。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

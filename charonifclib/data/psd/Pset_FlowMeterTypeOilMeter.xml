@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_FlowMeterTypeOilMeter</Name>
+  <Definition>Device that measures, indicates and sometimes records, the volume of oil that passes through it without interrupting the flow.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcFlowMeter/OILMETER</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcFlowMeter/OILMETER</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="fed7f4e1a49e48aeae2782e1dcd4e612">
+      <Name>ConnectionSize</Name>
+      <Definition>Defines the size of inlet and outlet pipe connections to the meter.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="14ef67974d9847b6b8f0ab3318faaecd">
+      <Name>MaximumFlowRate</Name>
+      <Definition>Maximum rate of flow which the meter is expected to pass.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcVolumetricFlowRateMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases />
+</PropertySetDef>

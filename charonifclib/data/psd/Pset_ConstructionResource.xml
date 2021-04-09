@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_ConstructionResource</Name>
+  <Definition>Properties for tracking resource usage over time.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcConstructionResource</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcConstructionResource</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="b2e0a3658ef84105814a5d0acd9cfe99">
+      <Name>ScheduleWork</Name>
+      <Definition>The scheduled work on behalf of the resource allocation.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcDuration">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="7361f0d267714b2d9d35826b791d3abe">
+      <Name>ActualWork</Name>
+      <Definition>The actual work on behalf of the resource allocation.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcDuration">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="2d2dc0dfc15b4e9e8f40e4485f742e7d">
+      <Name>RemainingWork</Name>
+      <Definition>The remaining work on behalf of the resource allocation.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcDuration">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="19c9cb779c104597b085cfee0011dbef">
+      <Name>ScheduleCost</Name>
+      <Definition>The budgeted cost on behalf of the resource allocation.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcMonetaryMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="2048a2c5fab54fa8aa4e0b8de45232a9">
+      <Name>ActualCost</Name>
+      <Definition>The actual cost on behalf of the resource allocation.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcMonetaryMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="291f5d7736204f9386843f78d6454047">
+      <Name>RemainingCost</Name>
+      <Definition>The remaining cost on behalf of the resource allocation.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcMonetaryMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="7039947e49914bcd93f36fa025ebb9ab">
+      <Name>ScheduleCompletion</Name>
+      <Definition>The scheduled completion percentage of the allocation.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcNormalisedRatioMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="480b8c7c101c42a4ae4d4e873dd65218">
+      <Name>ActualCompletion</Name>
+      <Definition>The actual completion percentage of the allocation.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcNormalisedRatioMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases />
+</PropertySetDef>

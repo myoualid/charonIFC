@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_ActuatorPHistory</Name>
+  <Definition>Properties for history of actuators. HISTORY: Added in IFC2X4.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcActuator</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcActuator</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="cde33c5e091d4a78938fe5f775866c9d">
+      <Name>Position</Name>
+      <Definition>Indicates position of the actuator over time where 0.0 is fully closed and 1.0 is fully open.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcNormalisedRatioMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">位置</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">アクチュエータの時間ごとの位置を示す値。0.0が完全に閉じられた状態で、1.0が完全に開いた状態。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="26fae80d0c4a45b4b265eb8dca5c2385">
+      <Name>Quality</Name>
+      <Definition>Indicates the quality of measurement or failure condition, which may be further qualified by the Status.  True: measured values are considered reliable; False: measured values are considered not reliable (i.e. a fault has been detected); Unknown: reliability of values is uncertain.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcLogical">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">品質</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">計測の品質を示す値。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="05367dc866494b7ba34d81d876670dc2">
+      <Name>Status</Name>
+      <Definition>Indicates an error code or identifier, whose meaning is specific to the particular automation system.  Example values include: 'ConfigurationError', 'NotConnected', 'DeviceFailure', 'SensorFailure', 'LastKnown, 'CommunicationsFailure', 'OutOfService'.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcLabel">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">状態</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">エラーコードまたはIDを示す。例：'ConfigurationError', 'NotConnected', 'DeviceFailure', 'SensorFailure', 'LastKnown, 'CommunicationsFailure', 'OutOfService'.</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="ja-JP">アクチュエータの性能履歴の属性。IFC2x4にて追加。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

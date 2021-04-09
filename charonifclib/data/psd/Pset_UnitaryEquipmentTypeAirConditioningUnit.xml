@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_UnitaryEquipmentTypeAirConditioningUnit</Name>
+  <Definition>Air conditioning unit equipment type attributes.
+Note that these attributes were formely Pset_PackagedACUnit prior to IFC2x2.
+HeatingEnergySource attribute deleted in IFC2x2 Pset Addendum: Use IfcEnergyProperties, IfcFuelProperties, etc. instead.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcUnitaryEquipment/AIRCONDITIONINGUNIT</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcUnitaryEquipment/AIRCONDITIONINGUNIT</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="9d46aa5dcb3743bfa7ff29e46c47f73d">
+      <Name>SensibleCoolingCapacity</Name>
+      <Definition>Sensible cooling capacity.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPowerMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">顕熱冷却能力</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">顕熱冷却能力</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="b83b895e1aa04ac2aeb2d9a8aa0917f8">
+      <Name>LatentCoolingCapacity</Name>
+      <Definition>Latent cooling capacity.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPowerMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">潜熱冷却能力</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">潜熱冷却能力</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="3d2bab75bf6d4d008f40272d91ab91c7">
+      <Name>CoolingEfficiency</Name>
+      <Definition>Coefficient of Performance: Ratio of cooling energy output to energy input under full load operating conditions.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">冷却効率</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">性能係数全負荷運転状態でのエネルギー入力に対する冷却エネルギー出力の割合</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="ea24369bbfcd48b2903eb6945a5b9c25">
+      <Name>HeatingCapacity</Name>
+      <Definition>Heating capacity.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPowerMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">加熱容量</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">加熱容量</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="2d5b7f9bd4134b0ab58f2e0dfcf9b875">
+      <Name>HeatingEfficiency</Name>
+      <Definition>Heating efficiency under full load heating conditions.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">加熱効率</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">全負荷加熱状態での熱効率</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="0cbf1461eb824c17aff660b9fc1d0a99">
+      <Name>CondenserFlowrate</Name>
+      <Definition>Flow rate of fluid through the condenser.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcVolumetricFlowRateMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">凝縮器流量</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">凝縮器を通る流体の流量</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="8e8f17d9bdd5486ebfa82a0e22839532">
+      <Name>CondenserEnteringTemperature</Name>
+      <Definition>Temperature of fluid entering condenser.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">凝縮器入口温度</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">凝縮器入口流体温度</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="7e46a0f8c1cf49988690d16ef9562070">
+      <Name>CondenserLeavingTemperature</Name>
+      <Definition>Termperature of fluid leaving condenser.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">凝縮器出口温度</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">凝縮器出口流体温度</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="4c4d59788f034ae098ad925c971e3c9b">
+      <Name>OutsideAirFlowrate</Name>
+      <Definition>Flow rate of outside air entering the unit.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcVolumetricFlowRateMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">外気流量</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">ユニットに入る外気流量</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="ja-JP">エアコンユニット</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

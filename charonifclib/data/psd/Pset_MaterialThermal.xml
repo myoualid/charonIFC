@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_MaterialThermal</Name>
+  <Definition>A set of thermal material properties.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcMaterial</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcMaterial</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="b52a71a6cef44059847d956ecb366fa9">
+      <Name>SpecificHeatCapacity</Name>
+      <Definition>Defines the specific heat of the material: heat energy absorbed per temperature unit.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcSpecificHeatCapacityMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="c1dda84f16654b3c9fe472e00067f216">
+      <Name>BoilingPoint</Name>
+      <Definition>The boiling point of the material (fluid).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="5ed2a92de8f646309cb90b848624ace7">
+      <Name>FreezingPoint</Name>
+      <Definition>The freezing point of the material (fluid).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="adf26e886205499ca2d31527a000d8f4">
+      <Name>ThermalConductivity</Name>
+      <Definition>The rate at which thermal energy is transmitted through the material.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcThermalConductivityMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases />
+</PropertySetDef>

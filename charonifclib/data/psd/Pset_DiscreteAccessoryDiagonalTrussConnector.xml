@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_DiscreteAccessoryDiagonalTrussConnector</Name>
+  <Definition>Definition from IAI: Shape properties specific to connecting accessories in truss form with diagonal cross-bars.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcDiscreteAccessory/Diagonal truss connector</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcDiscreteAccessory/Diagonal truss connector</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="db89b8fdea63428d9d15fdfb718570d8">
+      <Name>DiagonalTrussHeight</Name>
+      <Definition>The overall height of the truss connector.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">全体高さ</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">トラス接続部材の全体の高さ。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="787d9da1ff7245cfa19fbd73fa23f184">
+      <Name>DiagonalTrussLength</Name>
+      <Definition>The overall length of the truss connector.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">全体長さ</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">トラス接続部材の全体の長さ。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="0592bb62ef4d4d7c8f182b09d30ef498">
+      <Name>DiagonalTrussCrossBarSpacing</Name>
+      <Definition>The spacing between diagonal cross-bar sections.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">クロスバー間隔</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">斜めのクロスバーの間隔。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="25f9d3bada234d9391619bb3e73b3702">
+      <Name>DiagonalTrussBaseBarDiameter</Name>
+      <Definition>The nominal diameter of the base bar.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">ベースバー径</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">ベースバーの公称直径。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="db65c25fad6c47cbbe4b3b90729b27dd">
+      <Name>DiagonalTrussSecondaryBarDiameter</Name>
+      <Definition>The nominal diameter of the secondary bar.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">二次バー径</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">二次バーの公称直径。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="ec112aa8b45542acbba8634f494c22f2">
+      <Name>DiagonalTrussCrossBarDiameter</Name>
+      <Definition>The nominal diameter of the diagonal cross-bars.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">クロスバー径</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">斜めクロスバーの公称直径。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="ja-JP">斜めのクロスバーを使って接続したトラスの形状定義。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

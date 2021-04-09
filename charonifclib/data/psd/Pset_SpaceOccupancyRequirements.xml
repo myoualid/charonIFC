@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_SpaceOccupancyRequirements</Name>
+  <Definition>Properties concerning work activities occurring or expected to occur within one or a set of similar spatial structure elements.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcSpace</ClassName>
+    <ClassName> IfcSpatialZone</ClassName>
+    <ClassName> IfcZone</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSpace, IfcSpatialZone, IfcZone</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="368f498533b24751889c30f3175777a1">
+      <Name>OccupancyType</Name>
+      <Definition>Occupancy type for this object. It is defined according to the presiding national building code.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Nutzungsart</NameAlias>
+        <NameAlias lang="fr-FR">TypeOccupation</NameAlias>
+        <NameAlias lang="ja-JP">用途</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Nutzungsart des Raums gemäß der gültigen Raumnutzungstabelle des Raumprogramms.</DefinitionAlias>
+        <DefinitionAlias lang="fr-FR">Usage type de cet espace. Est défini selon le Code national en vigueur.</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">このオブジェクトの用途。統括する国の建築法規により定義される。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="97672ea41cc64f069c4af7b91cb1c731">
+      <Name>OccupancyNumber</Name>
+      <Definition>Number of people required for the activity assigned to this space.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcCountMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Belegung</NameAlias>
+        <NameAlias lang="fr-FR">NombreOccupants</NameAlias>
+        <NameAlias lang="ja-JP">利用人数</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Durchschnittliche Anzahl der Personen für deren  Aktivitäten der Raum vorgesehen ist.</DefinitionAlias>
+        <DefinitionAlias lang="fr-FR">Nombre d'occupants concernés par l'activité dans cet espace.</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">この空間に割り当てられた活動を遂行するために必要な人数。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="017eb616bea144a3823e8c4f6b92dd66">
+      <Name>OccupancyNumberPeak</Name>
+      <Definition>Maximal number of people required for the activity assigned to this space in peak time.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcCountMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Maximale Belegung</NameAlias>
+        <NameAlias lang="fr-FR">NombreOccupantsMax</NameAlias>
+        <NameAlias lang="ja-JP">利用人数ピーク</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Maximale Anzahl der Personen für deren  Aktivitäten der Raum vorgesehen ist.</DefinitionAlias>
+        <DefinitionAlias lang="fr-FR">Nombre maximum d'occupants simultanés concernés par l'activité dans cet espace à l'heure de pointe.</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">この空間に割り当てられた活動を遂行するために必要な最大人数。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="3c36d336d1db407897163ec7b06a92c0">
+      <Name>OccupancyTimePerDay</Name>
+      <Definition>The amount of time during the day that the activity is required within this space.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcTimeMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Belegungszeit pro Tag</NameAlias>
+        <NameAlias lang="fr-FR">DureeOccupationJour</NameAlias>
+        <NameAlias lang="ja-JP">日毎利用時間</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Durchschnittliche Belegungszeit des Raums pro Tag.</DefinitionAlias>
+        <DefinitionAlias lang="fr-FR">Durée journalière de l'activité dans cet espace</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">この空間での活動をするために必要な日中の時間。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="53274ab2982a488e9c1cb4080a9f03b3">
+      <Name>AreaPerOccupant</Name>
+      <Definition>Design occupancy loading for this type of usage assigned to this space.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcAreaMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Fläche pro Nutzer</NameAlias>
+        <NameAlias lang="fr-FR">SurfaceParOccupant</NameAlias>
+        <NameAlias lang="ja-JP">利用者毎面積</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Anteil der Raumfläche pro Benutzer für Nutzung des Raums.</DefinitionAlias>
+        <DefinitionAlias lang="fr-FR">Taux de remplissage de l'espace pour l'usage type</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">この空間に割り当てられた用途に対する想定利用負荷。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="fc2ff62b31d644db81468266a8f1eba4">
+      <Name>MinimumHeadroom</Name>
+      <Definition>Headroom required for the activity assigned to this space.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Lichte Höhe</NameAlias>
+        <NameAlias lang="fr-FR">HauteurPassageMinimale</NameAlias>
+        <NameAlias lang="ja-JP">最小頭上あき高</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Minumal geforderte lichte Höhe für diesen Raum.</DefinitionAlias>
+        <DefinitionAlias lang="fr-FR">Hauteur de passage requise pour l'usage assigné à l'espace</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">この空間に割り当てられた用途に必要な頭上あき高。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="d97602fdb23543058eabb5d63ad011a8">
+      <Name>IsOutlookDesirable</Name>
+      <Definition>An indication of whether the outlook is desirable (set TRUE) or not (set FALSE)</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Ausblick erwünscht</NameAlias>
+        <NameAlias lang="fr-FR">VueExterieurSouhaitable</NameAlias>
+        <NameAlias lang="ja-JP">眺望の善し悪し</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Angabe, ob dieser Raum einen natürlichen Ausblick nach draussen gewähren soll (WAHR) oder dies nicht gefordert ist (FALSCH).</DefinitionAlias>
+        <DefinitionAlias lang="fr-FR">Indique si la vue sur l'extérieur est souhaitable (VRAI) ou non (FAUX).</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">外の眺望が望ましいかどうか。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="de-DE">Property Set Definition in German</PsetDefinitionAlias>
+    <PsetDefinitionAlias lang="fr-FR">Définition de l'IAI : propriétés relatives à l'usage attendu ou effectif d'un élément de structure spatial ou d'un ensemble d'éléments de struture spatiale similaires.</PsetDefinitionAlias>
+    <PsetDefinitionAlias lang="ja-JP">一つの、あるいは複数の類似した空間構成要素で起きる、あるいは起こるであろう業務活動に関する属性。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

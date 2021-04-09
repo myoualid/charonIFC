@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_ActuatorTypeRotationalActuation</Name>
+  <Definition>Characteristics of rotational actuation of an actuator
+History: Replaces Pset_RotationalActuator</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcActuator</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcActuator</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="748134eef4664135a87da47e024d9d17">
+      <Name>Torque</Name>
+      <Definition>Indicates the maximum close-off torque for the actuator.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcTorqueMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">最大トルク</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">アクチュエータの最大締め切りトルクを示す。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="585178bab3ef4530852c653b57c4e43e">
+      <Name>RangeAngle</Name>
+      <Definition>Indicates the maximum rotation the actuator must traverse.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPlaneAngleMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">最大回転角</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">アクチュエータが動く最大回転角を示す。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="ja-JP">アクチュエータの回転動作の特性。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

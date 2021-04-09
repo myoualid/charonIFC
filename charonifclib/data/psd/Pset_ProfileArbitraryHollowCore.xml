@@ -1,0 +1,272 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_ProfileArbitraryHollowCore</Name>
+  <Definition>This is a collection of geometric properties of hollow core section profiles of precast concrete elements, to be used in conjunction with IfcArbitraryProfileDefWithVoids when profile designation alone does not fulfill the information requirements.  
+
+In all cases, the cores are symmetrically distributed on either side of the plank center line, irrespective of whether the number of cores is odd or even. For planks with a center core with different geometry to that of the other cores, provide the property CenterCoreSpacing. When the number of cores is even, no Center Core properties shall be asserted.
+
+Key chamfers and draft chamfer are all 45 degree chamfers.
+
+The CoreTopRadius and CoreBaseRadius parameters can be derived and are therefore not listed in the property set. They are shown to define that the curves are arcs. The parameters for the center core are the same as above, but with the prefix "Center".</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcArbitraryProfileDefWithVoids</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcArbitraryProfileDefWithVoids</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="2acf053761c647c28738af704f59dd2b">
+      <Name>OverallWidth</Name>
+      <Definition>Overall width of the profile.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="04d4d8bba571421f95b87473953617db">
+      <Name>OverallDepth</Name>
+      <Definition>Overall depth of the profile.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="ba2d66ed012f4dee9d49af2b413a5e77">
+      <Name>EdgeDraft</Name>
+      <Definition>Edge draft of the profile.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcNonNegativeLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="785d1cb65837462d962d9fb8fd5fddc1">
+      <Name>DraftBaseOffset</Name>
+      <Definition>Draft base offset of the profile.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcNonNegativeLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="42b902a5766c473ea3b6727e32955264">
+      <Name>DraftSideOffset</Name>
+      <Definition>Draft side offset of the profile.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcNonNegativeLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="b92b9ed9c0674332b248ba1a1b678535">
+      <Name>BaseChamfer</Name>
+      <Definition>Base chamfer of the profile.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcNonNegativeLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="50e1b316878141f58d681e28ee9e2571">
+      <Name>KeyDepth</Name>
+      <Definition>Key depth of the profile.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcNonNegativeLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="cbfb61b177d2470dbe5a699a94506a63">
+      <Name>KeyHeight</Name>
+      <Definition>Key height of the profile.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcNonNegativeLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="4dc04ef09d354703b3abb9a57624fcc1">
+      <Name>KeyOffset</Name>
+      <Definition>Key offset of the profile.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcNonNegativeLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="18addcc24f954c498f7827af9eb28a93">
+      <Name>BottomCover</Name>
+      <Definition>Bottom cover of the profile.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="b27deccfb22f4d15bd6c820dc2159abc">
+      <Name>CoreSpacing</Name>
+      <Definition>Core spacing of the profile.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="73fa5063210a4e92b77e8dd0746af0cc">
+      <Name>CoreBaseHeight</Name>
+      <Definition>Core base height of the profile.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="a8182ff3978245a79d6c092c0c2abc25">
+      <Name>CoreMiddleHeight</Name>
+      <Definition>Core middle height of the profile.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="19e3b872465146549a7ee9579eb36ca2">
+      <Name>CoreTopHeight</Name>
+      <Definition>Core top height of the profile.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="862d8fd3b623492db7bc6a9b28e4c16c">
+      <Name>CoreBaseWidth</Name>
+      <Definition>Core base width of the profile.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="2505b228a68046a1abee2f7d058626fc">
+      <Name>CoreTopWidth</Name>
+      <Definition>Core top width of the profile.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="30e61f83b94741809f64ade56a3b00e2">
+      <Name>CenterCoreSpacing</Name>
+      <Definition>Center core spacing of the profile.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="2c2b672ac33640538fd508c23bffc619">
+      <Name>CenterCoreBaseHeight</Name>
+      <Definition>Center core base height of the profile.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="c9952f54ce04429a88f602a1c036a878">
+      <Name>CenterCoreMiddleHeight</Name>
+      <Definition>Center core middle height of the profile.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="8f44f3f3a1da47f097edf6e4c0cd77a2">
+      <Name>CenterCoreTopHeight</Name>
+      <Definition>Center core top height of the profile.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="8923bd294bed40f7bd1c0829e5d11a36">
+      <Name>CenterCoreBaseWidth</Name>
+      <Definition>Center core base width of the profile.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="0f96421ddc9f4fd69857b86b186e4b53">
+      <Name>CenterCoreTopWidth</Name>
+      <Definition>Center core top width of the profile.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="b5f3a3a9f4ca48ffa96f276832696649">
+      <Name>NumberOfCores</Name>
+      <Definition>Number of cores.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcCountMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases />
+</PropertySetDef>

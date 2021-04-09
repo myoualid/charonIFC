@@ -1,0 +1,195 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_SpaceHeaterPHistory</Name>
+  <Definition>Space heater performance history common attributes.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcSpaceHeater</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSpaceHeater</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="a2bdd415d783441fb6da1e45665ec49c">
+      <Name>FractionRadiantHeatTransfer</Name>
+      <Definition>Fraction of the total heat transfer rate as the radiant heat transfer.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcNormalisedRatioMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">放射熱移動フラクション</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">総合熱移動の内放射熱移動とみなされる部分</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="795ed15f5d874f1abb60b4fc2cfdc0cf">
+      <Name>FractionConvectiveHeatTransfer</Name>
+      <Definition>Fraction of the total heat transfer rate as the convective heat transfer.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcNormalisedRatioMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">対流熱移動フラクション</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">総合熱移動の内対流射熱移動とみなされる部分</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="6c9987c5ac544af9876634ae935784e4">
+      <Name>Effectiveness</Name>
+      <Definition>Ratio of the real heat transfer rate to the maximum possible heat transfer rate.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcNormalisedRatioMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">効率</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">最大可能熱移動量に対する実熱移動量の割合</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="9c1e6291c1cd45a9bfde0ec0fce85234">
+      <Name>SurfaceTemperature</Name>
+      <Definition>Average surface temperature of the component.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcThermodynamicTemperatureMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">表面温度</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">構成要素の平均表面温度</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="7bbb64ebbd454478a8257e7360321a4e">
+      <Name>SpaceAirTemperature</Name>
+      <Definition>Dry bulb temperature in the space.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcThermodynamicTemperatureMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">室温</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">部屋の乾球温度</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="71169c1a1bd846f58c4adcfd5eae9311">
+      <Name>SpaceMeanRadiantTemperature</Name>
+      <Definition>Mean radiant temperature in the space.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcThermodynamicTemperatureMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">室平均放射温度</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">部屋の平均放射温度</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="ccb7c1d932994481ba32d86a43b44c70">
+      <Name>AuxiliaryEnergySourceConsumption</Name>
+      <Definition>Auxiliary energy source consumption.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">補助エネルギー源使用量</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">補助エネルギー源使用量</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="1c48198685cb4523aed7c4d714e792fa">
+      <Name>UACurve</Name>
+      <Definition>UA curve as function of ambient temperature and surface temperature; UA = f (Tambient, Tsurface)</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">UA曲線</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">周囲温度と表面温度との関数のUA曲線</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="3c466a335fff4434b7be6b8949bf45ef">
+      <Name>OutputCapacityCurve</Name>
+      <Definition>Partial output capacity curve (as a function of water temperature); Q = f (Twater).</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">部分的アウトプット能力曲線</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">部分的アウトプット能力曲線（水温の関数として）</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="abd560b39c8340f0884440e71e966897">
+      <Name>AirResistanceCurve</Name>
+      <Definition>Air resistance curve (w/ fan only); Pressure = f ( flow rate).</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">空気抵抗曲線</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">空気抵抗曲線（送風機のみ）圧力＝ｆ（流速）</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="731757f9ae60441090e3d72d844785c1">
+      <Name>Exponent</Name>
+      <Definition>Characteristic exponent, slope of log(heat output) vs log (surface temperature minus environmental temperature).</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcReal">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">指数</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">特徴的な指数、log(熱出力)log（表面温度マイナス周囲温度）の勾配</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="b7fe600e0ff64fd1a197b5037eb95461">
+      <Name>HeatOutputRate</Name>
+      <Definition>Overall heat transfer rate.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcPowerMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">熱出力比</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">総合熱移動率</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="ja-JP">暖房用ヒーター性能履歴共通属性</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

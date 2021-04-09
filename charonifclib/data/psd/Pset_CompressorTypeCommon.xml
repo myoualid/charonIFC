@@ -1,0 +1,196 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_CompressorTypeCommon</Name>
+  <Definition>Compressor type common attributes.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcCompressor</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcCompressor</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="e3ec3feb896e4c79a77d0d93258eafeb">
+      <Name>Reference</Name>
+      <Definition>Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcIdentifier" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">参照記号</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">このプロジェクトにおける参照記号(例：A-1)。分類コードではなく内部で使用されるプロジェクトタイプとして使用されるもの。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="0512df2540874e9c978605c5e93b6ccf">
+      <Name>Status</Name>
+      <Definition>Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_Status">
+            <EnumItem>NEW</EnumItem>
+            <EnumItem>EXISTING</EnumItem>
+            <EnumItem>DEMOLISH</EnumItem>
+            <EnumItem>TEMPORARY</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">状態</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">要素（主にリノベーションまたは改修プロジェクトにおいて）の状態。 状態は、「新規(New)」－新しく追加される要素。「既存」－要素は存在し、かつ残りもの。「破壊」－要素は存在したが、廃棄されるもの。「一時的」－一時的に存在する要素（一時的にサポートしている構造のようなもの）。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="9248bac0a6a64dd78f38df71f3a06bfb">
+      <Name>PowerSource</Name>
+      <Definition>Type of power driving the compressor.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_CompressorTypePowerSource">
+            <EnumItem>MOTORDRIVEN</EnumItem>
+            <EnumItem>ENGINEDRIVEN</EnumItem>
+            <EnumItem>GASTURBINE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="3a06cc413d4a42a8b6fb3b04b4147aa7">
+      <Name>RefrigerantClass</Name>
+      <Definition>Refrigerant class used by the compressor.
+
+CFC: Chlorofluorocarbons.
+HCFC: Hydrochlorofluorocarbons.
+HFC: Hydrofluorocarbons.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_RefrigerantClass">
+            <EnumItem>CFC</EnumItem>
+            <EnumItem>HCFC</EnumItem>
+            <EnumItem>HFC</EnumItem>
+            <EnumItem>HYDROCARBONS</EnumItem>
+            <EnumItem>AMMONIA</EnumItem>
+            <EnumItem>CO2</EnumItem>
+            <EnumItem>H2O</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="a6a65436931b4d17a033f56f8b58fcad">
+      <Name>RefrigerantType</Name>
+      <Definition>Refrigerant material.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="">
+          <DataType type="IfcMaterialDefinition" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="6ec71c92ae924085af9eb5de202cc458">
+      <Name>MinimumPartLoadRatio</Name>
+      <Definition>Minimum part load ratio as a fraction of nominal capacity.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="85827f41b1b74635bd6e596018ff34f4">
+      <Name>MaximumPartLoadRatio</Name>
+      <Definition>Maximum part load ratio as a fraction of nominal capacity.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="850bad4066b243f7bf5b66cd191352b2">
+      <Name>CompressorSpeed</Name>
+      <Definition>Compressor speed.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcRotationalFrequencyMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="353e2352cd254284916d9c0c30270bd8">
+      <Name>NominalCapacity</Name>
+      <Definition>Compressor nameplate capacity.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPowerMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="bdf99aedb2fb49e1a28bd4c999fa15dd">
+      <Name>IdealCapacity</Name>
+      <Definition>Compressor capacity under ideal conditions.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPowerMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="5678082f47624bdb98710502571f52e4">
+      <Name>IdealShaftPower</Name>
+      <Definition>Compressor shaft power under ideal conditions.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPowerMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="4392b492e3a74f41af327beabac53ad2">
+      <Name>HasHotGasBypass</Name>
+      <Definition>Whether or not hot gas bypass is provided for the compressor. TRUE = Yes, FALSE = No.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="9a7e647d8ae2464a8c1e9a72b727e7fa">
+      <Name>ImpellerDiameter</Name>
+      <Definition>Diameter of compressor impeller - used to scale performance of geometrically similar compressors.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="ja-JP">コンプレッサー型の共通プロパティ属性設定。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

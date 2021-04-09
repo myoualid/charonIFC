@@ -1,0 +1,498 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_AirTerminalTypeCommon</Name>
+  <Definition>Air terminal type common attributes.
+</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcAirTerminal</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcAirTerminal</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="c2056584ff9a47d5a17270e0a4ba3d87">
+      <Name>Reference</Name>
+      <Definition>Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcIdentifier" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">参照記号</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">このプロジェクトにおける参照記号(例：A-1)。分類コードではなく内部で使用されるプロジェクトタイプとして使用されるもの。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="620f11f6001e40fc8ff4bff7c44e2e8a">
+      <Name>Status</Name>
+      <Definition>Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_Status">
+            <EnumItem>NEW</EnumItem>
+            <EnumItem>EXISTING</EnumItem>
+            <EnumItem>DEMOLISH</EnumItem>
+            <EnumItem>TEMPORARY</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">状態</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">要素（主にリノベーションまたは改修プロジェクトにおいて）の状態。 状態は、「新規(New)」－新しく追加される要素。「既存」－要素は存在し、かつ残りもの。「破壊」－要素は存在したが、廃棄されるもの。「一時的」－一時的に存在する要素（一時的にサポートしている構造のようなもの）。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="c642e0f9d070498b9a6a1b1972303051">
+      <Name>Shape</Name>
+      <Definition>Shape of the air terminal. Slot is typically a long narrow supply device with an aspect ratio generally greater than 10 to 1.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_AirTerminalShape">
+            <EnumItem>ROUND</EnumItem>
+            <EnumItem>RECTANGULAR</EnumItem>
+            <EnumItem>SQUARE</EnumItem>
+            <EnumItem>SLOT</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">形状</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">ターミナルの形状（円状、四角形、正方形、スロット他）。　スロット（溝状）は一般的にアスペクト比１０以上が典型的である。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="72b2c7e0265c43968a3d2dcc2575a535">
+      <Name>FaceType</Name>
+      <Definition>Identifies how the terminal face of an AirTerminal is constructed.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_AirTerminalFaceType">
+            <EnumItem>FOURWAYPATTERN</EnumItem>
+            <EnumItem>SINGLEDEFLECTION</EnumItem>
+            <EnumItem>DOUBLEDEFLECTION</EnumItem>
+            <EnumItem>SIGHTPROOF</EnumItem>
+            <EnumItem>EGGCRATE</EnumItem>
+            <EnumItem>PERFORATED</EnumItem>
+            <EnumItem>LOUVERED</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">表面タイプ</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">ターミナル表面の形式定義</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="f5f6904115944edf9e29e8ff6638e9b3">
+      <Name>SlotWidth</Name>
+      <Definition>Slot width.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">スロット巾</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">スロット巾</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="89a158e0e46344169d22d635cb912305">
+      <Name>SlotLength</Name>
+      <Definition>Slot length.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">スロット長</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">スロット長</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="ac8eb2fd1d004243997b8f317dcffb3c">
+      <Name>NumberOfSlots</Name>
+      <Definition>Number of slots.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcInteger" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">スロット数</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">スロット数</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="ae5d2fa86a0c499c887449d164f19f78">
+      <Name>FlowPattern</Name>
+      <Definition>Flow pattern.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_AirTerminalFlowPattern">
+            <EnumItem>LINEARSINGLE</EnumItem>
+            <EnumItem>LINEARDOUBLE</EnumItem>
+            <EnumItem>LINEARFOURWAY</EnumItem>
+            <EnumItem>RADIAL</EnumItem>
+            <EnumItem>SWIRL</EnumItem>
+            <EnumItem>DISPLACMENT</EnumItem>
+            <EnumItem>COMPACTJET</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">流れ種類</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">流れ種類（単一直線、腹式直線、４方向、放射状、SWIRL、DISPLACEMENT、COMPACT他）</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="c2f72d87e2cd4c2d897b1f8bf023b816">
+      <Name>AirFlowrateRange</Name>
+      <Definition>Air flowrate range within which the air terminal is designed to operate.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcVolumetricFlowRateMeasure" />
+        </TypePropertyBoundedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">流量範囲</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">操作されるターミナル内の空気流の範囲</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="3a9850887ee64fd9a0d47c323b4e5bbf">
+      <Name>TemperatureRange</Name>
+      <Definition>Temperature range within which the air terminal is designed to operate.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure" />
+        </TypePropertyBoundedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">温度範囲</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">操作されるターミナルの温度範囲</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="b3e770a84aff4c96b1e49eff845df87b">
+      <Name>DischargeDirection</Name>
+      <Definition>Discharge direction of the air terminal.
+
+Parallel: discharges parallel to mounting surface designed so that flow attaches to the surface.
+Perpendicular:  discharges away from mounting surface.
+Adjustable: both parallel and perpendicular discharge.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_AirTerminalDischargeDirection">
+            <EnumItem>PARALLEL</EnumItem>
+            <EnumItem>PERPENDICULAR</EnumItem>
+            <EnumItem>ADJUSTABLE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">吐き出し方向</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">ターミナルの吐き出し方向
+水平：取り付け面と水平に吐き出し
+垂直：取り付け面から離れた方向に吐き出し
+調節可能：水平・垂直方向両方に調整</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="56413d12181c41febbb0da542d8c6c3e">
+      <Name>ThrowLength</Name>
+      <Definition>The horizontal or vertical axial distance an airstream travels after leaving an AirTerminal before the maximum stream velocity is reduced to a specified terminal velocity under isothermal conditions at the upper value of the AirFlowrateRange.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">到達距離</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">ターミナルからの水平または垂直の到達距離
+流量範囲の最大値での吐き出し速度が設定された流速に減速するまでの上限値</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="7a0b0731733f4f3d9cd8857e6b2dd430">
+      <Name>AirDiffusionPerformanceIndex</Name>
+      <Definition>The Air Diffusion Performance Index (ADPI) is used for cooling mode conditions. If several measurements of air velocity and air temperature are made throughout the occupied zone of a space, the ADPI is the percentage of locations where measurements were taken that meet the specifications for effective draft temperature and air velocity.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcReal" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">空気拡散性能指標</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">空気拡散性能指標（ADPI)は冷房時に使用される。
+空気速度および気温のいくつかの測定が空間の居住域の隅々でなされる場合、ADPIは有効な草案の温度および空気速度のための仕様に遭遇する測定が得られた位置の割合である。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="5d36a024d5de406894957874b9c5691a">
+      <Name>FinishType</Name>
+      <Definition>The type of finish for the air terminal.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_AirTerminalFinishType">
+            <EnumItem>ANNODIZED</EnumItem>
+            <EnumItem>PAINTED</EnumItem>
+            <EnumItem>NONE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">仕上げ形式</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">ターミナルの仕上げの形式（ANNODIZED,塗装他）</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="de28a8c16d984afeab4193f4757240a1">
+      <Name>FinishColor</Name>
+      <Definition>The finish color for the air terminal.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">仕上げ色</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">ターミナルの仕上げ色</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="b4c43ee3f59c46acb47f7d2286d8ebfb">
+      <Name>MountingType</Name>
+      <Definition>The way the air terminal is mounted to the ceiling, wall, etc.
+
+Surface: mounted to the surface of something (e.g., wall, duct, etc.).
+Flat flush: mounted flat and flush with a surface.
+Lay-in: mounted in a lay-in type ceiling (e.g., a dropped ceiling grid).</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_AirTerminalMountingType">
+            <EnumItem>SURFACE</EnumItem>
+            <EnumItem>FLATFLUSH</EnumItem>
+            <EnumItem>LAYIN</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">取り付け形式</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">ターミナルが天井や壁などに取り付けられる方法。
+表面、水平、LAYIN他
+表面：何か（壁・ダクト等）の表面に取り付け
+FLATFLUSH：表面に水平・Flushni取り付け
+LAYIN：天井にlay-in形式での取り付け（下がり天井格子など）</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="5ad1527cdaf6426785fa6e90435cb2ec">
+      <Name>CoreType</Name>
+      <Definition>Identifies the way the core of the AirTerminal is constructed.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_AirTerminalCoreType">
+            <EnumItem>SHUTTERBLADE</EnumItem>
+            <EnumItem>CURVEDBLADE</EnumItem>
+            <EnumItem>REMOVABLE</EnumItem>
+            <EnumItem>REVERSIBLE</EnumItem>
+            <EnumItem>NONE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">コア形式</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">取り付けられたターミナルのコアの定義方法（SHUTTERBLADE, CURVEDBLADE, REMOVABLE, REVERSIBLEなど）</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="e141874d688a41be826500fb8ba257ed">
+      <Name>CoreSetHorizontal</Name>
+      <Definition>Degree of horizontal (in the X-axis of the LocalPlacement) blade set from the centerline.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPlaneAngleMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">水平羽根角度</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">水平翼の中心線からの水平（ローカル座標のＸ軸）面の羽根角度</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="62db91981cae4d12b463d1e0d3bcb69b">
+      <Name>CoreSetVertical</Name>
+      <Definition>Degree of vertical (in the Y-axis of the LocalPlacement) blade set from the centerline.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPlaneAngleMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">垂直羽根角度</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">垂直翼の中心線からの垂直（ローカル座標のＹ軸）方向の羽根角度</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="eb125ec19fb3441da903d26a9696fdb0">
+      <Name>HasIntegralControl</Name>
+      <Definition>If TRUE, a self powered temperature control is included in the AirTerminal.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">自己制御有無</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">もし真なら、ターミナルに自身による温度制御が含まれる</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="0479cc5b9e5245b08973b897ed485220">
+      <Name>FlowControlType</Name>
+      <Definition>Type of flow control element that may be included as a part of the construction of the air terminal.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_AirTerminalFlowControlType">
+            <EnumItem>DAMPER</EnumItem>
+            <EnumItem>BELLOWS</EnumItem>
+            <EnumItem>NONE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">流量制御形式</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">ターミナルの構成の一部として含まれる流量制御の形式
+（ダンパー、ベローズ、無し…）</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="b56b5e3187f84fe69d4b8a13cafa7cc1">
+      <Name>HasSoundAttenuator</Name>
+      <Definition>If TRUE, the air terminal has sound attenuation.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">消音有無</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">ターミナルに消音が付いている場合に真</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="46d7087e42514f3ebde7b3b6adc83260">
+      <Name>HasThermalInsulation</Name>
+      <Definition>If TRUE, the air terminal has thermal insulation.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">断熱有無</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">ターミナルに断熱がある場合に真</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="bbfeb45a26514d7fb27655536502ea62">
+      <Name>NeckArea</Name>
+      <Definition>Neck area of the air terminal.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcAreaMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">ネック面積</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">ターミナルのネック面積</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="c5440264fa25492996aec4a721740f16">
+      <Name>EffectiveArea</Name>
+      <Definition>Effective discharge area of the air terminal.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcAreaMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">有効面積</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">ターミナルの有効吹き出し範囲</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="36e9384f639042428940f59999811d12">
+      <Name>AirFlowrateVersusFlowControlElement</Name>
+      <Definition>Air flowrate versus flow control element position at nominal pressure drop.</Definition>
+      <PropertyType>
+        <TypePropertyTableValue />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">流量制御特性</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">標準の圧力低下における流量制御装置の位置に対する流量</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="ja-JP">エアターミナル型共通属性設定。
+SoundLevel属性はIFC2x2 psetの付録で削除された：IfcSoundPropertiesを代わりに使用します。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

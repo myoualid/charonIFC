@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_ControllerPHistory</Name>
+  <Definition>Properties for history of controller values.  HISTORY: Added in IFC2X4.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcController</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcController</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="812a924e4ad24fc5b21d53549dd313c2">
+      <Name>Value</Name>
+      <Definition>Indicates values over time which may be recorded continuously or only when changed beyond a particular deadband.  The range of possible values is defined by the Value property on the corresponding occurrence property set (Pset_ControllerTypeFloating, Pset_ControllerTypeProportional, Pset_ControllerTypeMultiPosition, or Pset_ControllerTypeTwoPosition).</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcReal">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">デフォルト出力時系列定数</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">時間とともに値を示す。
+Pset_ControllerTypeValue.Valueに対応
+※ 設定可能情報は IfcTimeSeriesプロパティ参照</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="47bb3b22541a4a2eba65d91d0633dddc">
+      <Name>Quality</Name>
+      <Definition>Indicates the quality of measurement or failure condition, which may be further qualified by the Status.  True: measured values are considered reliable; False: measured values are considered not reliable (i.e. a fault has been detected); Unknown: reliability of values is uncertain.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcLogical">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="6cee9be5b408456d886bad094b34cbb5">
+      <Name>Status</Name>
+      <Definition>Indicates an error code or identifier, whose meaning is specific to the particular automation system.  Example values include: 'ConfigurationError', 'NotConnected', 'DeviceFailure', 'SensorFailure', 'LastKnown, 'CommunicationsFailure', 'OutOfService'.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcLabel">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="ja-JP">コントローラの性能履歴属性。
+IFC2x4 にて新規追加。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

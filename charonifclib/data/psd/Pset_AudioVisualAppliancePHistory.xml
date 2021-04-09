@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_AudioVisualAppliancePHistory</Name>
+  <Definition>Captures realtime information for audio-video devices, such as for security camera footage and retail information displays.  HISTORY: Added in IFC2x4.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcAudioVisualAppliance</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcAudioVisualAppliance</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="19281a9df89e44f2b4ae2a1517fbca55">
+      <Name>PowerState</Name>
+      <Definition>Indicates the power state of the device where True is on and False is off.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcBoolean">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">電源状態</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">機器の電源オンオフの時間ごとの状態を示す。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="a8172a23b5694cdcad88af7b35e3a5a0">
+      <Name>MediaSource</Name>
+      <Definition>Indicates the media source where the identifier corresponds to an entry within the table of available media sources on Pset_AudioVisualApplianceTypeCommon.MediaSource.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcIdentifier">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="da0d409999074790ae2c7218fa7a8720">
+      <Name>MediaContent</Name>
+      <Definition>Indicates the media content storage location, such as URLs to camera footage within particular time periods.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcText">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="96521cb9039b492f8eba218c8ca2bc51">
+      <Name>AudioVolume</Name>
+      <Definition>Indicates the audio volume level where the integer level corresponds to an entry or interpolation within Pset_AudioVisualApplianceTypeCommon.AudioVolume.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcInteger">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="ja-JP">オーディオビジュアル機器のリアルタイム情報の把握のためのプロパティセット。たとえばセキュリティカメラの画像情報インデックスや音量設定など。IFC2x4にて追加。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

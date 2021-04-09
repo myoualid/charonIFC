@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_Warranty</Name>
+  <Definition>An assurance given by the seller or provider of an artefact that the artefact is without defects and will operate as described for a defined period of time without failure and that if a defect does arise during that time, that it will be corrected by the seller or provider.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcElement</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcElement</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="b92c655d7ff64b9a904416e1a1170993">
+      <Name>WarrantyIdentifier</Name>
+      <Definition>The identifier assigned to a warranty.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcIdentifier" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="097e73fc8d834bd5b61497611f128e43">
+      <Name>WarrantyStartDate</Name>
+      <Definition>The date on which the warranty commences.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcDate" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="6b7551c15ffc4bd9931c88bf169274c5">
+      <Name>WarrantyEndDate</Name>
+      <Definition>The date on which the warranty expires.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcDate" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="ed71deb62a2a4defa133a7e0ec924903">
+      <Name>IsExtendedWarranty</Name>
+      <Definition>Indication of whether this is an extended warranty whose duration is greater than that normally assigned to an artefact (=TRUE) or not (= FALSE).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="74d7b4faca0a402b86d4b9a375db0ec7">
+      <Name>WarrantyPeriod</Name>
+      <Definition>The time duration during which a manufacturer or supplier guarantees or warrants the performance of an artefact.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcTimeMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="19c0c7ac2cf44658bdce1c5eee01438e">
+      <Name>PointOfContact</Name>
+      <Definition>The organization that should be contacted for action under the terms of the warranty. Note that the role of the organization (manufacturer, supplier, installer etc.) is determined by the IfcActorRole attribute of IfcOrganization.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="">
+          <DataType type="IfcOrganization" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="208e58a9e50f40559f8f0b05c9226f87">
+      <Name>WarrantyContent</Name>
+      <Definition>The content of the warranty.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcText" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="5109a969a8a24167ac5f51319c07bca6">
+      <Name>Exclusions</Name>
+      <Definition>Items, conditions or actions that may be excluded from the warranty or that may cause the warranty to become void.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcText" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases />
+</PropertySetDef>

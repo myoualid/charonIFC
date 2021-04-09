@@ -1,0 +1,8 @@
+#!/usr/bin/make -f
+#export DH_VERBOSE=1
+export PYBUILD_NAME=charonifc
+export PYBUILD_DISABLE_python2=test
+export PYBUILD_DISABLE_python3=test
+#export PYBUILD_INSTALL_ARGS=--install-lib=/usr/share/charonifc/ --install-scripts=/usr/share/charonifc/
+%:
+	dh $@ --with python2,python3 --buildsystem=pybuild

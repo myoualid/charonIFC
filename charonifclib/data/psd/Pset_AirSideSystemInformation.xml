@@ -1,0 +1,305 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_AirSideSystemInformation</Name>
+  <Definition>Attributes that apply to an air side HVAC system. HISTORY: New property set in IFC Release 1.0.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcSpace</ClassName>
+    <ClassName>IfcZone</ClassName>
+    <ClassName>IfcSpatialZone</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSpace,IfcZone,IfcSpatialZone</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="80503fe4138c453b8ec844cfac6b56ea">
+      <Name>Name</Name>
+      <Definition>The name of the air side system.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">名前</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">空調方式の名称。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="ae7cec79d6c9460ea0ba766e2136fd3e">
+      <Name>Description</Name>
+      <Definition>The description of the air side system.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">説明</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">空調方式の説明。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="b2f9330049644bd39985c2354618c2fe">
+      <Name>AirSideSystemType</Name>
+      <Definition>This enumeration specifies the basic types of possible air side systems (e.g., Constant Volume, Variable Volume, etc.).</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_AirSideSystemType">
+            <EnumItem>CONSTANTVOLUME</EnumItem>
+            <EnumItem>CONSTANTVOLUMESINGLEZONE</EnumItem>
+            <EnumItem>CONSTANTVOLUMEMULTIPLEZONEREHEAT</EnumItem>
+            <EnumItem>CONSTANTVOLUMEBYPASS</EnumItem>
+            <EnumItem>VARIABLEAIRVOLUME</EnumItem>
+            <EnumItem>VARIABLEAIRVOLUMEREHEAT</EnumItem>
+            <EnumItem>VARIABLEAIRVOLUMEINDUCTION</EnumItem>
+            <EnumItem>VARIABLEAIRVOLUMEFANPOWERED</EnumItem>
+            <EnumItem>VARIABLEAIRVOLUMEDUALCONDUIT</EnumItem>
+            <EnumItem>VARIABLEAIRVOLUMEVARIABLEDIFFUSERS</EnumItem>
+            <EnumItem>VARIABLEAIRVOLUMEVARIABLETEMPERATURE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="9db0723c96fc40fd8cbfb7fa9342e101">
+      <Name>AirSideSystemDistributionType</Name>
+      <Definition>This enumeration defines the basic types of air side systems (e.g., SingleDuct, DualDuct, Multizone, etc.).</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_AirSideSystemDistributionType">
+            <EnumItem>SINGLEDUCT</EnumItem>
+            <EnumItem>DUALDUCT</EnumItem>
+            <EnumItem>MULTIZONE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">搬送方式</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">基本的な空調方式（単一ダクト、二重ダクト、マルチゾーン等）。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="bf86fdf0787a4aa7bebab3d00b4c5e53">
+      <Name>TotalAirflow</Name>
+      <Definition>The total design supply air flowrate required for the system for either heating or cooling conditions, whichever is greater.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcVolumetricFlowRateMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">給気量</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">暖房、冷房の条件の、いずれか大きい条件で要求される設計給気量。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="1003990b067e4c39b93ef9fdc2b889b7">
+      <Name>EnergyGainTotal</Name>
+      <Definition>The total amount of energy gains for the spaces served by the system during the peak cooling conditions, plus any system-level total energy gains.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPowerMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">総熱取得</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">居室の最大冷房負荷と空調システム（機器等）の再熱負荷による最大熱負荷。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="9b578f6251d54aea8210757ec658ce73">
+      <Name>AirflowSensible</Name>
+      <Definition>The air flowrate required to satisfy the sensible peak loads.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcVolumetricFlowRateMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">顕熱空調給気量</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">最大潜熱負荷に対応する給気量。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="3775023e50c4437ab83523dc85014a12">
+      <Name>EnergyGainSensible</Name>
+      <Definition>The sum of total energy gains for the spaces served by the system during the peak cooling conditions, plus any system-level sensible energy gains.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPowerMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">顕熱空調負荷</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">ピーク時各居室の最大冷房負荷と空調システムの顕熱負荷による最大顕熱負荷。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="de936a5cc301478fbf21da8e5d2a46b0">
+      <Name>EnergyLoss</Name>
+      <Definition>The sum of energy losses for the spaces served by the system during the peak heating conditions.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPowerMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">熱（エネルギー）ロス</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">ピーク時空調システム最大暖房負荷を提供する際の熱ロス。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="32418f2d98854832921baa0cc67ec357">
+      <Name>LightingDiversity</Name>
+      <Definition>Lighting diversity.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">照明負荷係数</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">照明負荷係数。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="f3551da9169f49cea8cbfd3bb3f8a404">
+      <Name>InfiltrationDiversitySummer</Name>
+      <Definition>Diversity factor for Summer infiltration.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">夏期すき間換気率</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">夏期すき間換気率。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="3c7039bddc4245a49c613ab85a88dd60">
+      <Name>InfiltrationDiversityWinter</Name>
+      <Definition>Diversity factor for Winter infiltration.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">冬期すき間換気率</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">冬期すき間換気率。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="75a4fa5425504abf9f7146c47fb92178">
+      <Name>ApplianceDiversity</Name>
+      <Definition>Diversity of appliance load.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">機器の負荷率</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">機器の負荷率。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="1b0f75af78654ed880aec347e8dcba95">
+      <Name>LoadSafetyFactor</Name>
+      <Definition>Load safety factor.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">負荷の安全率</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">空調負荷計算用の安全率（割増係数）。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="b477b4a168534ba69430d788bc59cef4">
+      <Name>HeatingTemperatureDelta</Name>
+      <Definition>Heating temperature difference for calculating space air flow rates.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">暖房時送風温度差</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">空調送風量計算用の暖房給気温度差。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="1ea5e55c603242ba97a7765a5670c8b0">
+      <Name>CoolingTemperatureDelta</Name>
+      <Definition>Cooling temperature difference for calculating space air flow rates.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">冷房時送風温度差</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">空調送風量計算用の冷房給気温度差。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="cf28d1534c6a417fbbcc73f6414b65dc">
+      <Name>Ventilation</Name>
+      <Definition>Required outside air ventilation.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcVolumetricFlowRateMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">外気量</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">要求された外気量。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="ed297383c34140e7be4fe1fae468985d">
+      <Name>FanPower</Name>
+      <Definition>Fan motor loads contributing to the cooling load.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPowerMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">送風機電力消費量</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">送風機モーターからの熱取得。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="ja-JP">空調システムに適用する属性。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

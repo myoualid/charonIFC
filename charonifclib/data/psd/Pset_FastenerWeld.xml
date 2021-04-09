@@ -1,0 +1,189 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_FastenerWeld</Name>
+  <Definition>Properties related to welded connections.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcFastener/WELD</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcFastener/WELD</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="08032d8d5d054da19f6c5fb812410eed">
+      <Name>Type1</Name>
+      <Definition>Type of weld seam according to ISO 2553.  Note, combined welds are given by two corresponding symbols in the direction of the normal axis of the coordinate system.  For example, an X weld is specified by Type1 = 'V' and Type2 = 'V'.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="b0538fdfbe864f1e81b252f7060ff708">
+      <Name>Type2</Name>
+      <Definition>See Type1.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="089d615398f447a7a161bd5188548866">
+      <Name>Surface1</Name>
+      <Definition>Aspect of weld seam surface, i.e. 'plane', 'curved' or 'hollow'.  Combined welds are given by two corresponding symbols analogous to Type1 and Type2.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="9c7d701a6b7745be962274baa9acc0fd">
+      <Name>Surface2</Name>
+      <Definition>See Surface1.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="30c8039e4e6f40938e6698c9578c8467">
+      <Name>Process</Name>
+      <Definition>Reference number of the welding process according to ISO 4063, an up to three digits long code</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcInteger" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="a6f23a4dce3e406f9cd34e3eff712bae">
+      <Name>ProcessName</Name>
+      <Definition>Name of the welding process.  Alternative to the numeric Process property.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="95e44a01216b4fa68f62d1cc5ebedeb5">
+      <Name>a</Name>
+      <Definition>Measure a according to ISO 2553</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="0e04dedd77e84fd6a4008e1fa895b5ac">
+      <Name>c</Name>
+      <Definition>Measure c according to ISO 2553</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="ea1bbd0628af462c82f33757b10ccde7">
+      <Name>d</Name>
+      <Definition>Measure d according to ISO 2553</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="b3dd5c39cac847c9b9ab2b09355c9c97">
+      <Name>e</Name>
+      <Definition>Measure e according to ISO 2553</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="288f90d7f94446a3893f0e162893bf88">
+      <Name>l</Name>
+      <Definition>Measure l according to ISO 2553</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="461a29af16d742d6bcd8d8885087a405">
+      <Name>n</Name>
+      <Definition>Count n according to ISO 2553</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcCountMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="3bbfcda36bd448479ade5e80276acb50">
+      <Name>s</Name>
+      <Definition>Measure s according to ISO 2553</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="92ef4cb62ac84749b90f4741d90c0278">
+      <Name>z</Name>
+      <Definition>Measure z according to ISO 2553</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="3f0d2c39cb0d431fa44fe9fd40655e94">
+      <Name>Intermittent</Name>
+      <Definition>If fillet weld, intermittent or not</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="6459390e7a0046e2b825eca0293b6f7f">
+      <Name>Staggered</Name>
+      <Definition>If intermittent weld, staggered or not</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases />
+</PropertySetDef>

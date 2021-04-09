@@ -1,0 +1,182 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_FanOccurrence</Name>
+  <Definition>Fan occurrence attributes attached to an instance of IfcFan.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcFan</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcFan</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="5cb95822b6be4df69545912df097ad03">
+      <Name>DischargeType</Name>
+      <Definition>Defines the type of connection at the fan discharge.
+
+Duct: Discharge into ductwork.
+Screen: Discharge into screen outlet.
+Louver: Discharge into a louver.
+Damper: Discharge into a damper.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_FanDischargeType">
+            <EnumItem>DUCT</EnumItem>
+            <EnumItem>SCREEN</EnumItem>
+            <EnumItem>LOUVER</EnumItem>
+            <EnumItem>DAMPER</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">吐出形式</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">送風機出口の接続形式定義
+Duct：ダクトへの吐き出し
+Screen:SCREEN内への吐き出し
+Louver:ルーバーへの吐き出し</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="8572289c69794ec28651c3953e7e521a">
+      <Name>ApplicationOfFan</Name>
+      <Definition>The functional application of the fan.
+
+SupplyAir: Supply air fan. 
+ReturnAir: Return air fan. 
+ExhaustAir: Exhaust air fan. 
+Other: Other type of application not defined above.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_FanApplicationType">
+            <EnumItem>SUPPLYAIR</EnumItem>
+            <EnumItem>RETURNAIR</EnumItem>
+            <EnumItem>EXHAUSTAIR</EnumItem>
+            <EnumItem>COOLINGTOWER</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">Fan用途</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">Fanの系統
+SUPPLYAIR, RETURNAIR, EXHAUSTAIR, COOLINGTOWER, OTHER</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="8c7bd343c3c1458e9b9ef945510f2855">
+      <Name>CoilPosition</Name>
+      <Definition>Defines the relationship between a fan and a coil.
+
+DrawThrough: Fan located downstream of the coil.
+BlowThrough: Fan located upstream of the coil.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_FanCoilPosition">
+            <EnumItem>DRAWTHROUGH</EnumItem>
+            <EnumItem>BLOWTHROUGH</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">コイル位置</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">Fanとコイル間の関係定義
+DwawThrough:ファンはコイルの下流に位置
+BlowThrough:ファンはコイルの上流に位置</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="eb6044a365124402aa5e0b75ffde9a12">
+      <Name>MotorPosition</Name>
+      <Definition>Defines the location of the motor relative to the air stream.
+
+InAirStream: Fan motor is in the air stream.
+OutOfAirStream: Fan motor is out of the air stream.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_FanMotorPosition">
+            <EnumItem>INAIRSTREAM</EnumItem>
+            <EnumItem>OUTOFAIRSTREAM</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">モーター位置</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">空気流路と相対的なモーターの位置定義
+流路内、流路外　その他</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="367ac40b1b3b4e71aaca88f54bb6ee1a">
+      <Name>FanMountingType</Name>
+      <Definition>Defines the method of mounting the fan in the building.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_FanMountingType">
+            <EnumItem>MANUFACTUREDCURB</EnumItem>
+            <EnumItem>FIELDERECTEDCURB</EnumItem>
+            <EnumItem>CONCRETEPAD</EnumItem>
+            <EnumItem>SUSPENDED</EnumItem>
+            <EnumItem>WALLMOUNTED</EnumItem>
+            <EnumItem>DUCTMOUNTED</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">Fan設置タイプ</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">建物へのFan設置方法定義
+MANUFACTUREDCURB, FIELDERECTEDCURB, CONCRETEPAD, SUSPENDED, WALLMOUNTED, DUCTMOUNTED</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="32707f92ecd24a6eb8a90fa98299c1b9">
+      <Name>FractionOfMotorHeatToAirStream</Name>
+      <Definition>Fraction of the motor heat released into the fluid flow.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcNormalisedRatioMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">モーター排熱</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">流体中にモーター発熱が放出される場合にTRUE</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="3f40e7ccc0bb4db7ac58747706aada2a">
+      <Name>ImpellerDiameter</Name>
+      <Definition>Diameter of fan wheel - used to scale performance of geometrically similar fans.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">羽根径</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">ファンホイールの直径　-　幾何学的に類似したファンの性能を基準化するために使用。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="ja-JP">IfcFanの値に付け加えられたFan属性</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

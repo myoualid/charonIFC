@@ -1,0 +1,237 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_ShadingDeviceCommon</Name>
+  <Definition>Shading device properties associated with an element that represents a shading device</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcShadingDevice</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcShadingDevice</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="09c6bad54daf49c9868929b75e93d36d">
+      <Name>Reference</Name>
+      <Definition>Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcIdentifier" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Bemusterungstyp</NameAlias>
+        <NameAlias lang="ja-JP">参照記号</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Bemusterungstyp, wird als Attribute angegeben, wenn keine allgemein anerkanntes Klassifizierungssystem angewandt wird.</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">このプロジェクトにおける参照記号(例：A-1)。分類コードではなく内部で使用されるプロジェクトタイプとして使用されるもの。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="bcf9169d99944271a75079f283aaae3a">
+      <Name>Status</Name>
+      <Definition>Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_ElementStatus">
+            <EnumItem>NEW</EnumItem>
+            <EnumItem>EXISTING</EnumItem>
+            <EnumItem>DEMOLISH</EnumItem>
+            <EnumItem>TEMPORARY</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Status</NameAlias>
+        <NameAlias lang="ja-JP">状態</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Status bzw. Phase des Bauteils insbesondere beim Bauen im Bestand. "Neu" (new) neues Bauteil als Ergänzung, "Bestand" (existing) bestehendes Bauteil, dass erhalten bleibt, "Abbruch" (demolish) Bauteil, das abgebrochen wird, "Temporär" (temporary) Bauteil und andere Bauelemente, die vorübergehend eingebaut werden (wie Abstützungen, etc.)</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">要素（主にリノベーションまたは改修プロジェクトにおいて）の状態。 状態は、「新規(New)」－新しく追加される要素。「既存」－要素は存在し、かつ残りもの。「破壊」－要素は存在したが、廃棄されるもの。「一時的」－一時的に存在する要素（一時的にサポートしている構造のようなもの）。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="0fd1f61cea4c480baf6b6e8e68c93428">
+      <Name>ShadingDeviceType</Name>
+      <Definition>Specifies the type of shading device.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_ElementShading">
+            <EnumItem>FIXED</EnumItem>
+            <EnumItem>MOVABLE</EnumItem>
+            <EnumItem>OVERHANG</EnumItem>
+            <EnumItem>SIDEFIN</EnumItem>
+            <EnumItem>USERDEFINED</EnumItem>
+            <EnumItem>NOTDEFINED</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Sonnenschutztyp</NameAlias>
+        <NameAlias lang="ja-JP">日除け装置種別</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE" />
+        <DefinitionAlias lang="ja-JP">日除け装置の種別を設定する。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="053b425bd8764797a79cc1d772b7f031">
+      <Name>IsExternal</Name>
+      <Definition>Indication whether the element is designed for use in the exterior (TRUE) or not (FALSE). If (TRUE) it is an external element and faces the outside of the building.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Außenbauteil</NameAlias>
+        <NameAlias lang="ja-JP">外部区分</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Angabe, ob dieses Bauteil ein Aussenbauteil ist (JA) oder ein Innenbauteil (NEIN). Als Aussenbauteil grenzt es an den Aussenraum (oder Erdreich, oder Wasser).</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">外部の部材かどうかを示すブーリアン値。もしTRUEの場合、外部の部材で建物の外側に面している。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="bb71d3b99457469da9733bf9d8a17671">
+      <Name>MechanicalOperated</Name>
+      <Definition>Indication whether the element is operated machanically (TRUE) or not, i.e. manually  (FALSE).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Mechanisch</NameAlias>
+        <NameAlias lang="ja-JP">機械的操作</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Angabe, ob dieses Bauteil  mechanisch bewegt oder angetrieben wird (JA) oder manuell (NEIN). Diese Eigenschaft wird nur für beweglichen Sonnenschutz angegeben.</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">機械的操作が可能かどうかを示すブーリアン値。可能な場合TRUE、手動の場合FALSE。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="2603160568e140a79a203fadb337399b">
+      <Name>ThermalTransmittance</Name>
+      <Definition>Thermal transmittance coefficient (U-Value) of a material of a certain thickness for this element.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcThermalTransmittanceMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="de-DE">U-Wert</NameAlias>
+        <NameAlias lang="ja-JP">熱貫流率</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE">Wärmedurchgangskoeffizient (U-Wert) der Materialschichten.
+Hier der Gesamtwärmedurchgangskoeffizient der Tür.</DefinitionAlias>
+        <DefinitionAlias lang="ja-JP">熱貫流率U値。
+ここでは（すべての材料を含む）梁を通した熱移動の方向における全体の熱還流率を示す。
+注：IFC2x4の新しいプロパティ</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="cd96f995d2814464bdb059ce323bcea9">
+      <Name>SolarTransmittance</Name>
+      <Definition>(Tsol): The ratio of incident solar radiation that directly passes through a shading system (also named τe). Note the following equation Asol + Rsol + Tsol = 1</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Strahlungstransmissionsgrad</NameAlias>
+        <NameAlias lang="ja-JP">日射透過率</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE" />
+        <DefinitionAlias lang="ja-JP">(Tsol)：日除けシステムを直接透過する日射の率。注： Asol + Rsol + Tsol = 1　という方程式が成り立つ。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="5f7b332c65d64ccc90f29f663f85f0f0">
+      <Name>VisibleLightTransmittance</Name>
+      <Definition>Fraction of the visible light that passes the shading system  at normal incidence. It is a value without unit.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Transmissionsgrad für sichtbares Licht</NameAlias>
+        <NameAlias lang="ja-JP">可視光透過率</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE" />
+        <DefinitionAlias lang="ja-JP">通常の入射における日除け装置を通過する可視光の比率。単位の無い数値。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="28e4a63d50a7438c9c6ad8f913cace7f">
+      <Name>SolarReflectance</Name>
+      <Definition>(Rsol): The ratio of incident solar radiation that is reflected by a shading system (also named ρe). Note the following equation Asol + Rsol + Tsol = 1</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Strahlungsreflectionsgrad</NameAlias>
+        <NameAlias lang="ja-JP">日射反射率</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE" />
+        <DefinitionAlias lang="ja-JP">(Rsol)：日除けシステムにより反射される日射の率。注： Asol + Rsol + Tsol = 1　という方程式が成り立つ。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="70ff1ec0bf254ec5a6d68c2651421fc3">
+      <Name>VisibleLightReflectance</Name>
+      <Definition>Fraction of the visible light that is reflected by the glazing at normal incidence. It is a value without unit.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Reflektionsgrad für sichtbares Licht</NameAlias>
+        <NameAlias lang="ja-JP">可視光反射率</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE" />
+        <DefinitionAlias lang="ja-JP">通常の入射における日除け装置により反射される可視光の比率。単位の無い数値。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="2cae150b5b664453bd19f438099135f4">
+      <Name>Roughness</Name>
+      <Definition>A measure of the vertical deviations of the surface.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Rauheit der Oberfläche</NameAlias>
+        <NameAlias lang="ja-JP">表面粗さ</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE" />
+        <DefinitionAlias lang="ja-JP">表面の垂直方向の偏差。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="1a756da6dc2440e7ab3ab51224e1bca1">
+      <Name>SurfaceColor</Name>
+      <Definition>The color of the surface.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="de-DE">Oberflächenfarbe</NameAlias>
+        <NameAlias lang="ja-JP">表面色</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="de-DE" />
+        <DefinitionAlias lang="ja-JP">表面の色を示す文字列情報。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="ja-JP">日除け装置(IfcShadingDeviceオブジェクト)に関する共通プロパティセット定義。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_SpaceThermalPHistory</Name>
+  <Definition>Thermal and air flow conditions of a space or zone. HISTORY: New property set in IFC 2x2.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcSpace</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSpace</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="c24fa3a724b84c33842695ce4d82252a">
+      <Name>CoolingAirFlowRate</Name>
+      <Definition>Cooling air flow rate in the space.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcVolumetricFlowRateMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">冷却空気流量</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">室内の冷却空気流量</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="afd82fe3e98042d0ac2016f4658464e3">
+      <Name>HeatingAirFlowRate</Name>
+      <Definition>Heating air flow rate in the space.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcVolumetricFlowRateMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">暖房空気流量</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">室内の暖房空気流量</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="09c79e49c821444d8e10da23c5af476b">
+      <Name>VentilationAirFlowRate</Name>
+      <Definition>Ventilation air flow rate in the space.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcVolumetricFlowRateMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">換気気流速度</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">室内の換気空気流量</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="ae93c49278ad4084bf39df6fd8add045">
+      <Name>ExhaustAirFlowRate</Name>
+      <Definition>Exhaust air flow rate in the space.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcVolumetricFlowRateMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">排気空気流量</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">室内の排気流量</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="1a4a8c57a83e43fbbfe8beff63a99683">
+      <Name>SpaceTemperature</Name>
+      <Definition>Temperature of the space.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcThermodynamicTemperatureMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">室内温度</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">室内の温度</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="42de6c206a234b9a8745aafac0f6f2ef">
+      <Name>SpaceRelativeHumidity</Name>
+      <Definition>The relative humidity of the space.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcPositiveRatioMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">室内相対湿度</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">室内の相対湿度</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="ja-JP">スペースまたはゾーンの熱空気流条件 　　履歴：IFC2ｘ2で設定された新しいプロパティ</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

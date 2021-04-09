@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_ProtectiveDeviceTrippingUnitCurrentAdjustment</Name>
+  <Definition>A set of current adjustment values that may be applied to an electronic or thermal tripping unit type.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcProtectiveDeviceTrippingUnit</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcProtectiveDeviceTrippingUnit</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="8036668d38664954a5798c1152c802b6">
+      <Name>AdjustmentValueType</Name>
+      <Definition>The type of adjustment value that is applied through the property set. This determines the properties that should be asserted (see below).</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_AdjustmentValueType">
+            <EnumItem>RANGE</EnumItem>
+            <EnumItem>LIST</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">調整値の型</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">調整値のタイプを設定。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="1623513904ee4ee5a43a07f49ef8e0d1">
+      <Name>AdjustmentRange</Name>
+      <Definition>Upper and lower current adjustment limits for an AdjustmentValueType = RANGE. Note that this property should not have a value for an  AdjustmentValueType = LIST.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcElectricCurrentMeasure" />
+        </TypePropertyBoundedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">調整範囲</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">時間調整の範囲の上限値と下限値を設定。一覧表ではもっていない事を注意。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="2d47a9b57e9a46198ff3a99b90545edf">
+      <Name>AdjustmentRangeStepValue</Name>
+      <Definition>Step value of current adjustment for an AdjustmentValueType = RANGE. Note that this property should not have a value for an  AdjustmentValueType = LIST.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricCurrentMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">調整範囲のステップ値</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">時間調整の範囲をステップ値を設定。一覧表ではもっていない事を注意。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="8f4d3995a98242ddad90147eca4f56fc">
+      <Name>AdjustmentValues</Name>
+      <Definition>A list of current adjustment values that may be applied to a tripping unit for an AdjustmentValueType = LIST. A minimum of 1 and a maximum of 16 adjustment values may be specified. Note that this property should not have a value for an  AdjustmentValueType = RANGE.</Definition>
+      <PropertyType>
+        <TypePropertyListValue>
+          <ListValue>
+            <DataType type="IfcElectricCurrentMeasure" />
+          </ListValue>
+        </TypePropertyListValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">調整値</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">時間調整値を１から16で設定。範囲では、ない事を注意。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="e6adf8463c774c95a8c64a667bc34715">
+      <Name>AdjustmentDesignation</Name>
+      <Definition>The desgnation on the device for the adjustment.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">調整の指定</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">調整する装置の指定。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="ja-JP">電磁式または熱動式のトリップ装置の電流調整値。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

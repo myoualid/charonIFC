@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_LightFixtureTypeSecurityLighting</Name>
+  <Definition>Properties that characterize security lighting.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcLightFixture/SECURITYLIGHTING</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcLightFixture/SECURITYLIGHTING</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="560e7f8ef61f4a12970415984e4b2aa4">
+      <Name>SecurityLightingType</Name>
+      <Definition>The type of security lighting.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_LightFixtureSecurityLightingType">
+            <EnumItem>SAFETYLIGHT</EnumItem>
+            <EnumItem>WARNINGLIGHT</EnumItem>
+            <EnumItem>EMERGENCYEXITLIGHT</EnumItem>
+            <EnumItem>BLUEILLUMINATION</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">防犯灯</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">防犯灯のタイプ。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="5e3343beac214fccba28e0987b3cc673">
+      <Name>FixtureHeight</Name>
+      <Definition>The height of the fixture, such as the text height of an exit sign.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">器具の高さ</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">出口標識などの器具の高さ。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="4f5af42f37c74bf49149689ee3354530">
+      <Name>SelfTestFunction</Name>
+      <Definition>The type of self test function.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_SelfTestType">
+            <EnumItem>CENTRAL</EnumItem>
+            <EnumItem>LOCAL</EnumItem>
+            <EnumItem>NONE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">自己診断機能</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">自己診断機能のタイプ。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="edc76e33477b4f54a90783bfa6741b6f">
+      <Name>BackupSupplySystem</Name>
+      <Definition>The type of backup supply system.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_BackupSupplySystemType">
+            <EnumItem>LOCALBATTERY</EnumItem>
+            <EnumItem>CENTRALBATTERY</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">電源バックアップシステム</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">電源バックアップシステムのタイプ。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="ef26252ab7514c678002c7c3e34952bb">
+      <Name>PictogramEscapeDirection</Name>
+      <Definition>The direction of escape pictogram.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_PictogramEscapeDirectionType">
+            <EnumItem>RIGHTARROW</EnumItem>
+            <EnumItem>LEFTARROW</EnumItem>
+            <EnumItem>DOWNARROW</EnumItem>
+            <EnumItem>UPARROW</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">避難標識の向き</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">避難標識の向き。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="5f569e1104184a4c95ee31a7db3e21ba">
+      <Name>Addressablility</Name>
+      <Definition>The type of addressability.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_AddressabilityType">
+            <EnumItem>IMPLEMENTED</EnumItem>
+            <EnumItem>UPGRADEABLETO</EnumItem>
+            <EnumItem>NOTIMPLEMENTED</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">アドレス指定能力</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">アドレス指定能力のタイプ。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="ja-JP">防犯灯の特徴プロパティ。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

@@ -1,0 +1,20 @@
+name: charonifc
+version: 1.0
+summary: OfflineIMAP
+description: |
+  A library to extract information from an IFC file to produce Technical 
+  Documentation like Specifications and Bill of Quantities.
+
+grade: devel
+confinement: devmode
+
+apps:
+  charonifc:
+    command: bin/charonifc
+
+parts:
+  charonifc:
+    plugin: python
+    python-version: python3
+    source: .
+

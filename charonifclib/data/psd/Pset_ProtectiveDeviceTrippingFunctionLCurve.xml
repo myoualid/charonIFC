@@ -1,0 +1,154 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_ProtectiveDeviceTrippingFunctionLCurve</Name>
+  <Definition>Tripping functions are applied to electronic tripping units (i.e. tripping units having type property sets for electronic tripping defined). They are not applied to thermal, thermal magnetic or RCD tripping units.
+This property set represent the long time protection (L-curve) of an electronic protection device</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcProtectiveDeviceTrippingUnit</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcProtectiveDeviceTrippingUnit</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="20442b3f53e64954bf6ddbb2d4c7d78e">
+      <Name>IsSelectable</Name>
+      <Definition>Indication whether the L-function can be switched off or not.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">切り替え</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">装置の “ON-OFF”状態を電気的表示が切り替え可能かどうか。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="47415c86f57c4cb08a31de928f70012b">
+      <Name>UpperCurrent1</Name>
+      <Definition>The current in [x In], indicating that for currents larger than UpperCurrent1 the I2t part of the L-function will trip the current.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricCurrentMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">上電流1</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">[x In]の電流,電流をトリップするL関数のI2t部分は、上限電流1よりも大きい電流を示す。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="95ee0195b8eb408d9a50313a87b6cf1b">
+      <Name>UpperCurrent2</Name>
+      <Definition>The current in [x In], indicating the upper current limit of the upper time/current curve of the I2t part of the L-function.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricCurrentMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">上電流2</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">[x In]の電流,電流をトリップするL関数のI2t部分は、上限時間/特性曲線よりも大きい電流を示す。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="2fd9bd73cf9c4244b714a5855201f69d">
+      <Name>UpperTime1</Name>
+      <Definition>The time in [s], indicating that tripping times of the upper time/current curve lower than UpperTime1 is determined by the I2t part of the L-function.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcTimeMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">上時間1</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">[s]の時間,上時間より低い上部の時間/特性曲線のトリップ時間は、L-関数ののI2t部分によって決定される。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="23b4ceab21494468a08e4f85a6776a57">
+      <Name>UpperTime2</Name>
+      <Definition>The time in [s], indicating the tripping times of the upper time/current curve at the UpperCurrent2.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcTimeMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">上時間2</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">[s]の時間,上電流2より上部の特性曲線のトリップ時間を示す</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="e134c944c4db4efca7b36bf0646fb9c6">
+      <Name>LowerCurrent1</Name>
+      <Definition>The current in [x In], indicating that for currents smaller than LowerCurrent1 the I2t part of the L-function will not trip the current,</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricCurrentMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">下電流1</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">[x In]の電流,電流をトリップするL関数のI2t部分は、下電流1よりも小さい電流を示す。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="b47710c4ea314bb097675db9372460df">
+      <Name>LowerCurrent2</Name>
+      <Definition>The current in [x In], indicating the upper current limit of the lower time/current curve of the I2t part of the L-function.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricCurrentMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">下電流2</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">[x In]の電流,電流をトリップするL関数のI2t部分は、特性曲線よりも小さい電流を示す。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="e10d3521ec1e4a27863fd1902a37149f">
+      <Name>LowerTime1</Name>
+      <Definition>The time in [s], indicating that tripping times of the lower time/current curve lower than LowerTime1 is determined by the I2t part of the L-function.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcTimeMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">下時間1</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">[s]の時間,下時間より低い特性曲線のトリップ時間は、L-関数ののI2t部分によって決定される。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="990034073ad64c6da78b2840c6b5ca64">
+      <Name>LowerTime2</Name>
+      <Definition>The time in [s], indicating the tripping times of the upper time/current curve at the LowerCurrent2.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcTimeMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">下時間2</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">[s]の時間,下電流2より下部の特性曲線のトリップ時間を示す。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="ja-JP">トリッピング関数は、電子トリッピング装置に適用される。
+（例えば、トリッピング装置は、電子トリッピング定義されたプロパティセットタイプを持っている）
+これらは、熱,熱電磁,RCDトリッピング装置に適用されない。
+このプロパティセットは、電子保護装置の遅延短絡保護(L-curve)を表す。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

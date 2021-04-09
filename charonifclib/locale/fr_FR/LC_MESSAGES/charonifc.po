@@ -1,0 +1,5273 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-12-30 17:16+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: charonifc/charonifclib.py:806 charonifc/charonifclib.py:937
+msgid "Unset"
+msgstr ""
+
+#: charonifc/charonifclib.py:1033
+msgid "Undefined"
+msgstr "Pas défini"
+
+#: charonifc/charonifclib.py:1413
+msgid "Tag"
+msgstr "Tag"
+
+#: charonifc/charonifclib.py:1414
+msgid "GlobalID"
+msgstr "GlobalID"
+
+#: charonifc/charonifclib.py:1415
+msgid "Name"
+msgstr "Nom"
+
+#: charonifc/charonifclib.py:1416 charonifc/translator.py:1321
+msgid "Description"
+msgstr "Description"
+
+#: charonifc/charonifclib.py:1417 charonifc/translator.py:1364
+msgid "Predefined Type"
+msgstr "Type prédéfini"
+
+#: charonifc/cli.py:219
+msgid "Property Extraction"
+msgstr "Extractions des propriétées"
+
+#: charonifc/cli.py:222
+msgid "Bill of Quantities"
+msgstr "Devies quantitatif"
+
+#: charonifc/cli.py:225
+msgid "Technical Specifications"
+msgstr "Spécificitées techniques"
+
+#: charonifc/cli.py:243
+#, python-brace-format
+msgid "Processing {0}"
+msgstr "Traitement {0}"
+
+#: charonifc/cli.py:253
+msgid "Done, BOQ '{}' created."
+msgstr "Devies quantitatif '{}' crée"
+
+#: charonifc/cli.py:258 charonifc/cli.py:264
+msgid "BOQ Price List '{}' created."
+msgstr "Liste des prix des devies quantitatif '{}' crée."
+
+#: charonifc/cli.py:290
+msgid "Creating output file, please wait..."
+msgstr ""
+
+#: charonifc/cli.py:293
+msgid "File not created. Exiting..."
+msgstr ""
+
+#: charonifc/cli.py:296
+msgid "Done, file '{}' created."
+msgstr ""
+
+#: charonifc/gui.py:96
+msgid "Welcome to CharonIfC, please select an IFC model!"
+msgstr ""
+
+#: charonifc/gui.py:109
+msgid "Select IFC File"
+msgstr ""
+
+#: charonifc/gui.py:115
+msgid "Create Specifications"
+msgstr ""
+
+#: charonifc/gui.py:122
+msgid "Create Bill of Quantities"
+msgstr ""
+
+#: charonifc/gui.py:129
+msgid "Welcome to CharonIfc!"
+msgstr ""
+
+#: charonifc/gui.py:157
+msgid "Open an IFC file"
+msgstr ""
+
+#: charonifc/gui.py:166
+msgid "Choose the Preferences and configurations"
+msgstr ""
+
+#: charonifc/gui.py:223
+msgid "Choose an IFC file"
+msgstr ""
+
+#: charonifc/gui.py:269 charonifc/gui.py:278
+msgid "Cannot open file."
+msgstr ""
+
+#: charonifc/gui.py:307
+msgid "Cannot open configuration file."
+msgstr ""
+
+#: charonifc/gui.py:320
+msgid "Blacklist Property sections"
+msgstr ""
+
+#: charonifc/gui.py:321
+msgid "Blacklist Ifc Types"
+msgstr ""
+
+#: charonifc/gui.py:373
+msgid "List Properties for every IfcObjects"
+msgstr ""
+
+#: charonifc/gui.py:382
+msgid "Document Format"
+msgstr ""
+
+#: charonifc/gui.py:393
+msgid "Create the Specifications"
+msgstr ""
+
+#: charonifc/gui.py:431
+msgid "Document Created."
+msgstr ""
+
+#: charonifc/gui.py:435
+msgid "Unable to create the document."
+msgstr ""
+
+#: charonifc/gui.py:462
+msgid "File Format"
+msgstr ""
+
+#: charonifc/gui.py:473
+msgid "Create the BOQ"
+msgstr ""
+
+#: charonifc/gui.py:500
+msgid "BOQ Created."
+msgstr ""
+
+#: charonifc/gui.py:504
+msgid "Unable to create the file."
+msgstr ""
+
+#: charonifc/preventa_lib.py:70
+msgid "Lavori a Corpo"
+msgstr ""
+
+#: charonifc/preventa_lib.py:71
+msgid "Lavori a Misura"
+msgstr ""
+
+#: charonifc/preventa_lib.py:72
+msgid "Lavori in Economia"
+msgstr ""
+
+#: charonifc/preventa_lib.py:77
+msgid "Totale Parziale"
+msgstr ""
+
+#: charonifc/preventa_lib.py:78
+msgid "Totale Generale"
+msgstr ""
+
+#: charonifc/preventa_lib.py:79
+msgid "Manodopera"
+msgstr ""
+
+#: charonifc/preventa_lib.py:80
+msgid "Sicurezza"
+msgstr ""
+
+#: charonifc/preventa_lib.py:81
+msgid "-Nessuna categoria di Appalto-"
+msgstr ""
+
+#: charonifc/preventa_lib.py:115
+#, python-brace-format
+msgid "Linguaggio e codifica locale: {0}"
+msgstr ""
+
+#: charonifc/preventa_lib.py:147
+#, python-format
+msgid ""
+"Impossibile connettersi col database, verificare che il file '%s' esista"
+msgstr ""
+
+#: charonifc/preventa_lib.py:388
+#, python-format
+msgid "TABLE e TRIGGER creati nel database: %s"
+msgstr ""
+
+#: charonifc/preventa_lib.py:403
+#, python-format
+msgid "DROP dei TRIGGER esistenti nel database %s effettuato"
+msgstr ""
+
+#: charonifc/preventa_lib.py:458
+msgid ""
+"Colonne 'Tipo_lavori', 'Cat_appalto', 'Image_art' nella TABLE 'Computo' "
+"esistenti, aggiornamento non necessario."
+msgstr ""
+
+#: charonifc/preventa_lib.py:460
+#, python-format
+msgid ""
+"Impossibile aggiungere le Colonne 'Tipo_lavori', 'Cat_appalto', 'Image_art' "
+"nella TABLE 'Computo' errore nel database %s."
+msgstr ""
+
+#: charonifc/preventa_lib.py:497
+#, python-format
+msgid ""
+"Errore, impossibile eliminare le tavole dal database. Tavole inesistenti o "
+"File database %s mancante"
+msgstr ""
+
+#: charonifc/preventa_lib.py:499
+#, python-format
+msgid "Tutte le tavole esistenti nel database %s sono state eliminate"
+msgstr ""
+
+#: charonifc/preventa_lib.py:521
+#, python-format
+msgid "Parametro iniziale: '%s' non riconosciuto"
+msgstr ""
+
+#: charonifc/preventa_lib.py:523
+msgid ""
+"Nuove Impostazioni non riconosciute. 'new_settings' deve essere <type 'dict'>"
+msgstr ""
+
+#: charonifc/preventa_lib.py:567
+#, python-format
+msgid "Dato generale iniziale: '%s' non riconosciuto"
+msgstr ""
+
+#: charonifc/preventa_lib.py:569
+msgid ""
+"Nuove Impostazioni non riconosciute. Le impostazioni devono essere un "
+"oggetto type(dict)"
+msgstr ""
+
+#: charonifc/preventa_lib.py:584
+#, python-format
+msgid "Impossibile salvare il database, verificare che il file %s esista"
+msgstr ""
+
+#: charonifc/preventa_lib.py:586
+#, python-format
+msgid "Modifiche al database %s salvate"
+msgstr ""
+
+#: charonifc/preventa_lib.py:594
+#, python-format
+msgid ""
+"Impossibile annullare le modificha al database, verificare che il file %s "
+"esista"
+msgstr ""
+
+#: charonifc/preventa_lib.py:596
+#, python-format
+msgid "Modifiche al database '%s' annullate"
+msgstr ""
+
+#: charonifc/preventa_lib.py:607
+#, python-format
+msgid "Connessione al database %s chiusa"
+msgstr ""
+
+#: charonifc/preventa_lib.py:641
+msgid "Errore dell'aggiornamento dei dati generali del preventivo"
+msgstr ""
+
+#: charonifc/preventa_lib.py:646
+msgid "Dati generali aggiornati in 'DatiGenerali'"
+msgstr ""
+
+#: charonifc/preventa_lib.py:657
+msgid "Errore nell'aggiornamento del ricarico in tutti gli articoli di Epu"
+msgstr ""
+
+#: charonifc/preventa_lib.py:660
+msgid "Ricarico aggiornato in 'Epu' e 'DatiGenerali'"
+msgstr ""
+
+#: charonifc/preventa_lib.py:671
+msgid ""
+"Errore nell'aggiornamento dell'incidenza della sicurezza in tutti gli "
+"articoli di Epu"
+msgstr ""
+
+#: charonifc/preventa_lib.py:674
+msgid "Sicurezza aggiornata in 'Epu' e 'DatiGenerali'"
+msgstr ""
+
+#: charonifc/preventa_lib.py:690
+#, python-format
+msgid "La percentuale di manodopera '%s' è superiore a 100"
+msgstr ""
+
+#: charonifc/preventa_lib.py:697
+#, python-format
+msgid "Errore nell'inserimento del rigo di moanodopera '%s'"
+msgstr ""
+
+#: charonifc/preventa_lib.py:700
+#, python-format
+msgid "Rigo manodopera '%s' inserito."
+msgstr ""
+
+#: charonifc/preventa_lib.py:719
+#, python-format
+msgid "Errore nell'aggiornamento del rigo di moanodopera '%s'"
+msgstr ""
+
+#: charonifc/preventa_lib.py:722
+#, python-format
+msgid "Rigo manodopera '%s' aggiornato."
+msgstr ""
+
+#: charonifc/preventa_lib.py:732
+#, python-format
+msgid "Errore nella cancellazione del rigo di moanodopera '%s'"
+msgstr ""
+
+#: charonifc/preventa_lib.py:735
+#, python-format
+msgid "Rigo manodopera '%s' cancellato."
+msgstr ""
+
+#: charonifc/preventa_lib.py:746
+msgid "Tabella manodopera vuota, manodopera non aggiornata"
+msgstr ""
+
+#: charonifc/preventa_lib.py:759
+msgid ""
+"Percentuale totale delle righe manodopera nulla, manodopera non aggiornata"
+msgstr ""
+
+#: charonifc/preventa_lib.py:764
+#, python-format
+msgid "Valore della manodopera aggiornata: '%s'"
+msgstr ""
+
+#: charonifc/preventa_lib.py:798
+msgid ""
+"Errore 'Tipo' deve essere Supercapitolo/Supercapitolo/Capitolo/Subcapitolo "
+"o /Supercategoria/Categoria/Subcategoria"
+msgstr ""
+
+#: charonifc/preventa_lib.py:803
+#, python-format
+msgid "Errore nella tabella %s 'Descrizione' = %s deve essere una stringa"
+msgstr ""
+
+#: charonifc/preventa_lib.py:808
+#, python-format
+msgid ""
+"Errore nella tabella %s 'Aumento_prezzi' = %s deve essere un numero intero"
+msgstr ""
+
+#: charonifc/preventa_lib.py:817
+#, python-brace-format
+msgid "Inserita nella tabella '{0}': {1}"
+msgstr ""
+
+#: charonifc/preventa_lib.py:819
+#, python-format
+msgid ""
+"Errore di esecuzione inserimento nella tabella %s Capitoli e Categorie: %s"
+msgstr ""
+
+#: charonifc/preventa_lib.py:837
+#, python-format
+msgid "Errore di aggiornamento da tabella %s nome %s id %s"
+msgstr ""
+
+#: charonifc/preventa_lib.py:852
+#, python-format
+msgid "Errore 'column' deve essere una colonna valida della tabella %s"
+msgstr ""
+
+#: charonifc/preventa_lib.py:857
+#, python-brace-format
+msgid "Tabella cancellata '{0}'colonna 'id': {1}"
+msgstr ""
+
+#: charonifc/preventa_lib.py:859
+#, python-format
+msgid "Errore eliminazione da tabella %s colonna %s voce %s"
+msgstr ""
+
+#: charonifc/preventa_lib.py:908
+#, python-format
+msgid "Errore di inserimento dell'articolo: %s in EPU"
+msgstr ""
+
+#: charonifc/preventa_lib.py:918
+#, python-brace-format
+msgid "Inserito articolo tabella '{0}' col 'Tariffa': {1}"
+msgstr ""
+
+#: charonifc/preventa_lib.py:930
+#, python-format
+msgid "Errore di cancellazione dell'articolo: %s"
+msgstr ""
+
+#: charonifc/preventa_lib.py:933 charonifc/preventa_lib.py:1497
+#, python-brace-format
+msgid "Cancellato articolo tabella '{0}' col 'id': {1}"
+msgstr ""
+
+#: charonifc/preventa_lib.py:961
+#, python-format
+msgid "Errore dell'aggiornamento dell'articolo: %s in Epu"
+msgstr ""
+
+#: charonifc/preventa_lib.py:964 charonifc/preventa_lib.py:1520
+#: charonifc/preventa_lib.py:1560
+#, python-brace-format
+msgid "Aggiornato articolo tabella '{0}' col 'id': {1}"
+msgstr ""
+
+#: charonifc/preventa_lib.py:993
+#, python-format
+msgid "Impossibile copiare la tariffa '%s', la tariffa non esiste nel database"
+msgstr ""
+
+#: charonifc/preventa_lib.py:1092
+#, python-format
+msgid "Errore nell'aggiornamento dell'articolo di Epu: %s"
+msgstr ""
+
+#: charonifc/preventa_lib.py:1100
+msgid "I valori 'costo_partenza' e 'costo_arrivo' devono essere numeri interi"
+msgstr ""
+
+#: charonifc/preventa_lib.py:1134
+#, python-format
+msgid "Errore nell'aggiornamento delle fasce di costo dell'articolo: %s"
+msgstr ""
+
+#: charonifc/preventa_lib.py:1136
+#, python-brace-format
+msgid "Aggiornato prezzo articolo tabella '{0}' col 'id': {1}"
+msgstr ""
+
+#: charonifc/preventa_lib.py:1176
+#, python-format
+msgid "Errore nell'inserimento dell'articolo: %s"
+msgstr ""
+
+#: charonifc/preventa_lib.py:1191
+msgid ""
+"Errore la chiave primaria per aggiornare un articolo deve essere un numero "
+"intero"
+msgstr ""
+
+#: charonifc/preventa_lib.py:1193
+msgid "Errore la nuova chiave primaria deve essere un numero intero"
+msgstr ""
+
+#: charonifc/preventa_lib.py:1220
+#, python-format
+msgid "Errore di inserimento dell'articolo: %s"
+msgstr ""
+
+#: charonifc/preventa_lib.py:1223 charonifc/preventa_lib.py:1380
+#, python-brace-format
+msgid "Aggiornato articolo tabella '{0}', 'id' {1}, 'Tariffa' {2}"
+msgstr ""
+
+#: charonifc/preventa_lib.py:1238
+#, python-brace-format
+msgid "Cancellato articolo tabella '{0}', 'id' {1}, 'Tariffa' {2}"
+msgstr ""
+
+#: charonifc/preventa_lib.py:1377
+#, python-format
+msgid "Errore nell'aggiornamento dell'articolo di computo: %s"
+msgstr ""
+
+#: charonifc/preventa_lib.py:1420
+#, python-format
+msgid "Errore: impossibile cancellare gli articoli della '%s' numero '%d'"
+msgstr ""
+
+#: charonifc/preventa_lib.py:1475
+#, python-format
+msgid "Errore di inserimento dell'articolo: %s in Analisi"
+msgstr ""
+
+#: charonifc/preventa_lib.py:1478
+#, python-brace-format
+msgid ""
+"Inserito articolo tabella '{0}' col 'Tariffa': '{1}' col 'Codice': '{2}'"
+msgstr ""
+
+#: charonifc/preventa_lib.py:1482
+#, python-format
+msgid ""
+"Articolo tab 'Analisi' esistente per la Tariffa %s: %s \n"
+"l'articolo duplicato non verrà inserito"
+msgstr ""
+
+#: charonifc/preventa_lib.py:1494
+#, python-format
+msgid "Errore di cancellazione dell'articolo di listino: %s"
+msgstr ""
+
+#: charonifc/preventa_lib.py:1517
+#, python-format
+msgid "Errore dell'aggiornamento dell'articolo di listino: %s in Analisi"
+msgstr ""
+
+#: charonifc/preventa_lib.py:1557
+#, python-format
+msgid "Errore nell'aggiornamento dell'articolo di listino: %s in Analisi"
+msgstr ""
+
+#: charonifc/preventa_lib.py:1612
+#, python-format
+msgid ""
+"Errore impossibile recuperare gli articoli di listino relativi alla tariffa: "
+"%s"
+msgstr ""
+
+#: charonifc/preventa_lib.py:1673
+msgid "'insert_cmp' può essere 'True' o 'False'"
+msgstr ""
+
+#: charonifc/preventa_lib.py:1767
+msgid "Errore nel ricalcolo generale dei prezzi"
+msgstr ""
+
+#: charonifc/preventa_lib.py:1769
+msgid "Ricalcolo generale di tutti i prezzi effettuato"
+msgstr ""
+
+#: charonifc/preventa_lib.py:1792
+#, python-format
+msgid "Errore nel ricalcolo del prezzo dell'articolo: %s"
+msgstr ""
+
+#: charonifc/preventa_lib.py:1794
+#, python-brace-format
+msgid "Ricalcolo prezzo tariffa {0} effettuato"
+msgstr ""
+
+#: charonifc/preventa_lib.py:1829
+#, python-format
+msgid ""
+"Errore nell'aumento dei prezzi unitari delle voci di analisi dell'articolo: "
+"%s"
+msgstr ""
+
+#: charonifc/preventa_lib.py:1832 charonifc/preventa_lib.py:1833
+#: charonifc/preventa_lib.py:1843 charonifc/preventa_lib.py:1853
+#, python-brace-format
+msgid "Modifica '{0}' tabella '{1}' con tariffa '{2}'"
+msgstr ""
+
+#: charonifc/preventa_lib.py:1840
+#, python-format
+msgid "Errore nell'aumento del costo materiali dell'articolo: %s"
+msgstr ""
+
+#: charonifc/preventa_lib.py:1850
+#, python-format
+msgid "Errore nell'aumento del tempo di installazione dell'articolo: %s"
+msgstr ""
+
+#: charonifc/preventa_lib.py:1855
+#, python-brace-format
+msgid "Fine modifica tabella {0} articolo {1}"
+msgstr ""
+
+#: charonifc/preventa_lib.py:3025
+#, python-brace-format
+msgid "Totale Complessivo {0} ({1}):"
+msgstr ""
+
+#: charonifc/preventa_lib.py:3071
+msgid "Elementi di Analisi art."
+msgstr ""
+
+#: charonifc/preventa_lib.py:3080
+msgid "Costo Materiali Art."
+msgstr ""
+
+#: charonifc/preventa_lib.py:3105
+msgid "Accessori per art."
+msgstr ""
+
+#: charonifc/preventa_lib.py:3113
+msgid "Parziale Costo materiali con ricarico"
+msgstr ""
+
+#: charonifc/preventa_lib.py:3145
+msgid "Totale manodopera"
+msgstr ""
+
+#: charonifc/preventa_lib.py:3152
+msgid "Parziale Manodopera con ricarico"
+msgstr ""
+
+#: charonifc/preventa_lib.py:3161
+msgid "Oneri di Sicurezza"
+msgstr ""
+
+#: charonifc/preventa_lib.py:3169
+msgid "Arrotondamento"
+msgstr ""
+
+#: charonifc/preventa_lib.py:3217 charonifc/preventa_lib.py:3311
+msgid ""
+"No.\n"
+"Tariffa"
+msgstr ""
+
+#: charonifc/preventa_lib.py:3217 charonifc/preventa_lib.py:3311
+msgid "Descrizione"
+msgstr ""
+
+#: charonifc/preventa_lib.py:3217 charonifc/preventa_lib.py:3311
+msgid "UM"
+msgstr ""
+
+#: charonifc/preventa_lib.py:3218 charonifc/preventa_lib.py:3312
+msgid "Quantita"
+msgstr ""
+
+#: charonifc/preventa_lib.py:3218 charonifc/preventa_lib.py:3312
+msgid "P.Unitario"
+msgstr ""
+
+#: charonifc/preventa_lib.py:3218 charonifc/preventa_lib.py:3312
+msgid "P.Totale"
+msgstr ""
+
+#: charonifc/preventa_lib.py:3266 charonifc/preventa_lib.py:3315
+msgid "Cat."
+msgstr ""
+
+#: charonifc/preventa_lib.py:3266 charonifc/preventa_lib.py:3315
+msgid "Categoria\n"
+msgstr ""
+
+#: charonifc/preventa_lib.py:3266 charonifc/preventa_lib.py:3315
+msgid "Totale"
+msgstr ""
+
+#: charonifc/preventa_lib.py:3267 charonifc/preventa_lib.py:3316
+msgid "Incidenza"
+msgstr ""
+
+#: charonifc/preventa_lib.py:3791
+#, python-brace-format
+msgid "Parsing del file XML: {0}"
+msgstr ""
+
+#: charonifc/preventa_lib.py:3855
+#, python-brace-format
+msgid "SUPERCAPITOLO: {0}"
+msgstr ""
+
+#: charonifc/preventa_lib.py:3859
+#, python-brace-format
+msgid "CAPITOLO: {0}"
+msgstr ""
+
+#: charonifc/preventa_lib.py:3863
+#, python-brace-format
+msgid "SUBCAPITOLO: {0}"
+msgstr ""
+
+#: charonifc/translator.py:51
+#, python-brace-format
+msgid "Word '{0}' Unknown, unable to Translate."
+msgstr ""
+
+#: charonifc/translator.py:68
+msgid "Absorbed Dose Measure"
+msgstr ""
+
+#: charonifc/translator.py:69
+msgid "Acceleration Measure"
+msgstr ""
+
+#: charonifc/translator.py:70
+msgid "Action Request"
+msgstr ""
+
+#: charonifc/translator.py:71
+msgid "Actor"
+msgstr ""
+
+#: charonifc/translator.py:72
+msgid "Actor Role"
+msgstr ""
+
+#: charonifc/translator.py:73
+msgid "Actor Select"
+msgstr ""
+
+#: charonifc/translator.py:74
+msgid "Actuator"
+msgstr ""
+
+#: charonifc/translator.py:75
+msgid "Actuators"
+msgstr ""
+
+#: charonifc/translator.py:76
+msgid "Address"
+msgstr ""
+
+#: charonifc/translator.py:80
+msgid "Air Terminal"
+msgstr ""
+
+#: charonifc/translator.py:81
+msgid "Air Terminal Box"
+msgstr ""
+
+#: charonifc/translator.py:82
+msgid "Air Terminal Boxs"
+msgstr ""
+
+#: charonifc/translator.py:83
+msgid "Air Terminals"
+msgstr ""
+
+#: charonifc/translator.py:84
+msgid "Air To Air Heat Recovery"
+msgstr ""
+
+#: charonifc/translator.py:85
+msgid "Air To Air Heat Recoverys"
+msgstr ""
+
+#: charonifc/translator.py:86
+msgid "Alarm"
+msgstr ""
+
+#: charonifc/translator.py:87
+msgid "Alarms"
+msgstr ""
+
+#: charonifc/translator.py:88
+msgid "Amount Of Substance Measure"
+msgstr ""
+
+#: charonifc/translator.py:89
+msgid "Angular Velocity Measure"
+msgstr ""
+
+#: charonifc/translator.py:92
+msgid "Application"
+msgstr ""
+
+#: charonifc/translator.py:93
+msgid "Applied Value"
+msgstr ""
+
+#: charonifc/translator.py:94
+msgid "Applied Value Select"
+msgstr ""
+
+#: charonifc/translator.py:95
+msgid "Approval"
+msgstr ""
+
+#: charonifc/translator.py:96
+msgid "Approval Relationship"
+msgstr ""
+
+#: charonifc/translator.py:97
+msgid "Arbitrary Closed Profile Def"
+msgstr ""
+
+#: charonifc/translator.py:98
+msgid "Arbitrary Open Profile Def"
+msgstr ""
+
+#: charonifc/translator.py:99
+msgid "Arbitrary Profile Def With Voids"
+msgstr ""
+
+#: charonifc/translator.py:100
+msgid "Arc Index"
+msgstr ""
+
+#: charonifc/translator.py:101
+msgid "Area Density Measure"
+msgstr ""
+
+#: charonifc/translator.py:102
+msgid "Area Measure"
+msgstr ""
+
+#: charonifc/translator.py:103
+msgid "Asset"
+msgstr ""
+
+#: charonifc/translator.py:105
+msgid "Audio Visual Appliance"
+msgstr ""
+
+#: charonifc/translator.py:106
+msgid "Audio Visual Appliances"
+msgstr ""
+
+#: charonifc/translator.py:117
+msgid "Beam"
+msgstr ""
+
+#: charonifc/translator.py:118
+msgid "Beam Standard Case"
+msgstr ""
+
+#: charonifc/translator.py:119
+msgid "Beams"
+msgstr ""
+
+#: charonifc/translator.py:120
+msgid "Bending Parameter Select"
+msgstr ""
+
+#: charonifc/translator.py:121
+msgid "Binary"
+msgstr ""
+
+#: charonifc/translator.py:123
+msgid "Block"
+msgstr ""
+
+#: charonifc/translator.py:124
+msgid "Boiler"
+msgstr ""
+
+#: charonifc/translator.py:125
+msgid "Boilers"
+msgstr ""
+
+#: charonifc/translator.py:126
+msgid "Boolean"
+msgstr ""
+
+#: charonifc/translator.py:127
+msgid "Boolean Clipping Result"
+msgstr ""
+
+#: charonifc/translator.py:128
+msgid "Boolean Operand"
+msgstr ""
+
+#: charonifc/translator.py:129
+msgid "Boolean Operator"
+msgstr ""
+
+#: charonifc/translator.py:130
+msgid "Boolean Result"
+msgstr ""
+
+#: charonifc/translator.py:131
+msgid "Boundary Condition"
+msgstr ""
+
+#: charonifc/translator.py:132
+msgid "Boundary Curve"
+msgstr ""
+
+#: charonifc/translator.py:133
+msgid "Boundary Edge Condition"
+msgstr ""
+
+#: charonifc/translator.py:134
+msgid "Boundary Face Condition"
+msgstr ""
+
+#: charonifc/translator.py:135
+msgid "Boundary Node Condition"
+msgstr ""
+
+#: charonifc/translator.py:136
+msgid "Boundary Node Condition Warping"
+msgstr ""
+
+#: charonifc/translator.py:137
+msgid "Bounded Curve"
+msgstr ""
+
+#: charonifc/translator.py:138
+msgid "Bounded Surface"
+msgstr ""
+
+#: charonifc/translator.py:139
+msgid "Bounding Box"
+msgstr ""
+
+#: charonifc/translator.py:140
+msgid "Box Alignment"
+msgstr ""
+
+#: charonifc/translator.py:141
+msgid "Boxed Half Space"
+msgstr ""
+
+#: charonifc/translator.py:142
+msgid "Building"
+msgstr ""
+
+#: charonifc/translator.py:143
+msgid "Building Element"
+msgstr ""
+
+#: charonifc/translator.py:144
+msgid "Building Element Part"
+msgstr ""
+
+#: charonifc/translator.py:145
+msgid "Building Element Parts"
+msgstr ""
+
+#: charonifc/translator.py:146
+msgid "Building Element Proxy"
+msgstr ""
+
+#: charonifc/translator.py:147
+msgid "Building Element Proxys"
+msgstr ""
+
+#: charonifc/translator.py:148
+msgid "Building Elements"
+msgstr ""
+
+#: charonifc/translator.py:149
+msgid "Building Storey"
+msgstr ""
+
+#: charonifc/translator.py:150
+msgid "Building System"
+msgstr ""
+
+#: charonifc/translator.py:151
+msgid "Burner"
+msgstr ""
+
+#: charonifc/translator.py:152
+msgid "Burners"
+msgstr ""
+
+#: charonifc/translator.py:153
+msgid "C Shape Profile Def"
+msgstr ""
+
+#: charonifc/translator.py:154
+msgid "Cable Carrier Fitting"
+msgstr ""
+
+#: charonifc/translator.py:155
+msgid "Cable Carrier Fittings"
+msgstr ""
+
+#: charonifc/translator.py:156
+msgid "Cable Carrier Segment"
+msgstr ""
+
+#: charonifc/translator.py:157
+msgid "Cable Carrier Segments"
+msgstr ""
+
+#: charonifc/translator.py:158
+msgid "Cable Fitting"
+msgstr ""
+
+#: charonifc/translator.py:159
+msgid "Cable Fittings"
+msgstr ""
+
+#: charonifc/translator.py:160
+msgid "Cable Segment"
+msgstr ""
+
+#: charonifc/translator.py:161
+msgid "Cable Segments"
+msgstr ""
+
+#: charonifc/translator.py:173
+msgid "Chiller"
+msgstr ""
+
+#: charonifc/translator.py:174
+msgid "Chillers"
+msgstr ""
+
+#: charonifc/translator.py:175
+msgid "Chimney"
+msgstr ""
+
+#: charonifc/translator.py:176
+msgid "Chimneys"
+msgstr ""
+
+#: charonifc/translator.py:180
+msgid "Civil Element"
+msgstr ""
+
+#: charonifc/translator.py:181
+msgid "Civil Elements"
+msgstr ""
+
+#: charonifc/translator.py:182
+msgid "Classification"
+msgstr ""
+
+#: charonifc/translator.py:183
+msgid "Classification Reference"
+msgstr ""
+
+#: charonifc/translator.py:184
+msgid "Classification Reference Select"
+msgstr ""
+
+#: charonifc/translator.py:185
+msgid "Classification Select"
+msgstr ""
+
+#: charonifc/translator.py:186
+msgid "Closed Shell"
+msgstr ""
+
+#: charonifc/translator.py:187
+msgid "Coil"
+msgstr ""
+
+#: charonifc/translator.py:188
+msgid "Coils"
+msgstr ""
+
+#: charonifc/translator.py:194
+msgid "Column"
+msgstr ""
+
+#: charonifc/translator.py:195
+msgid "Column Standard Case"
+msgstr ""
+
+#: charonifc/translator.py:196
+msgid "Columns"
+msgstr ""
+
+#: charonifc/translator.py:197
+msgid "Communications Appliance"
+msgstr ""
+
+#: charonifc/translator.py:198
+msgid "Communications Appliances"
+msgstr ""
+
+#: charonifc/translator.py:199
+msgid "Complex Number"
+msgstr ""
+
+#: charonifc/translator.py:200
+msgid "Complex Property"
+msgstr ""
+
+#: charonifc/translator.py:201
+msgid "Complex Property Template"
+msgstr ""
+
+#: charonifc/translator.py:206
+msgid "Compound Plane Angle Measure"
+msgstr ""
+
+#: charonifc/translator.py:207
+msgid "Compressor"
+msgstr ""
+
+#: charonifc/translator.py:208
+msgid "Compressors"
+msgstr ""
+
+#: charonifc/translator.py:209
+msgid "Condenser"
+msgstr ""
+
+#: charonifc/translator.py:210
+msgid "Condensers"
+msgstr ""
+
+#: charonifc/translator.py:211
+msgid "Conic"
+msgstr ""
+
+#: charonifc/translator.py:219
+msgid "Constraint"
+msgstr ""
+
+#: charonifc/translator.py:220
+msgid "Construction Equipment Resource"
+msgstr ""
+
+#: charonifc/translator.py:221
+msgid "Construction Equipment Resources"
+msgstr ""
+
+#: charonifc/translator.py:222
+msgid "Construction Material Resource"
+msgstr ""
+
+#: charonifc/translator.py:223
+msgid "Construction Material Resources"
+msgstr ""
+
+#: charonifc/translator.py:224
+msgid "Construction Product Resource"
+msgstr ""
+
+#: charonifc/translator.py:225
+msgid "Construction Product Resources"
+msgstr ""
+
+#: charonifc/translator.py:226
+msgid "Construction Resource"
+msgstr ""
+
+#: charonifc/translator.py:227
+msgid "Construction Resources"
+msgstr ""
+
+#: charonifc/translator.py:228
+msgid "Context"
+msgstr ""
+
+#: charonifc/translator.py:229
+msgid "Context Dependent Measure"
+msgstr ""
+
+#: charonifc/translator.py:230
+msgid "Context Dependent Unit"
+msgstr ""
+
+#: charonifc/translator.py:231
+msgid "Control"
+msgstr ""
+
+#: charonifc/translator.py:232
+msgid "Controller"
+msgstr ""
+
+#: charonifc/translator.py:233
+msgid "Controllers"
+msgstr ""
+
+#: charonifc/translator.py:234
+msgid "Conversion Based Unit"
+msgstr ""
+
+#: charonifc/translator.py:235
+msgid "Conversion Based Unit With Offset"
+msgstr ""
+
+#: charonifc/translator.py:236
+msgid "Cooled Beam"
+msgstr ""
+
+#: charonifc/translator.py:237
+msgid "Cooled Beams"
+msgstr ""
+
+#: charonifc/translator.py:238
+msgid "Cooling Tower"
+msgstr ""
+
+#: charonifc/translator.py:239
+msgid "Cooling Towers"
+msgstr ""
+
+#: charonifc/translator.py:240
+msgid "Coordinate Operation"
+msgstr ""
+
+#: charonifc/translator.py:241
+msgid "Coordinate Reference System"
+msgstr ""
+
+#: charonifc/translator.py:242
+msgid "Coordinate Reference System Select"
+msgstr ""
+
+#: charonifc/translator.py:243
+msgid "Cost Item"
+msgstr ""
+
+#: charonifc/translator.py:244
+msgid "Cost Schedule"
+msgstr ""
+
+#: charonifc/translator.py:245
+msgid "Cost Value"
+msgstr ""
+
+#: charonifc/translator.py:246
+msgid "Count Measure"
+msgstr ""
+
+#: charonifc/translator.py:247
+msgid "Covering"
+msgstr ""
+
+#: charonifc/translator.py:248
+msgid "Coverings"
+msgstr ""
+
+#: charonifc/translator.py:249
+msgid "Crew Resource"
+msgstr ""
+
+#: charonifc/translator.py:250
+msgid "Crew Resources"
+msgstr ""
+
+#: charonifc/translator.py:254
+msgid "Currency Relationship"
+msgstr ""
+
+#: charonifc/translator.py:255 charonifc/translator.py:1427
+msgid "Curtain Wall"
+msgstr ""
+
+#: charonifc/translator.py:256
+msgid "Curtain Walls"
+msgstr ""
+
+#: charonifc/translator.py:257
+msgid "Curvature Measure"
+msgstr ""
+
+#: charonifc/translator.py:258
+msgid "Curve"
+msgstr ""
+
+#: charonifc/translator.py:259
+msgid "Curve Bounded Plane"
+msgstr ""
+
+#: charonifc/translator.py:260
+msgid "Curve Bounded Surface"
+msgstr ""
+
+#: charonifc/translator.py:261
+msgid "Curve Font Or Scaled Curve Font Select"
+msgstr ""
+
+#: charonifc/translator.py:262
+msgid "Curve On Surface"
+msgstr ""
+
+#: charonifc/translator.py:263
+msgid "Curve Or Edge Curve"
+msgstr ""
+
+#: charonifc/translator.py:264
+msgid "Curve Style"
+msgstr ""
+
+#: charonifc/translator.py:265
+msgid "Curve Style Font"
+msgstr ""
+
+#: charonifc/translator.py:266
+msgid "Curve Style Font And Scaling"
+msgstr ""
+
+#: charonifc/translator.py:267
+msgid "Curve Style Font Pattern"
+msgstr ""
+
+#: charonifc/translator.py:268
+msgid "Curve Style Font Select"
+msgstr ""
+
+#: charonifc/translator.py:269
+msgid "Cylindrical Surface"
+msgstr ""
+
+#: charonifc/translator.py:270
+msgid "Damper"
+msgstr ""
+
+#: charonifc/translator.py:271
+msgid "Dampers"
+msgstr ""
+
+#: charonifc/translator.py:272
+msgid "Date"
+msgstr ""
+
+#: charonifc/translator.py:273
+msgid "Date Time"
+msgstr ""
+
+#: charonifc/translator.py:274
+msgid "Day In Month Number"
+msgstr ""
+
+#: charonifc/translator.py:275
+msgid "Day In Week Number"
+msgstr ""
+
+#: charonifc/translator.py:276
+msgid "Definition Select"
+msgstr ""
+
+#: charonifc/translator.py:277
+msgid "Derived Measure Value"
+msgstr ""
+
+#: charonifc/translator.py:278
+msgid "Derived Profile Def"
+msgstr ""
+
+#: charonifc/translator.py:279
+msgid "Derived Unit"
+msgstr ""
+
+#: charonifc/translator.py:280
+msgid "Derived Unit Element"
+msgstr ""
+
+#: charonifc/translator.py:281
+msgid "Descriptive Measure"
+msgstr ""
+
+#: charonifc/translator.py:282
+msgid "Dimension Count"
+msgstr ""
+
+#: charonifc/translator.py:283
+msgid "Dimensional Exponents"
+msgstr ""
+
+#: charonifc/translator.py:284 charonifc/translator.py:1429
+msgid "Direction"
+msgstr ""
+
+#: charonifc/translator.py:285
+msgid "Discrete Accessory"
+msgstr ""
+
+#: charonifc/translator.py:286
+msgid "Discrete Accessorys"
+msgstr ""
+
+#: charonifc/translator.py:287
+msgid "Distribution Chamber Element"
+msgstr ""
+
+#: charonifc/translator.py:288
+msgid "Distribution Chamber Elements"
+msgstr ""
+
+#: charonifc/translator.py:289
+msgid "Distribution Circuit"
+msgstr ""
+
+#: charonifc/translator.py:290
+msgid "Distribution Control Element"
+msgstr ""
+
+#: charonifc/translator.py:291
+msgid "Distribution Control Elements"
+msgstr ""
+
+#: charonifc/translator.py:292
+msgid "Distribution Element"
+msgstr ""
+
+#: charonifc/translator.py:293
+msgid "Distribution Elements"
+msgstr ""
+
+#: charonifc/translator.py:294
+msgid "Distribution Flow Element"
+msgstr ""
+
+#: charonifc/translator.py:295
+msgid "Distribution Flow Elements"
+msgstr ""
+
+#: charonifc/translator.py:296
+msgid "Distribution Port"
+msgstr ""
+
+#: charonifc/translator.py:297
+msgid "Distribution System"
+msgstr ""
+
+#: charonifc/translator.py:298
+msgid "Document Information"
+msgstr ""
+
+#: charonifc/translator.py:299
+msgid "Document Information Relationship"
+msgstr ""
+
+#: charonifc/translator.py:300
+msgid "Document Reference"
+msgstr ""
+
+#: charonifc/translator.py:301
+msgid "Document Select"
+msgstr ""
+
+#: charonifc/translator.py:302
+msgid "Door"
+msgstr ""
+
+#: charonifc/translator.py:303
+msgid "Door Lining Properties"
+msgstr ""
+
+#: charonifc/translator.py:304
+msgid "Door Panel Properties"
+msgstr ""
+
+#: charonifc/translator.py:305
+msgid "Door Standard Case"
+msgstr ""
+
+#: charonifc/translator.py:306
+msgid "Door Style"
+msgstr ""
+
+#: charonifc/translator.py:307
+msgid "Doors"
+msgstr ""
+
+#: charonifc/translator.py:308
+msgid "Dose Equivalent Measure"
+msgstr ""
+
+#: charonifc/translator.py:309
+msgid "Draughting Pre Defined Colour"
+msgstr ""
+
+#: charonifc/translator.py:310
+msgid "Draughting Pre Defined Curve Font"
+msgstr ""
+
+#: charonifc/translator.py:311
+msgid "Duct Fitting"
+msgstr ""
+
+#: charonifc/translator.py:312
+msgid "Duct Fittings"
+msgstr ""
+
+#: charonifc/translator.py:313
+msgid "Duct Segment"
+msgstr ""
+
+#: charonifc/translator.py:314
+msgid "Duct Segments"
+msgstr ""
+
+#: charonifc/translator.py:315
+msgid "Duct Silencer"
+msgstr ""
+
+#: charonifc/translator.py:316
+msgid "Duct Silencers"
+msgstr ""
+
+#: charonifc/translator.py:317
+msgid "Duration"
+msgstr ""
+
+#: charonifc/translator.py:318
+msgid "Dynamic Viscosity Measure"
+msgstr ""
+
+#: charonifc/translator.py:319
+msgid "Edge"
+msgstr ""
+
+#: charonifc/translator.py:320
+msgid "Edge Curve"
+msgstr ""
+
+#: charonifc/translator.py:321
+msgid "Edge Loop"
+msgstr ""
+
+#: charonifc/translator.py:322
+msgid "Electric Appliance"
+msgstr ""
+
+#: charonifc/translator.py:323
+msgid "Electric Appliances"
+msgstr ""
+
+#: charonifc/translator.py:324
+msgid "Electric Capacitance Measure"
+msgstr ""
+
+#: charonifc/translator.py:325
+msgid "Electric Charge Measure"
+msgstr ""
+
+#: charonifc/translator.py:326
+msgid "Electric Conductance Measure"
+msgstr ""
+
+#: charonifc/translator.py:327
+msgid "Electric Current Measure"
+msgstr ""
+
+#: charonifc/translator.py:328 charonifc/translator.py:1216
+msgid "Electric Distribution Board"
+msgstr ""
+
+#: charonifc/translator.py:329
+msgid "Electric Distribution Boards"
+msgstr ""
+
+#: charonifc/translator.py:330
+msgid "Electric Flow Storage Device"
+msgstr ""
+
+#: charonifc/translator.py:331
+msgid "Electric Flow Storage Devices"
+msgstr ""
+
+#: charonifc/translator.py:332
+msgid "Electric Generator"
+msgstr ""
+
+#: charonifc/translator.py:333
+msgid "Electric Generators"
+msgstr ""
+
+#: charonifc/translator.py:334
+msgid "Electric Motor"
+msgstr ""
+
+#: charonifc/translator.py:335
+msgid "Electric Motors"
+msgstr ""
+
+#: charonifc/translator.py:336
+msgid "Electric Resistance Measure"
+msgstr ""
+
+#: charonifc/translator.py:337
+msgid "Electric Time Control"
+msgstr ""
+
+#: charonifc/translator.py:338
+msgid "Electric Time Controls"
+msgstr ""
+
+#: charonifc/translator.py:339
+msgid "Electric Voltage Measure"
+msgstr ""
+
+#: charonifc/translator.py:340
+msgid "Element"
+msgstr ""
+
+#: charonifc/translator.py:341
+msgid "Element Assembly"
+msgstr ""
+
+#: charonifc/translator.py:342
+msgid "Element Assemblys"
+msgstr ""
+
+#: charonifc/translator.py:343
+msgid "Element Component"
+msgstr ""
+
+#: charonifc/translator.py:344
+msgid "Element Components"
+msgstr ""
+
+#: charonifc/translator.py:345
+msgid "Element Quantity"
+msgstr ""
+
+#: charonifc/translator.py:346
+msgid "Elements"
+msgstr ""
+
+#: charonifc/translator.py:347
+msgid "Elementary Surface"
+msgstr ""
+
+#: charonifc/translator.py:350
+msgid "Energy Conversion Device"
+msgstr ""
+
+#: charonifc/translator.py:351
+msgid "Energy Conversion Devices"
+msgstr ""
+
+#: charonifc/translator.py:352
+msgid "Energy Measure"
+msgstr ""
+
+#: charonifc/translator.py:353
+msgid "Engine"
+msgstr ""
+
+#: charonifc/translator.py:354
+msgid "Engines"
+msgstr ""
+
+#: charonifc/translator.py:355
+msgid "Evaporative Cooler"
+msgstr ""
+
+#: charonifc/translator.py:356
+msgid "Evaporative Coolers"
+msgstr ""
+
+#: charonifc/translator.py:357
+msgid "Evaporator"
+msgstr ""
+
+#: charonifc/translator.py:358
+msgid "Evaporators"
+msgstr ""
+
+#: charonifc/translator.py:359
+msgid "Event"
+msgstr ""
+
+#: charonifc/translator.py:360
+msgid "Event Time"
+msgstr ""
+
+#: charonifc/translator.py:361
+msgid "Events"
+msgstr ""
+
+#: charonifc/translator.py:380
+msgid "Failure Connection Condition"
+msgstr ""
+
+#: charonifc/translator.py:381
+msgid "Fan"
+msgstr ""
+
+#: charonifc/translator.py:382
+msgid "Fans"
+msgstr ""
+
+#: charonifc/translator.py:383
+msgid "Fastener"
+msgstr ""
+
+#: charonifc/translator.py:384
+msgid "Fasteners"
+msgstr ""
+
+#: charonifc/translator.py:385
+msgid "Feature Element"
+msgstr ""
+
+#: charonifc/translator.py:386
+msgid "Feature Element Addition"
+msgstr ""
+
+#: charonifc/translator.py:387
+msgid "Feature Element Subtraction"
+msgstr ""
+
+#: charonifc/translator.py:392
+msgid "Filter"
+msgstr ""
+
+#: charonifc/translator.py:393
+msgid "Filters"
+msgstr ""
+
+#: charonifc/translator.py:394
+msgid "Fire Suppression Terminal"
+msgstr ""
+
+#: charonifc/translator.py:395
+msgid "Fire Suppression Terminals"
+msgstr ""
+
+#: charonifc/translator.py:396
+msgid "Fixed Reference Swept Area Solid"
+msgstr ""
+
+#: charonifc/translator.py:397
+msgid "Flow Controller"
+msgstr ""
+
+#: charonifc/translator.py:398
+msgid "Flow Controllers"
+msgstr ""
+
+#: charonifc/translator.py:399
+msgid "Flow Fitting"
+msgstr ""
+
+#: charonifc/translator.py:400
+msgid "Flow Fittings"
+msgstr ""
+
+#: charonifc/translator.py:401
+msgid "Flow Instrument"
+msgstr ""
+
+#: charonifc/translator.py:402
+msgid "Flow Instruments"
+msgstr ""
+
+#: charonifc/translator.py:403
+msgid "Flow Meter"
+msgstr ""
+
+#: charonifc/translator.py:404
+msgid "Flow Meters"
+msgstr ""
+
+#: charonifc/translator.py:405
+msgid "Flow Moving Device"
+msgstr ""
+
+#: charonifc/translator.py:406
+msgid "Flow Moving Devices"
+msgstr ""
+
+#: charonifc/translator.py:407
+msgid "Flow Segment"
+msgstr ""
+
+#: charonifc/translator.py:408
+msgid "Flow Segments"
+msgstr ""
+
+#: charonifc/translator.py:409
+msgid "Flow Storage Device"
+msgstr ""
+
+#: charonifc/translator.py:410
+msgid "Flow Storage Devices"
+msgstr ""
+
+#: charonifc/translator.py:411
+msgid "Flow Terminal"
+msgstr ""
+
+#: charonifc/translator.py:412
+msgid "Flow Terminals"
+msgstr ""
+
+#: charonifc/translator.py:413
+msgid "Flow Treatment Device"
+msgstr ""
+
+#: charonifc/translator.py:414
+msgid "Flow Treatment Devices"
+msgstr ""
+
+#: charonifc/translator.py:418
+msgid "Footing"
+msgstr ""
+
+#: charonifc/translator.py:419
+msgid "Footings"
+msgstr ""
+
+#: charonifc/translator.py:420
+msgid "Force Measure"
+msgstr ""
+
+#: charonifc/translator.py:421
+msgid "Frequency Measure"
+msgstr ""
+
+#: charonifc/translator.py:422
+msgid "Furnishing Element"
+msgstr ""
+
+#: charonifc/translator.py:423
+msgid "Furnishing Elements"
+msgstr ""
+
+#: charonifc/translator.py:424
+msgid "Furniture"
+msgstr ""
+
+#: charonifc/translator.py:425
+msgid "Furnitures"
+msgstr ""
+
+#: charonifc/translator.py:426
+msgid "Geographic Element"
+msgstr ""
+
+#: charonifc/translator.py:427
+msgid "Geographic Elements"
+msgstr ""
+
+#: charonifc/translator.py:435
+msgid "Globally Unique Id"
+msgstr ""
+
+#: charonifc/translator.py:436
+msgid "Grid"
+msgstr ""
+
+#: charonifc/translator.py:437
+msgid "Grid Axis"
+msgstr ""
+
+#: charonifc/translator.py:438
+msgid "Grid Placement"
+msgstr ""
+
+#: charonifc/translator.py:439
+msgid "Grid Placement Direction Select"
+msgstr ""
+
+#: charonifc/translator.py:440
+msgid "Group"
+msgstr ""
+
+#: charonifc/translator.py:443
+msgid "Heat Exchanger"
+msgstr ""
+
+#: charonifc/translator.py:444
+msgid "Heat Exchangers"
+msgstr ""
+
+#: charonifc/translator.py:445
+msgid "Heat Flux Density Measure"
+msgstr ""
+
+#: charonifc/translator.py:446
+msgid "Heating Value Measure"
+msgstr ""
+
+#: charonifc/translator.py:447
+msgid "Humidifier"
+msgstr ""
+
+#: charonifc/translator.py:448
+msgid "Humidifiers"
+msgstr ""
+
+#: charonifc/translator.py:449
+msgid "Shape Profile Def"
+msgstr ""
+
+#: charonifc/translator.py:450
+msgid "Identifier"
+msgstr ""
+
+#: charonifc/translator.py:451 charonifc/translator.py:459
+msgid "Measure"
+msgstr ""
+
+#: charonifc/translator.py:452
+msgid "Texture"
+msgstr ""
+
+#: charonifc/translator.py:460
+msgid "Integer"
+msgstr ""
+
+#: charonifc/translator.py:461
+msgid "Count Rate Measure"
+msgstr ""
+
+#: charonifc/translator.py:462
+msgid "Interceptor"
+msgstr ""
+
+#: charonifc/translator.py:463
+msgid "Interceptors"
+msgstr ""
+
+#: charonifc/translator.py:465
+msgid "Inventory"
+msgstr ""
+
+#: charonifc/translator.py:466
+msgid "Concentration Measure"
+msgstr ""
+
+#: charonifc/translator.py:467 charonifc/translator.py:980
+msgid "Time Series"
+msgstr ""
+
+#: charonifc/translator.py:468 charonifc/translator.py:981
+msgid "Time Series Value"
+msgstr ""
+
+#: charonifc/translator.py:469
+msgid "Moisture Capacity Measure"
+msgstr ""
+
+#: charonifc/translator.py:470
+msgid "Junction Box"
+msgstr ""
+
+#: charonifc/translator.py:471
+msgid "Junction Boxs"
+msgstr ""
+
+#: charonifc/translator.py:472
+msgid "Kinematic Viscosity Measure"
+msgstr ""
+
+#: charonifc/translator.py:473
+msgid "Knots"
+msgstr ""
+
+#: charonifc/translator.py:474
+msgid "L Shape Profile Def"
+msgstr ""
+
+#: charonifc/translator.py:475 charonifc/translator.py:1402
+msgid "Label"
+msgstr ""
+
+#: charonifc/translator.py:476
+msgid "Labor Resource"
+msgstr ""
+
+#: charonifc/translator.py:477
+msgid "Labor Resources"
+msgstr ""
+
+#: charonifc/translator.py:478
+msgid "Lag Time"
+msgstr ""
+
+#: charonifc/translator.py:479
+msgid "Lamp"
+msgstr ""
+
+#: charonifc/translator.py:480
+msgid "Lamps"
+msgstr ""
+
+#: charonifc/translator.py:481
+msgid "Language Id"
+msgstr ""
+
+#: charonifc/translator.py:482
+msgid "Layered Item"
+msgstr ""
+
+#: charonifc/translator.py:483
+msgid "Length Measure"
+msgstr ""
+
+#: charonifc/translator.py:484
+msgid "Library Information"
+msgstr ""
+
+#: charonifc/translator.py:485
+msgid "Library Reference"
+msgstr ""
+
+#: charonifc/translator.py:486
+msgid "Library Select"
+msgstr ""
+
+#: charonifc/translator.py:487
+msgid "Light Distribution Data"
+msgstr ""
+
+#: charonifc/translator.py:488
+msgid "Light Distribution Data Source Select"
+msgstr ""
+
+#: charonifc/translator.py:489
+msgid "Light Fixture"
+msgstr ""
+
+#: charonifc/translator.py:490
+msgid "Light Fixtures"
+msgstr ""
+
+#: charonifc/translator.py:491
+msgid "Light Intensity Distribution"
+msgstr ""
+
+#: charonifc/translator.py:492
+msgid "Light Source"
+msgstr ""
+
+#: charonifc/translator.py:493
+msgid "Light Source Ambient"
+msgstr ""
+
+#: charonifc/translator.py:494
+msgid "Light Source Directional"
+msgstr ""
+
+#: charonifc/translator.py:495
+msgid "Light Source Goniometric"
+msgstr ""
+
+#: charonifc/translator.py:496
+msgid "Light Source Positional"
+msgstr ""
+
+#: charonifc/translator.py:497
+msgid "Light Source Spot"
+msgstr ""
+
+#: charonifc/translator.py:500
+msgid "Linear Force Measure"
+msgstr ""
+
+#: charonifc/translator.py:501
+msgid "Linear Moment Measure"
+msgstr ""
+
+#: charonifc/translator.py:502
+msgid "Linear Stiffness Measure"
+msgstr ""
+
+#: charonifc/translator.py:503
+msgid "Linear Velocity Measure"
+msgstr ""
+
+#: charonifc/translator.py:504
+msgid "Local Placement"
+msgstr ""
+
+#: charonifc/translator.py:505
+msgid "Logical"
+msgstr ""
+
+#: charonifc/translator.py:506
+msgid "Loop"
+msgstr ""
+
+#: charonifc/translator.py:507
+msgid "Luminous Flux Measure"
+msgstr ""
+
+#: charonifc/translator.py:508
+msgid "Luminous Intensity Distribution Measure"
+msgstr ""
+
+#: charonifc/translator.py:509
+msgid "Luminous Intensity Measure"
+msgstr ""
+
+#: charonifc/translator.py:510
+msgid "Magnetic Flux Density Measure"
+msgstr ""
+
+#: charonifc/translator.py:511
+msgid "Magnetic Flux Measure"
+msgstr ""
+
+#: charonifc/translator.py:512
+msgid "Manifold Solid Brep"
+msgstr ""
+
+#: charonifc/translator.py:513
+msgid "Map Conversion"
+msgstr ""
+
+#: charonifc/translator.py:514
+msgid "Mapped Item"
+msgstr ""
+
+#: charonifc/translator.py:515
+msgid "Mass Density Measure"
+msgstr ""
+
+#: charonifc/translator.py:516
+msgid "Mass Flow Rate Measure"
+msgstr ""
+
+#: charonifc/translator.py:517
+msgid "Mass Measure"
+msgstr ""
+
+#: charonifc/translator.py:518
+msgid "Mass Per Length Measure"
+msgstr ""
+
+#: charonifc/translator.py:519 charonifc/translator.py:1277
+msgid "Material"
+msgstr ""
+
+#: charonifc/translator.py:520
+msgid "Material Classification Relationship"
+msgstr ""
+
+#: charonifc/translator.py:521
+msgid "Material Constituent"
+msgstr ""
+
+#: charonifc/translator.py:522
+msgid "Material Constituent Set"
+msgstr ""
+
+#: charonifc/translator.py:523
+msgid "Material Definition"
+msgstr ""
+
+#: charonifc/translator.py:524
+msgid "Material Definition Representation"
+msgstr ""
+
+#: charonifc/translator.py:525
+msgid "Material Layer"
+msgstr ""
+
+#: charonifc/translator.py:526
+msgid "Material Layer Set"
+msgstr ""
+
+#: charonifc/translator.py:527
+msgid "Material Layer Set Usage"
+msgstr ""
+
+#: charonifc/translator.py:528
+msgid "Material Layer With Offsets"
+msgstr ""
+
+#: charonifc/translator.py:529
+msgid "Material List"
+msgstr ""
+
+#: charonifc/translator.py:530
+msgid "Material Profile"
+msgstr ""
+
+#: charonifc/translator.py:531
+msgid "Material Profile Set"
+msgstr ""
+
+#: charonifc/translator.py:532
+msgid "Material Profile Set Usage"
+msgstr ""
+
+#: charonifc/translator.py:533
+msgid "Material Profile Set Usage Tapering"
+msgstr ""
+
+#: charonifc/translator.py:534
+msgid "Material Profile With Offsets"
+msgstr ""
+
+#: charonifc/translator.py:535
+msgid "Material Properties"
+msgstr ""
+
+#: charonifc/translator.py:536
+msgid "Material Relationship"
+msgstr ""
+
+#: charonifc/translator.py:537
+msgid "Material Select"
+msgstr ""
+
+#: charonifc/translator.py:538
+msgid "Material Usage Definition"
+msgstr ""
+
+#: charonifc/translator.py:539
+msgid "Measure Value"
+msgstr ""
+
+#: charonifc/translator.py:540
+msgid "Measure With Unit"
+msgstr ""
+
+#: charonifc/translator.py:541
+msgid "Mechanical Fastener"
+msgstr ""
+
+#: charonifc/translator.py:542
+msgid "Mechanical Fasteners"
+msgstr ""
+
+#: charonifc/translator.py:543
+msgid "Medical Device"
+msgstr ""
+
+#: charonifc/translator.py:544
+msgid "Medical Devices"
+msgstr ""
+
+#: charonifc/translator.py:545
+msgid "Member"
+msgstr ""
+
+#: charonifc/translator.py:546
+msgid "Member Standard Case"
+msgstr ""
+
+#: charonifc/translator.py:547
+msgid "Members"
+msgstr ""
+
+#: charonifc/translator.py:548
+msgid "Metric"
+msgstr ""
+
+#: charonifc/translator.py:549
+msgid "Metric Value Select"
+msgstr ""
+
+#: charonifc/translator.py:550
+msgid "Mirrored Profile Def"
+msgstr ""
+
+#: charonifc/translator.py:551
+msgid "Mirrored Profile Def-temp"
+msgstr ""
+
+#: charonifc/translator.py:552
+msgid "Modulus Of Elasticity Measure"
+msgstr ""
+
+#: charonifc/translator.py:553
+msgid "Modulus Of Linear Subgrade Reaction Measure"
+msgstr ""
+
+#: charonifc/translator.py:554
+msgid "Modulus Of Rotational Subgrade Reaction Measure"
+msgstr ""
+
+#: charonifc/translator.py:555
+msgid "Modulus Of Rotational Subgrade Reaction Select"
+msgstr ""
+
+#: charonifc/translator.py:556
+msgid "Modulus Of Subgrade Reaction Measure"
+msgstr ""
+
+#: charonifc/translator.py:557
+msgid "Modulus Of Subgrade Reaction Select"
+msgstr ""
+
+#: charonifc/translator.py:558
+msgid "Modulus Of Translational Subgrade Reaction Select"
+msgstr ""
+
+#: charonifc/translator.py:559
+msgid "Moisture Diffusivity Measure"
+msgstr ""
+
+#: charonifc/translator.py:560
+msgid "Molecular Weight Measure"
+msgstr ""
+
+#: charonifc/translator.py:561
+msgid "Moment Of Inertia Measure"
+msgstr ""
+
+#: charonifc/translator.py:562
+msgid "Monetary Measure"
+msgstr ""
+
+#: charonifc/translator.py:563
+msgid "Monetary Unit"
+msgstr ""
+
+#: charonifc/translator.py:564
+msgid "Month In Year Number"
+msgstr ""
+
+#: charonifc/translator.py:565
+msgid "Motor Connection"
+msgstr ""
+
+#: charonifc/translator.py:566
+msgid "Motor Connections"
+msgstr ""
+
+#: charonifc/translator.py:567
+msgid "Named Unit"
+msgstr ""
+
+#: charonifc/translator.py:568
+msgid "Non Negative Length Measure"
+msgstr ""
+
+#: charonifc/translator.py:569
+msgid "Normalised Ratio Measure"
+msgstr ""
+
+#: charonifc/translator.py:570
+msgid "Null Style"
+msgstr ""
+
+#: charonifc/translator.py:571
+msgid "Numeric Measure"
+msgstr ""
+
+#: charonifc/translator.py:572
+msgid "Object"
+msgstr ""
+
+#: charonifc/translator.py:573
+msgid "Object Definition"
+msgstr ""
+
+#: charonifc/translator.py:574
+msgid "Object Placement"
+msgstr ""
+
+#: charonifc/translator.py:575
+msgid "Object Reference Select"
+msgstr ""
+
+#: charonifc/translator.py:576
+msgid "Objective"
+msgstr ""
+
+#: charonifc/translator.py:577
+msgid "Occupant"
+msgstr ""
+
+#: charonifc/translator.py:578
+msgid "Offset Curve2 D"
+msgstr ""
+
+#: charonifc/translator.py:579
+msgid "Offset Curve3 D"
+msgstr ""
+
+#: charonifc/translator.py:580
+msgid "Open Shell"
+msgstr ""
+
+#: charonifc/translator.py:581
+msgid "Opening Element"
+msgstr ""
+
+#: charonifc/translator.py:582
+msgid "Opening Standard Case"
+msgstr ""
+
+#: charonifc/translator.py:583
+msgid "Organization"
+msgstr ""
+
+#: charonifc/translator.py:584
+msgid "Organization Relationship"
+msgstr ""
+
+#: charonifc/translator.py:585
+msgid "Oriented Edge"
+msgstr ""
+
+#: charonifc/translator.py:586
+msgid "Oriented Edge-temp"
+msgstr ""
+
+#: charonifc/translator.py:587
+msgid "Outer Boundary Curve"
+msgstr ""
+
+#: charonifc/translator.py:588
+msgid "Outlet"
+msgstr ""
+
+#: charonifc/translator.py:589
+msgid "Outlets"
+msgstr ""
+
+#: charonifc/translator.py:590
+msgid "Owner History"
+msgstr ""
+
+#: charonifc/translator.py:591
+msgid "P H Measure"
+msgstr ""
+
+#: charonifc/translator.py:592
+msgid "Parameter Value"
+msgstr ""
+
+#: charonifc/translator.py:593
+msgid "Parameterized Profile Def"
+msgstr ""
+
+#: charonifc/translator.py:594
+msgid "Path"
+msgstr ""
+
+#: charonifc/translator.py:596
+msgid "Performance History"
+msgstr ""
+
+#: charonifc/translator.py:597
+msgid "Permeable Covering Properties"
+msgstr ""
+
+#: charonifc/translator.py:598
+msgid "Permit"
+msgstr ""
+
+#: charonifc/translator.py:599
+msgid "Person"
+msgstr ""
+
+#: charonifc/translator.py:600
+msgid "Person And Organization"
+msgstr ""
+
+#: charonifc/translator.py:601
+msgid "Physical Complex Quantity"
+msgstr ""
+
+#: charonifc/translator.py:602
+msgid "Physical Quantity"
+msgstr ""
+
+#: charonifc/translator.py:603
+msgid "Physical Simple Quantity"
+msgstr ""
+
+#: charonifc/translator.py:604
+msgid "Pile"
+msgstr ""
+
+#: charonifc/translator.py:605
+msgid "Piles"
+msgstr ""
+
+#: charonifc/translator.py:606
+msgid "Pipe Fitting"
+msgstr ""
+
+#: charonifc/translator.py:607
+msgid "Pipe Fittings"
+msgstr ""
+
+#: charonifc/translator.py:608
+msgid "Pipe Segment"
+msgstr ""
+
+#: charonifc/translator.py:609
+msgid "Pipe Segments"
+msgstr ""
+
+#: charonifc/translator.py:610
+msgid "Pixel Texture"
+msgstr ""
+
+#: charonifc/translator.py:611
+msgid "Placement"
+msgstr ""
+
+#: charonifc/translator.py:612
+msgid "Planar Box"
+msgstr ""
+
+#: charonifc/translator.py:613
+msgid "Planar Extent"
+msgstr ""
+
+#: charonifc/translator.py:614
+msgid "Planar Force Measure"
+msgstr ""
+
+#: charonifc/translator.py:615
+msgid "Plane"
+msgstr ""
+
+#: charonifc/translator.py:616
+msgid "Plane Angle Measure"
+msgstr ""
+
+#: charonifc/translator.py:617
+msgid "Plate"
+msgstr ""
+
+#: charonifc/translator.py:618
+msgid "Plate Standard Case"
+msgstr ""
+
+#: charonifc/translator.py:619
+msgid "Plates"
+msgstr ""
+
+#: charonifc/translator.py:628
+msgid "Port"
+msgstr ""
+
+#: charonifc/translator.py:629
+msgid "Positive Integer"
+msgstr ""
+
+#: charonifc/translator.py:630
+msgid "Positive Length Measure"
+msgstr ""
+
+#: charonifc/translator.py:631
+msgid "Positive Plane Angle Measure"
+msgstr ""
+
+#: charonifc/translator.py:632
+msgid "Positive Ratio Measure"
+msgstr ""
+
+#: charonifc/translator.py:633
+msgid "Postal Address"
+msgstr ""
+
+#: charonifc/translator.py:634
+msgid "Power Measure"
+msgstr ""
+
+#: charonifc/translator.py:642
+msgid "Presentable Text"
+msgstr ""
+
+#: charonifc/translator.py:643
+msgid "Presentation Item"
+msgstr ""
+
+#: charonifc/translator.py:644
+msgid "Presentation Layer Assignment"
+msgstr ""
+
+#: charonifc/translator.py:645
+msgid "Presentation Layer With Style"
+msgstr ""
+
+#: charonifc/translator.py:646
+msgid "Presentation Style"
+msgstr ""
+
+#: charonifc/translator.py:647
+msgid "Presentation Style Assignment"
+msgstr ""
+
+#: charonifc/translator.py:648
+msgid "Presentation Style Select"
+msgstr ""
+
+#: charonifc/translator.py:649
+msgid "Pressure Measure"
+msgstr ""
+
+#: charonifc/translator.py:650
+msgid "Procedure"
+msgstr ""
+
+#: charonifc/translator.py:651
+msgid "Procedures"
+msgstr ""
+
+#: charonifc/translator.py:652
+msgid "Process"
+msgstr ""
+
+#: charonifc/translator.py:653
+msgid "Process Select"
+msgstr ""
+
+#: charonifc/translator.py:654
+msgid "Product"
+msgstr ""
+
+#: charonifc/translator.py:655
+msgid "Product Definition Shape"
+msgstr ""
+
+#: charonifc/translator.py:656
+msgid "Product Representation"
+msgstr ""
+
+#: charonifc/translator.py:657
+msgid "Product Representation Select"
+msgstr ""
+
+#: charonifc/translator.py:658
+msgid "Product Select"
+msgstr ""
+
+#: charonifc/translator.py:659
+msgid "Profile Def"
+msgstr ""
+
+#: charonifc/translator.py:660
+msgid "Profile Properties"
+msgstr ""
+
+#: charonifc/translator.py:661 charonifc/translator.py:1441
+msgid "Project"
+msgstr ""
+
+#: charonifc/translator.py:662
+msgid "Project Library"
+msgstr ""
+
+#: charonifc/translator.py:663
+msgid "Project Order"
+msgstr ""
+
+#: charonifc/translator.py:664
+msgid "Projected CRS"
+msgstr ""
+
+#: charonifc/translator.py:665
+msgid "Projection Element"
+msgstr ""
+
+#: charonifc/translator.py:666
+msgid "Property"
+msgstr ""
+
+#: charonifc/translator.py:667
+msgid "Property Abstraction"
+msgstr ""
+
+#: charonifc/translator.py:668
+msgid "Property Bounded Value"
+msgstr ""
+
+#: charonifc/translator.py:669
+msgid "Property Definition"
+msgstr ""
+
+#: charonifc/translator.py:670
+msgid "Property Dependency Relationship"
+msgstr ""
+
+#: charonifc/translator.py:671
+msgid "Property Enumerated Value"
+msgstr ""
+
+#: charonifc/translator.py:672
+msgid "Property Enumeration"
+msgstr ""
+
+#: charonifc/translator.py:673
+msgid "Property List Value"
+msgstr ""
+
+#: charonifc/translator.py:674
+msgid "Property Reference Value"
+msgstr ""
+
+#: charonifc/translator.py:675
+msgid "Property Set"
+msgstr ""
+
+#: charonifc/translator.py:676
+msgid "Property Set Definition"
+msgstr ""
+
+#: charonifc/translator.py:677
+msgid "Property Set Definition Select"
+msgstr ""
+
+#: charonifc/translator.py:678
+msgid "Property Set Definition Set"
+msgstr ""
+
+#: charonifc/translator.py:679
+msgid "Property Set Template"
+msgstr ""
+
+#: charonifc/translator.py:680
+msgid "Property Single Value"
+msgstr ""
+
+#: charonifc/translator.py:681
+msgid "Property Table Value"
+msgstr ""
+
+#: charonifc/translator.py:682
+msgid "Property Template"
+msgstr ""
+
+#: charonifc/translator.py:683
+msgid "Property Template Definition"
+msgstr ""
+
+#: charonifc/translator.py:684
+msgid "Protective Device"
+msgstr ""
+
+#: charonifc/translator.py:685
+msgid "Protective Device Tripping Unit"
+msgstr ""
+
+#: charonifc/translator.py:686
+msgid "Protective Device Tripping Units"
+msgstr ""
+
+#: charonifc/translator.py:687
+msgid "Protective Devices"
+msgstr ""
+
+#: charonifc/translator.py:688
+msgid "Proxy"
+msgstr ""
+
+#: charonifc/translator.py:689
+msgid "Pump"
+msgstr ""
+
+#: charonifc/translator.py:690
+msgid "Pumps"
+msgstr ""
+
+#: charonifc/translator.py:691
+msgid "Quantity Area"
+msgstr ""
+
+#: charonifc/translator.py:692
+msgid "Quantity Count"
+msgstr ""
+
+#: charonifc/translator.py:693
+msgid "Quantity Length"
+msgstr ""
+
+#: charonifc/translator.py:694
+msgid "Quantity Set"
+msgstr ""
+
+#: charonifc/translator.py:695
+msgid "Quantity Time"
+msgstr ""
+
+#: charonifc/translator.py:696
+msgid "Quantity Volume"
+msgstr ""
+
+#: charonifc/translator.py:697
+msgid "Quantity Weight"
+msgstr ""
+
+#: charonifc/translator.py:698
+msgid "Radio Activity Measure"
+msgstr ""
+
+#: charonifc/translator.py:699
+msgid "Railing"
+msgstr ""
+
+#: charonifc/translator.py:700
+msgid "Railings"
+msgstr ""
+
+#: charonifc/translator.py:701
+msgid "Ramp"
+msgstr ""
+
+#: charonifc/translator.py:702
+msgid "Ramp Flight"
+msgstr ""
+
+#: charonifc/translator.py:703
+msgid "Ramp Flights"
+msgstr ""
+
+#: charonifc/translator.py:704
+msgid "Ramps"
+msgstr ""
+
+#: charonifc/translator.py:705
+msgid "Ratio Measure"
+msgstr ""
+
+#: charonifc/translator.py:708
+msgid "Real"
+msgstr ""
+
+#: charonifc/translator.py:713
+msgid "Recurrence Pattern"
+msgstr ""
+
+#: charonifc/translator.py:714 charonifc/translator.py:1244
+msgid "Reference"
+msgstr ""
+
+#: charonifc/translator.py:715
+msgid "Regular Time Series"
+msgstr ""
+
+#: charonifc/translator.py:716
+msgid "Reinforcement Bar Properties"
+msgstr ""
+
+#: charonifc/translator.py:717
+msgid "Reinforcement Definition Properties"
+msgstr ""
+
+#: charonifc/translator.py:718
+msgid "Reinforcing Bar"
+msgstr ""
+
+#: charonifc/translator.py:719
+msgid "Reinforcing Bars"
+msgstr ""
+
+#: charonifc/translator.py:720
+msgid "Reinforcing Element"
+msgstr ""
+
+#: charonifc/translator.py:721
+msgid "Reinforcing Elements"
+msgstr ""
+
+#: charonifc/translator.py:722
+msgid "Reinforcing Mesh"
+msgstr ""
+
+#: charonifc/translator.py:723
+msgid "Reinforcing Meshs"
+msgstr ""
+
+#: charonifc/translator.py:771
+msgid "Relationship"
+msgstr ""
+
+#: charonifc/translator.py:772
+msgid "Reparametrised Composite Curve Segment"
+msgstr ""
+
+#: charonifc/translator.py:773
+msgid "Representation"
+msgstr ""
+
+#: charonifc/translator.py:774
+msgid "Representation Context"
+msgstr ""
+
+#: charonifc/translator.py:775
+msgid "Representation Item"
+msgstr ""
+
+#: charonifc/translator.py:776
+msgid "Representation Map"
+msgstr ""
+
+#: charonifc/translator.py:777
+msgid "Resource"
+msgstr ""
+
+#: charonifc/translator.py:778
+msgid "Resource Approval Relationship"
+msgstr ""
+
+#: charonifc/translator.py:779
+msgid "Resource Constraint Relationship"
+msgstr ""
+
+#: charonifc/translator.py:780
+msgid "Resource Level Relationship"
+msgstr ""
+
+#: charonifc/translator.py:781
+msgid "Resource Object Select"
+msgstr ""
+
+#: charonifc/translator.py:782
+msgid "Resource Select"
+msgstr ""
+
+#: charonifc/translator.py:783
+msgid "Resource Time"
+msgstr ""
+
+#: charonifc/translator.py:784
+msgid "Revolved Area Solid"
+msgstr ""
+
+#: charonifc/translator.py:785
+msgid "Revolved Area Solid Tapered"
+msgstr ""
+
+#: charonifc/translator.py:786
+msgid "Right Circular Cone"
+msgstr ""
+
+#: charonifc/translator.py:787
+msgid "Right Circular Cylinder"
+msgstr ""
+
+#: charonifc/translator.py:788
+msgid "Roof"
+msgstr ""
+
+#: charonifc/translator.py:789
+msgid "Roofs"
+msgstr ""
+
+#: charonifc/translator.py:790
+msgid "Root"
+msgstr ""
+
+#: charonifc/translator.py:791
+msgid "Rotational Frequency Measure"
+msgstr ""
+
+#: charonifc/translator.py:792
+msgid "Rotational Mass Measure"
+msgstr ""
+
+#: charonifc/translator.py:793
+msgid "Rotational Stiffness Measure"
+msgstr ""
+
+#: charonifc/translator.py:794
+msgid "Rotational Stiffness Select"
+msgstr ""
+
+#: charonifc/translator.py:795
+msgid "Rounded Rectangle Profile Def"
+msgstr ""
+
+#: charonifc/translator.py:796
+msgid "S I Prefix"
+msgstr ""
+
+#: charonifc/translator.py:797
+msgid "S I Unit"
+msgstr ""
+
+#: charonifc/translator.py:798
+msgid "S I Unit-temp"
+msgstr ""
+
+#: charonifc/translator.py:799
+msgid "S I Unit Name"
+msgstr ""
+
+#: charonifc/translator.py:800
+msgid "Sanitary Terminal"
+msgstr ""
+
+#: charonifc/translator.py:801
+msgid "Sanitary Terminals"
+msgstr ""
+
+#: charonifc/translator.py:802
+msgid "Scheduling Time"
+msgstr ""
+
+#: charonifc/translator.py:803
+msgid "Seam Curve"
+msgstr ""
+
+#: charonifc/translator.py:804
+msgid "Section Modulus Measure"
+msgstr ""
+
+#: charonifc/translator.py:805
+msgid "Section Properties"
+msgstr ""
+
+#: charonifc/translator.py:806
+msgid "Section Reinforcement Properties"
+msgstr ""
+
+#: charonifc/translator.py:807
+msgid "Sectional Area Integral Measure"
+msgstr ""
+
+#: charonifc/translator.py:808
+msgid "Sectioned Spine"
+msgstr ""
+
+#: charonifc/translator.py:809
+msgid "Segment Index Select"
+msgstr ""
+
+#: charonifc/translator.py:810
+msgid "Sensor"
+msgstr ""
+
+#: charonifc/translator.py:811
+msgid "Sensors"
+msgstr ""
+
+#: charonifc/translator.py:812
+msgid "Shading Device"
+msgstr ""
+
+#: charonifc/translator.py:813
+msgid "Shading Devices"
+msgstr ""
+
+#: charonifc/translator.py:814
+msgid "Shape Aspect"
+msgstr ""
+
+#: charonifc/translator.py:815
+msgid "Shape Model"
+msgstr ""
+
+#: charonifc/translator.py:816
+msgid "Shape Representation"
+msgstr ""
+
+#: charonifc/translator.py:817
+msgid "Shear Modulus Measure"
+msgstr ""
+
+#: charonifc/translator.py:818
+msgid "Shell"
+msgstr ""
+
+#: charonifc/translator.py:819
+msgid "Shell Based Surface Model"
+msgstr ""
+
+#: charonifc/translator.py:820
+msgid "Simple Property"
+msgstr ""
+
+#: charonifc/translator.py:821
+msgid "Simple Property Template"
+msgstr ""
+
+#: charonifc/translator.py:822
+msgid "Simple Value"
+msgstr ""
+
+#: charonifc/translator.py:823 charonifc/translator.py:1444
+msgid "Site"
+msgstr ""
+
+#: charonifc/translator.py:824
+msgid "Size Select"
+msgstr ""
+
+#: charonifc/translator.py:825
+msgid "Slab"
+msgstr ""
+
+#: charonifc/translator.py:826
+msgid "Slab Elemented Case"
+msgstr ""
+
+#: charonifc/translator.py:827
+msgid "Slab Standard Case"
+msgstr ""
+
+#: charonifc/translator.py:828
+msgid "Slabs"
+msgstr ""
+
+#: charonifc/translator.py:829
+msgid "Slippage Connection Condition"
+msgstr ""
+
+#: charonifc/translator.py:830
+msgid "Solar Device"
+msgstr ""
+
+#: charonifc/translator.py:831
+msgid "Solar Devices"
+msgstr ""
+
+#: charonifc/translator.py:832
+msgid "Solid Angle Measure"
+msgstr ""
+
+#: charonifc/translator.py:833
+msgid "Solid Model"
+msgstr ""
+
+#: charonifc/translator.py:834
+msgid "Solid Or Shell"
+msgstr ""
+
+#: charonifc/translator.py:835
+msgid "Sound Power Level Measure"
+msgstr ""
+
+#: charonifc/translator.py:836
+msgid "Sound Power Measure"
+msgstr ""
+
+#: charonifc/translator.py:837
+msgid "Sound Pressure Level Measure"
+msgstr ""
+
+#: charonifc/translator.py:838
+msgid "Sound Pressure Measure"
+msgstr ""
+
+#: charonifc/translator.py:839 charonifc/translator.py:1447
+msgid "Space"
+msgstr ""
+
+#: charonifc/translator.py:840
+msgid "Space Boundary Select"
+msgstr ""
+
+#: charonifc/translator.py:841
+msgid "Space Heater"
+msgstr ""
+
+#: charonifc/translator.py:842
+msgid "Space Heaters"
+msgstr ""
+
+#: charonifc/translator.py:843
+msgid "Spaces"
+msgstr ""
+
+#: charonifc/translator.py:844
+msgid "Spatial Element"
+msgstr ""
+
+#: charonifc/translator.py:845
+msgid "Spatial Elements"
+msgstr ""
+
+#: charonifc/translator.py:846
+msgid "Spatial Structure Element"
+msgstr ""
+
+#: charonifc/translator.py:847
+msgid "Spatial Structure Elements"
+msgstr ""
+
+#: charonifc/translator.py:848
+msgid "Spatial Zone"
+msgstr ""
+
+#: charonifc/translator.py:849
+msgid "Spatial Zones"
+msgstr ""
+
+#: charonifc/translator.py:850
+msgid "Specific Heat Capacity Measure"
+msgstr ""
+
+#: charonifc/translator.py:851
+msgid "Specular Exponent"
+msgstr ""
+
+#: charonifc/translator.py:852
+msgid "Specular Highlight Select"
+msgstr ""
+
+#: charonifc/translator.py:853
+msgid "Specular Roughness"
+msgstr ""
+
+#: charonifc/translator.py:854
+msgid "Sphere"
+msgstr ""
+
+#: charonifc/translator.py:855
+msgid "Spherical Surface"
+msgstr ""
+
+#: charonifc/translator.py:856
+msgid "Stack Terminal"
+msgstr ""
+
+#: charonifc/translator.py:857
+msgid "Stack Terminals"
+msgstr ""
+
+#: charonifc/translator.py:858
+msgid "Stair"
+msgstr ""
+
+#: charonifc/translator.py:859
+msgid "Stair Flight"
+msgstr ""
+
+#: charonifc/translator.py:860
+msgid "Stair Flights"
+msgstr ""
+
+#: charonifc/translator.py:861
+msgid "Stairs"
+msgstr ""
+
+#: charonifc/translator.py:862
+msgid "Structural Action"
+msgstr ""
+
+#: charonifc/translator.py:863
+msgid "Structural Activity"
+msgstr ""
+
+#: charonifc/translator.py:864
+msgid "Structural Activity Assignment Select"
+msgstr ""
+
+#: charonifc/translator.py:865
+msgid "Structural Analysis Model"
+msgstr ""
+
+#: charonifc/translator.py:866
+msgid "Structural Connection"
+msgstr ""
+
+#: charonifc/translator.py:867
+msgid "Structural Connection Condition"
+msgstr ""
+
+#: charonifc/translator.py:868
+msgid "Structural Curve Action"
+msgstr ""
+
+#: charonifc/translator.py:869
+msgid "Structural Curve Connection"
+msgstr ""
+
+#: charonifc/translator.py:870
+msgid "Structural Curve Member"
+msgstr ""
+
+#: charonifc/translator.py:871
+msgid "Structural Curve Member Varying"
+msgstr ""
+
+#: charonifc/translator.py:872
+msgid "Structural Curve Reaction"
+msgstr ""
+
+#: charonifc/translator.py:873
+msgid "Structural Item"
+msgstr ""
+
+#: charonifc/translator.py:874
+msgid "Structural Linear Action"
+msgstr ""
+
+#: charonifc/translator.py:875
+msgid "Structural Load"
+msgstr ""
+
+#: charonifc/translator.py:876
+msgid "Structural Load Case"
+msgstr ""
+
+#: charonifc/translator.py:877
+msgid "Structural Load Configuration"
+msgstr ""
+
+#: charonifc/translator.py:878
+msgid "Structural Load Group"
+msgstr ""
+
+#: charonifc/translator.py:879
+msgid "Structural Load Linear Force"
+msgstr ""
+
+#: charonifc/translator.py:880
+msgid "Structural Load Or Result"
+msgstr ""
+
+#: charonifc/translator.py:881
+msgid "Structural Load Planar Force"
+msgstr ""
+
+#: charonifc/translator.py:882
+msgid "Structural Load Single Displacement"
+msgstr ""
+
+#: charonifc/translator.py:883
+msgid "Structural Load Single Displacement Distortion"
+msgstr ""
+
+#: charonifc/translator.py:884
+msgid "Structural Load Single Force"
+msgstr ""
+
+#: charonifc/translator.py:885
+msgid "Structural Load Single Force Warping"
+msgstr ""
+
+#: charonifc/translator.py:886
+msgid "Structural Load Static"
+msgstr ""
+
+#: charonifc/translator.py:887
+msgid "Structural Load Temperature"
+msgstr ""
+
+#: charonifc/translator.py:888
+msgid "Structural Member"
+msgstr ""
+
+#: charonifc/translator.py:889
+msgid "Structural Planar Action"
+msgstr ""
+
+#: charonifc/translator.py:890
+msgid "Structural Point Action"
+msgstr ""
+
+#: charonifc/translator.py:891
+msgid "Structural Point Connection"
+msgstr ""
+
+#: charonifc/translator.py:892
+msgid "Structural Point Reaction"
+msgstr ""
+
+#: charonifc/translator.py:893
+msgid "Structural Reaction"
+msgstr ""
+
+#: charonifc/translator.py:894
+msgid "Structural Result Group"
+msgstr ""
+
+#: charonifc/translator.py:895
+msgid "Structural Surface Action"
+msgstr ""
+
+#: charonifc/translator.py:896
+msgid "Structural Surface Connection"
+msgstr ""
+
+#: charonifc/translator.py:897
+msgid "Structural Surface Member"
+msgstr ""
+
+#: charonifc/translator.py:898
+msgid "Structural Surface Member Varying"
+msgstr ""
+
+#: charonifc/translator.py:899
+msgid "Structural Surface Reaction"
+msgstr ""
+
+#: charonifc/translator.py:900
+msgid "Style Assignment Select"
+msgstr ""
+
+#: charonifc/translator.py:901
+msgid "Style Model"
+msgstr ""
+
+#: charonifc/translator.py:902
+msgid "Styled Item"
+msgstr ""
+
+#: charonifc/translator.py:903
+msgid "Styled Representation"
+msgstr ""
+
+#: charonifc/translator.py:904
+msgid "Sub Contract Resource"
+msgstr ""
+
+#: charonifc/translator.py:905
+msgid "Sub Contract Resources"
+msgstr ""
+
+#: charonifc/translator.py:907
+msgid "Surface"
+msgstr ""
+
+#: charonifc/translator.py:928
+msgid "Switching Device"
+msgstr ""
+
+#: charonifc/translator.py:929
+msgid "Switching Devices"
+msgstr ""
+
+#: charonifc/translator.py:930
+msgid "System"
+msgstr ""
+
+#: charonifc/translator.py:931
+msgid "System Furniture Element"
+msgstr ""
+
+#: charonifc/translator.py:932
+msgid "System Furniture Elements"
+msgstr ""
+
+#: charonifc/translator.py:933
+msgid "T Shape Profile Def"
+msgstr ""
+
+#: charonifc/translator.py:934
+msgid "Table"
+msgstr ""
+
+#: charonifc/translator.py:935
+msgid "Table Column"
+msgstr ""
+
+#: charonifc/translator.py:936
+msgid "Table Row"
+msgstr ""
+
+#: charonifc/translator.py:937
+msgid "Tank"
+msgstr ""
+
+#: charonifc/translator.py:938
+msgid "Tanks"
+msgstr ""
+
+#: charonifc/translator.py:939
+msgid "Task"
+msgstr ""
+
+#: charonifc/translator.py:940
+msgid "Task Time"
+msgstr ""
+
+#: charonifc/translator.py:941
+msgid "Task Time Recurring"
+msgstr ""
+
+#: charonifc/translator.py:942
+msgid "Tasks"
+msgstr ""
+
+#: charonifc/translator.py:943
+msgid "Telecom Address"
+msgstr ""
+
+#: charonifc/translator.py:944
+msgid "Temperature Gradient Measure"
+msgstr ""
+
+#: charonifc/translator.py:945
+msgid "Temperature Rate Of Change Measure"
+msgstr ""
+
+#: charonifc/translator.py:946
+msgid "Tendon"
+msgstr ""
+
+#: charonifc/translator.py:947
+msgid "Tendon Anchor"
+msgstr ""
+
+#: charonifc/translator.py:948
+msgid "Tendon Anchors"
+msgstr ""
+
+#: charonifc/translator.py:949
+msgid "Tendons"
+msgstr ""
+
+#: charonifc/translator.py:970
+msgid "Thermal Admittance Measure"
+msgstr ""
+
+#: charonifc/translator.py:971
+msgid "Thermal Conductivity Measure"
+msgstr ""
+
+#: charonifc/translator.py:972
+msgid "Thermal Expansion Coefficient Measure"
+msgstr ""
+
+#: charonifc/translator.py:973
+msgid "Thermal Resistance Measure"
+msgstr ""
+
+#: charonifc/translator.py:974
+msgid "Thermal Transmittance Measure"
+msgstr ""
+
+#: charonifc/translator.py:975
+msgid "Thermodynamic Temperature Measure"
+msgstr ""
+
+#: charonifc/translator.py:976
+msgid "Time"
+msgstr ""
+
+#: charonifc/translator.py:977
+msgid "Time Measure"
+msgstr ""
+
+#: charonifc/translator.py:978
+msgid "Time Or Ratio Select"
+msgstr ""
+
+#: charonifc/translator.py:979
+msgid "Time Period"
+msgstr ""
+
+#: charonifc/translator.py:982
+msgid "Time Stamp"
+msgstr ""
+
+#: charonifc/translator.py:983
+msgid "Topological Representation Item"
+msgstr ""
+
+#: charonifc/translator.py:984
+msgid "Topology Representation"
+msgstr ""
+
+#: charonifc/translator.py:985
+msgid "Toroidal Surface"
+msgstr ""
+
+#: charonifc/translator.py:986
+msgid "Torque Measure"
+msgstr ""
+
+#: charonifc/translator.py:987
+msgid "Transformer"
+msgstr ""
+
+#: charonifc/translator.py:988
+msgid "Transformers"
+msgstr ""
+
+#: charonifc/translator.py:989
+msgid "Transition Code"
+msgstr ""
+
+#: charonifc/translator.py:990
+msgid "Translational Stiffness Select"
+msgstr ""
+
+#: charonifc/translator.py:991
+msgid "Transport Element"
+msgstr ""
+
+#: charonifc/translator.py:992
+msgid "Transport Elements"
+msgstr ""
+
+#: charonifc/translator.py:993
+msgid "Trapezium Profile Def"
+msgstr ""
+
+#: charonifc/translator.py:994
+msgid "Triangulated Face Set"
+msgstr ""
+
+#: charonifc/translator.py:995
+msgid "Trimmed Curve"
+msgstr ""
+
+#: charonifc/translator.py:996
+msgid "Trimming Preference"
+msgstr ""
+
+#: charonifc/translator.py:997
+msgid "Trimming Select"
+msgstr ""
+
+#: charonifc/translator.py:998
+msgid "Tube Bundle"
+msgstr ""
+
+#: charonifc/translator.py:999
+msgid "Tube Bundles"
+msgstr ""
+
+#: charonifc/translator.py:1000
+msgid "Type Object"
+msgstr ""
+
+#: charonifc/translator.py:1001
+msgid "Type Process"
+msgstr ""
+
+#: charonifc/translator.py:1002
+msgid "Type Product"
+msgstr ""
+
+#: charonifc/translator.py:1003
+msgid "Type Resource"
+msgstr ""
+
+#: charonifc/translator.py:1004
+msgid "U R I Reference"
+msgstr ""
+
+#: charonifc/translator.py:1005
+msgid "U Shape Profile Def"
+msgstr ""
+
+#: charonifc/translator.py:1006
+msgid "Unit"
+msgstr ""
+
+#: charonifc/translator.py:1007
+msgid "Unit Assignment"
+msgstr ""
+
+#: charonifc/translator.py:1008
+msgid "Unitary Control Element"
+msgstr ""
+
+#: charonifc/translator.py:1009
+msgid "Unitary Control Elements"
+msgstr ""
+
+#: charonifc/translator.py:1010
+msgid "Unitary Equipment"
+msgstr ""
+
+#: charonifc/translator.py:1011
+msgid "Unitary Equipments"
+msgstr ""
+
+#: charonifc/translator.py:1012 charonifc/translator.py:1399
+msgid "Value"
+msgstr ""
+
+#: charonifc/translator.py:1013
+msgid "Valve"
+msgstr ""
+
+#: charonifc/translator.py:1014
+msgid "Valves"
+msgstr ""
+
+#: charonifc/translator.py:1015
+msgid "Vapor Permeability Measure"
+msgstr ""
+
+#: charonifc/translator.py:1016
+msgid "Vector"
+msgstr ""
+
+#: charonifc/translator.py:1017
+msgid "Vector Or Direction"
+msgstr ""
+
+#: charonifc/translator.py:1018
+msgid "Vertex"
+msgstr ""
+
+#: charonifc/translator.py:1019
+msgid "Vertex Loop"
+msgstr ""
+
+#: charonifc/translator.py:1020
+msgid "Vertex Point"
+msgstr ""
+
+#: charonifc/translator.py:1021
+msgid "Vibration Isolator"
+msgstr ""
+
+#: charonifc/translator.py:1022
+msgid "Vibration Isolators"
+msgstr ""
+
+#: charonifc/translator.py:1023
+msgid "Virtual Element"
+msgstr ""
+
+#: charonifc/translator.py:1024
+msgid "Virtual Grid Intersection"
+msgstr ""
+
+#: charonifc/translator.py:1025
+msgid "Voiding Feature"
+msgstr ""
+
+#: charonifc/translator.py:1026
+msgid "Volume Measure"
+msgstr ""
+
+#: charonifc/translator.py:1027
+msgid "Volumetric Flow Rate Measure"
+msgstr ""
+
+#: charonifc/translator.py:1028
+msgid "Wall"
+msgstr ""
+
+#: charonifc/translator.py:1029
+msgid "Wall Elemented Case"
+msgstr ""
+
+#: charonifc/translator.py:1030
+msgid "Wall Standard Case"
+msgstr ""
+
+#: charonifc/translator.py:1031
+msgid "Walls"
+msgstr ""
+
+#: charonifc/translator.py:1032
+msgid "Warping Constant Measure"
+msgstr ""
+
+#: charonifc/translator.py:1033
+msgid "Warping Moment Measure"
+msgstr ""
+
+#: charonifc/translator.py:1034
+msgid "Warping Stiffness Select"
+msgstr ""
+
+#: charonifc/translator.py:1035
+msgid "Waste Terminal"
+msgstr ""
+
+#: charonifc/translator.py:1036
+msgid "Waste Terminals"
+msgstr ""
+
+#: charonifc/translator.py:1037
+msgid "Window"
+msgstr ""
+
+#: charonifc/translator.py:1038
+msgid "Window Lining Properties"
+msgstr ""
+
+#: charonifc/translator.py:1039
+msgid "Window Panel Properties"
+msgstr ""
+
+#: charonifc/translator.py:1040
+msgid "Window Standard Case"
+msgstr ""
+
+#: charonifc/translator.py:1041
+msgid "Window Style"
+msgstr ""
+
+#: charonifc/translator.py:1042
+msgid "Windows"
+msgstr ""
+
+#: charonifc/translator.py:1043
+msgid "Work Calendar"
+msgstr ""
+
+#: charonifc/translator.py:1044
+msgid "Work Control"
+msgstr ""
+
+#: charonifc/translator.py:1045
+msgid "Work Plan"
+msgstr ""
+
+#: charonifc/translator.py:1046
+msgid "Work Schedule"
+msgstr ""
+
+#: charonifc/translator.py:1047
+msgid "Work Time"
+msgstr ""
+
+#: charonifc/translator.py:1048
+msgid "Z Shape Profile Def"
+msgstr ""
+
+#: charonifc/translator.py:1049
+msgid "Zone"
+msgstr ""
+
+#: charonifc/translator.py:1052
+msgid "ABSORBEDDOSEUNIT"
+msgstr ""
+
+#: charonifc/translator.py:1053
+msgid "m/s^2"
+msgstr ""
+
+#: charonifc/translator.py:1054
+msgid "AMOUNTOFSUBSTANCEUNIT"
+msgstr ""
+
+#: charonifc/translator.py:1055
+msgid "ANGULARVELOCITYUNIT"
+msgstr ""
+
+#: charonifc/translator.py:1056
+msgid "AREADENSITYUNIT"
+msgstr ""
+
+#: charonifc/translator.py:1057
+msgid "m^2"
+msgstr ""
+
+#: charonifc/translator.py:1058
+msgid "COMPOUNDPLANEANGLEUNIT"
+msgstr ""
+
+#: charonifc/translator.py:1059
+msgid "CURVATUREUNIT"
+msgstr ""
+
+#: charonifc/translator.py:1060
+msgid "DOSEEQUIVALENTUNIT"
+msgstr ""
+
+#: charonifc/translator.py:1061
+msgid "DYNAMICVISCOSITYUNIT"
+msgstr ""
+
+#: charonifc/translator.py:1062
+msgid "F"
+msgstr ""
+
+#: charonifc/translator.py:1063
+msgid "C"
+msgstr ""
+
+#: charonifc/translator.py:1064
+msgid "S"
+msgstr ""
+
+#: charonifc/translator.py:1065
+msgid "A"
+msgstr ""
+
+#: charonifc/translator.py:1066
+msgid "Ω"
+msgstr ""
+
+#: charonifc/translator.py:1067
+msgid "V"
+msgstr ""
+
+#: charonifc/translator.py:1068
+msgid "J"
+msgstr ""
+
+#: charonifc/translator.py:1069
+msgid "N"
+msgstr ""
+
+#: charonifc/translator.py:1070
+msgid "Hz"
+msgstr ""
+
+#: charonifc/translator.py:1071
+msgid "HEATFLUXDENSITYUNIT"
+msgstr ""
+
+#: charonifc/translator.py:1072
+msgid "kJ/kg"
+msgstr ""
+
+#: charonifc/translator.py:1073
+msgid "lm"
+msgstr ""
+
+#: charonifc/translator.py:1074
+msgid "H"
+msgstr ""
+
+#: charonifc/translator.py:1075
+msgid "INTEGERCOUNTRATEUNIT"
+msgstr ""
+
+#: charonifc/translator.py:1076
+msgid "IONCONCENTRATIONUNIT"
+msgstr ""
+
+#: charonifc/translator.py:1077
+msgid "ISOTHERMALMOISTURECAPACITYUNIT"
+msgstr ""
+
+#: charonifc/translator.py:1078
+msgid "KINEMATICVISCOSITYUNIT"
+msgstr ""
+
+#: charonifc/translator.py:1079
+msgid "m"
+msgstr ""
+
+#: charonifc/translator.py:1080 charonifc/translator.py:1127
+msgid "N⋅m"
+msgstr ""
+
+#: charonifc/translator.py:1081
+msgid "kg⋅m/s"
+msgstr ""
+
+#: charonifc/translator.py:1082
+msgid "LINEARSTIFFNESSUNIT"
+msgstr ""
+
+#: charonifc/translator.py:1083
+msgid "LINEARVELOCITYUNIT"
+msgstr ""
+
+#: charonifc/translator.py:1084
+msgid "Lux"
+msgstr ""
+
+#: charonifc/translator.py:1085
+msgid "LUMINOUSINTENSITYDISTRIBUTIONUNIT"
+msgstr ""
+
+#: charonifc/translator.py:1086
+msgid "LUMINOUSINTENSITYUNIT"
+msgstr ""
+
+#: charonifc/translator.py:1087
+msgid "MAGNETICFLUXDENSITYUNIT"
+msgstr ""
+
+#: charonifc/translator.py:1088
+msgid "MAGNETICFLUXUNIT"
+msgstr ""
+
+#: charonifc/translator.py:1089
+msgid "MASSDENSITYUNIT"
+msgstr ""
+
+#: charonifc/translator.py:1090
+msgid "MASSFLOWRATEUNIT"
+msgstr ""
+
+#: charonifc/translator.py:1091
+msgid "MASSPERLENGTHUNIT"
+msgstr ""
+
+#: charonifc/translator.py:1092
+msgid "kg"
+msgstr ""
+
+#: charonifc/translator.py:1093
+msgid "MODULUSOFELASTICITYUNIT"
+msgstr ""
+
+#: charonifc/translator.py:1094
+msgid "MODULUSOFLINEARSUBGRADEREACTIONUNIT"
+msgstr ""
+
+#: charonifc/translator.py:1095
+msgid "MODULUSOFROTATIONALSUBGRADEREACTIONUNIT"
+msgstr ""
+
+#: charonifc/translator.py:1096
+msgid "MODULUSOFSUBGRADEREACTIONUNIT"
+msgstr ""
+
+#: charonifc/translator.py:1097
+msgid "MOISTUREDIFFUSIVITYUNIT"
+msgstr ""
+
+#: charonifc/translator.py:1098
+msgid "MOLECULARWEIGHTUNIT"
+msgstr ""
+
+#: charonifc/translator.py:1099
+msgid "MOMENTORINERTIAUNIT"
+msgstr ""
+
+#: charonifc/translator.py:1100
+msgid "PHUNIT"
+msgstr ""
+
+#: charonifc/translator.py:1101
+msgid "PLANARFORCEUNIT"
+msgstr ""
+
+#: charonifc/translator.py:1102
+msgid "PLANEANGLEUNIT"
+msgstr ""
+
+#: charonifc/translator.py:1103 charonifc/translator.py:1114
+msgid "W"
+msgstr ""
+
+#: charonifc/translator.py:1104 charonifc/translator.py:1116
+msgid "Pa"
+msgstr ""
+
+#: charonifc/translator.py:1105
+msgid "Bq"
+msgstr ""
+
+#: charonifc/translator.py:1106
+msgid "ROTATIONALFREQUENCYUNIT"
+msgstr ""
+
+#: charonifc/translator.py:1107
+msgid "ROTATIONALMASSUNIT"
+msgstr ""
+
+#: charonifc/translator.py:1108
+msgid "ROTATIONALSTIFFNESSUNIT"
+msgstr ""
+
+#: charonifc/translator.py:1109
+msgid "SECTIONAREAINTEGRALUNIT"
+msgstr ""
+
+#: charonifc/translator.py:1110
+msgid "SECTIONMODULUSUNIT"
+msgstr ""
+
+#: charonifc/translator.py:1111
+msgid "SHEARMODULUSUNIT"
+msgstr ""
+
+#: charonifc/translator.py:1112
+msgid "SOLIDANGLEUNIT"
+msgstr ""
+
+#: charonifc/translator.py:1113 charonifc/translator.py:1115
+msgid "dB"
+msgstr ""
+
+#: charonifc/translator.py:1117
+msgid "SPECIFICHEATCAPACITYUNIT"
+msgstr ""
+
+#: charonifc/translator.py:1118
+msgid "TEMPERATUREGRADIENTUNIT"
+msgstr ""
+
+#: charonifc/translator.py:1119
+msgid "TEMPERATURERATEOFCHANGEUNIT"
+msgstr ""
+
+#: charonifc/translator.py:1120
+msgid "THERMALADMITTANCEUNIT"
+msgstr ""
+
+#: charonifc/translator.py:1121
+msgid "THERMALCONDUCTANCEUNIT"
+msgstr ""
+
+#: charonifc/translator.py:1122
+msgid "THERMALEXPANSIONCOEFFICIENTUNIT"
+msgstr ""
+
+#: charonifc/translator.py:1123
+msgid "THERMALRESISTANCEUNIT"
+msgstr ""
+
+#: charonifc/translator.py:1124
+msgid "THERMALTRANSMITTANCEUNIT"
+msgstr ""
+
+#: charonifc/translator.py:1125
+msgid "THERMODYNAMICTEMPERATUREUNIT"
+msgstr ""
+
+#: charonifc/translator.py:1126
+msgid "TIMEUNIT"
+msgstr ""
+
+#: charonifc/translator.py:1128
+msgid "USERDEFINED"
+msgstr ""
+
+#: charonifc/translator.py:1129
+msgid "VAPORPERMEABILITYUNIT"
+msgstr ""
+
+#: charonifc/translator.py:1130
+msgid "VOLUMETRICFLOWRATEUNIT"
+msgstr ""
+
+#: charonifc/translator.py:1131
+msgid "m^3"
+msgstr ""
+
+#: charonifc/translator.py:1132
+msgid "WARPINGCONSTANTUNIT"
+msgstr ""
+
+#: charonifc/translator.py:1133
+msgid "WARPINGMOMENTUNIT"
+msgstr ""
+
+#: charonifc/translator.py:1137
+msgid "Manufacturer Information"
+msgstr ""
+
+#: charonifc/translator.py:1138
+msgid "Air Terminal Properties"
+msgstr ""
+
+#: charonifc/translator.py:1139
+msgid "Audio-Video Properties"
+msgstr ""
+
+#: charonifc/translator.py:1140
+msgid "Electrical Properties"
+msgstr ""
+
+#: charonifc/translator.py:1141
+msgid "Communication Appliance Properties"
+msgstr ""
+
+#: charonifc/translator.py:1142
+msgid "Fire Suppression Terminal Properties"
+msgstr ""
+
+#: charonifc/translator.py:1143
+msgid "Lamp Properties"
+msgstr ""
+
+#: charonifc/translator.py:1144
+msgid "Light Fixture Properties"
+msgstr ""
+
+#: charonifc/translator.py:1145
+msgid "Light Fixture Thermal Properties"
+msgstr ""
+
+#: charonifc/translator.py:1146
+msgid "Medical Device Properties"
+msgstr ""
+
+#: charonifc/translator.py:1147
+msgid "Outlet Properties"
+msgstr ""
+
+#: charonifc/translator.py:1148 charonifc/translator.py:1210
+msgid "Waste Disposal Unit Properties"
+msgstr ""
+
+#: charonifc/translator.py:1149
+msgid "Space Heater Properties"
+msgstr ""
+
+#: charonifc/translator.py:1150 charonifc/translator.py:1211
+msgid "Waste Trap Properties"
+msgstr ""
+
+#: charonifc/translator.py:1151
+msgid "Curtain Wall Properties"
+msgstr ""
+
+#: charonifc/translator.py:1152
+msgid "Building Element Proxy Properties"
+msgstr ""
+
+#: charonifc/translator.py:1153
+msgid "Pipe Fitting Properties"
+msgstr ""
+
+#: charonifc/translator.py:1154
+msgid "Pipe Segment Properties"
+msgstr ""
+
+#: charonifc/translator.py:1155
+msgid "Plate Properties"
+msgstr ""
+
+#: charonifc/translator.py:1156
+msgid "Valve Properties"
+msgstr ""
+
+#: charonifc/translator.py:1160
+msgid "Amplifier Properties"
+msgstr ""
+
+#: charonifc/translator.py:1161
+msgid "Camera Properties"
+msgstr ""
+
+#: charonifc/translator.py:1162
+msgid "Display Properties"
+msgstr ""
+
+#: charonifc/translator.py:1163
+msgid "Player Properties"
+msgstr ""
+
+#: charonifc/translator.py:1164
+msgid "Projector Properties"
+msgstr ""
+
+#: charonifc/translator.py:1165
+msgid "Receiver Properties"
+msgstr ""
+
+#: charonifc/translator.py:1166
+msgid "Speaker Properties"
+msgstr ""
+
+#: charonifc/translator.py:1167
+msgid "Tuner Properties"
+msgstr ""
+
+#: charonifc/translator.py:1168
+msgid "Beam Common Properties"
+msgstr ""
+
+#: charonifc/translator.py:1169
+msgid "Building Storey Common Properties"
+msgstr ""
+
+#: charonifc/translator.py:1170
+msgid "Column Common Properties"
+msgstr ""
+
+#: charonifc/translator.py:1171
+msgid "Air Conditioning Properties"
+msgstr ""
+
+#: charonifc/translator.py:1172 charonifc/translator.py:1173
+msgid "Electric Board Properties"
+msgstr ""
+
+#: charonifc/translator.py:1174
+msgid "Breeching Inlet Properties"
+msgstr ""
+
+#: charonifc/translator.py:1175
+msgid "Fire Hydrant Properties"
+msgstr ""
+
+#: charonifc/translator.py:1176
+msgid "Hose Reel Properties"
+msgstr ""
+
+#: charonifc/translator.py:1177
+msgid "Sprinkler Properties"
+msgstr ""
+
+#: charonifc/translator.py:1178
+msgid "Security Lighting Properties"
+msgstr ""
+
+#: charonifc/translator.py:1179
+msgid "Member Common Properties"
+msgstr ""
+
+#: charonifc/translator.py:1180
+msgid "Cluvert Pipe Segment Properties"
+msgstr ""
+
+#: charonifc/translator.py:1181
+msgid "Gutter Pipe Segment Properties"
+msgstr ""
+
+#: charonifc/translator.py:1182
+msgid "Bath Properties"
+msgstr ""
+
+#: charonifc/translator.py:1183
+msgid "Bidet Properties"
+msgstr ""
+
+#: charonifc/translator.py:1184
+msgid "Cistern Properties"
+msgstr ""
+
+#: charonifc/translator.py:1185
+msgid "Sanitary Fountain Properties"
+msgstr ""
+
+#: charonifc/translator.py:1186
+msgid "Shower Properties"
+msgstr ""
+
+#: charonifc/translator.py:1187
+msgid "Sink Properties"
+msgstr ""
+
+#: charonifc/translator.py:1188
+msgid "Toilet Pan Properties"
+msgstr ""
+
+#: charonifc/translator.py:1189
+msgid "Urinal Properties"
+msgstr ""
+
+#: charonifc/translator.py:1190
+msgid "Wash Hand Basin Properties"
+msgstr ""
+
+#: charonifc/translator.py:1191
+msgid "Convector Properties"
+msgstr ""
+
+#: charonifc/translator.py:1192
+msgid "Radiator Properties"
+msgstr ""
+
+#: charonifc/translator.py:1193
+msgid "Air Release Valve Properties"
+msgstr ""
+
+#: charonifc/translator.py:1194
+msgid "Draw Off Cock Valve Properties"
+msgstr ""
+
+#: charonifc/translator.py:1195
+msgid "Faucet Valve Properties"
+msgstr ""
+
+#: charonifc/translator.py:1196
+msgid "Flushing Valve Properties"
+msgstr ""
+
+#: charonifc/translator.py:1197
+msgid "Gas Tap Valve Properties"
+msgstr ""
+
+#: charonifc/translator.py:1198
+msgid "Isolating Valve Properties"
+msgstr ""
+
+#: charonifc/translator.py:1199
+msgid "Mixing Valve Properties"
+msgstr ""
+
+#: charonifc/translator.py:1200
+msgid "Pressure Reducing Valve Properties"
+msgstr ""
+
+#: charonifc/translator.py:1201
+msgid "Pressure Relief Valve Properties"
+msgstr ""
+
+#: charonifc/translator.py:1202
+msgid "Floor Trap Properties"
+msgstr ""
+
+#: charonifc/translator.py:1203
+msgid "Floor Waste Properties"
+msgstr ""
+
+#: charonifc/translator.py:1204
+msgid "Grease Interceptor Properties"
+msgstr ""
+
+#: charonifc/translator.py:1205
+msgid "Gully Sump Properties"
+msgstr ""
+
+#: charonifc/translator.py:1206
+msgid "Gully Trap Properties"
+msgstr ""
+
+#: charonifc/translator.py:1207
+msgid "Oil Interceptor Properties"
+msgstr ""
+
+#: charonifc/translator.py:1208
+msgid "Petrol Interceptor Properties"
+msgstr ""
+
+#: charonifc/translator.py:1209
+msgid "Roof Drain Properties"
+msgstr ""
+
+#: charonifc/translator.py:1212
+msgid "Electric Actuator Properties"
+msgstr ""
+
+#: charonifc/translator.py:1213
+msgid "Multi Position Controller Properties"
+msgstr ""
+
+#: charonifc/translator.py:1214
+msgid "Proportional Controller Properties"
+msgstr ""
+
+#: charonifc/translator.py:1215
+msgid "Two Position Controller Properties"
+msgstr ""
+
+#: charonifc/translator.py:1217
+msgid "Electric Flow Storage Device Properties"
+msgstr ""
+
+#: charonifc/translator.py:1218
+msgid "Contact Sensor Properties"
+msgstr ""
+
+#: charonifc/translator.py:1219
+msgid "Pressure Sensor Properties"
+msgstr ""
+
+#: charonifc/translator.py:1220
+msgid "Site Common Properties"
+msgstr ""
+
+#: charonifc/translator.py:1221
+msgid "Slab Common Properties"
+msgstr ""
+
+#: charonifc/translator.py:1222
+msgid "Space Common Properties"
+msgstr ""
+
+#: charonifc/translator.py:1223
+msgid "Space Covering Requirements"
+msgstr ""
+
+#: charonifc/translator.py:1224
+msgid "Space Fire Safety Requirements"
+msgstr ""
+
+#: charonifc/translator.py:1225
+msgid "Space Lighting Requirements"
+msgstr ""
+
+#: charonifc/translator.py:1226
+msgid "Space Occupancy Requirements"
+msgstr ""
+
+#: charonifc/translator.py:1227
+msgid "Space Thermal Requirements"
+msgstr ""
+
+#: charonifc/translator.py:1228
+msgid "Stair Common Properties"
+msgstr ""
+
+#: charonifc/translator.py:1229
+msgid "Switching Device Common Properties"
+msgstr ""
+
+#: charonifc/translator.py:1230
+msgid "Emergency Stop Properties"
+msgstr ""
+
+#: charonifc/translator.py:1231
+msgid "Switch Disconnector Properties"
+msgstr ""
+
+#: charonifc/translator.py:1232
+msgid "Toggle Switch Properties"
+msgstr ""
+
+#: charonifc/translator.py:1238
+msgid "Slab Base Quantities"
+msgstr ""
+
+#: charonifc/translator.py:1239
+msgid "Wall Base Quantities"
+msgstr ""
+
+#: charonifc/translator.py:1243
+msgid "Global Trade Item Number"
+msgstr ""
+
+#: charonifc/translator.py:1245
+msgid "Status"
+msgstr ""
+
+#: charonifc/translator.py:1246
+msgid "Shape"
+msgstr ""
+
+#: charonifc/translator.py:1247
+msgid "Article Number"
+msgstr ""
+
+#: charonifc/translator.py:1248
+msgid "Face Type"
+msgstr ""
+
+#: charonifc/translator.py:1249
+msgid "Model Reference"
+msgstr ""
+
+#: charonifc/translator.py:1250
+msgid "Model Label"
+msgstr ""
+
+#: charonifc/translator.py:1251
+msgid "Slot Width"
+msgstr ""
+
+#: charonifc/translator.py:1252
+msgid "Slot Length"
+msgstr ""
+
+#: charonifc/translator.py:1253
+msgid "Number of Slots"
+msgstr ""
+
+#: charonifc/translator.py:1254 charonifc/translator.py:1271
+msgid "Flow Pattern"
+msgstr ""
+
+#: charonifc/translator.py:1255
+msgid "Manufacturer"
+msgstr ""
+
+#: charonifc/translator.py:1256
+msgid "Production Year"
+msgstr ""
+
+#: charonifc/translator.py:1257
+msgid "Assembly Place"
+msgstr ""
+
+#: charonifc/translator.py:1258
+msgid "Air Flowrate Range"
+msgstr ""
+
+#: charonifc/translator.py:1259
+msgid "Temperature Range"
+msgstr ""
+
+#: charonifc/translator.py:1260
+msgid "Discharge Direction"
+msgstr ""
+
+#: charonifc/translator.py:1261
+msgid "Throw Length"
+msgstr ""
+
+#: charonifc/translator.py:1262
+msgid "Air Diffusion Performance Index"
+msgstr ""
+
+#: charonifc/translator.py:1263
+msgid "Finish Type"
+msgstr ""
+
+#: charonifc/translator.py:1264
+msgid "Finish Color"
+msgstr ""
+
+#: charonifc/translator.py:1265
+msgid "Mounting Type"
+msgstr ""
+
+#: charonifc/translator.py:1266
+msgid "Core Type"
+msgstr ""
+
+#: charonifc/translator.py:1267
+msgid "Core Set Horizontal"
+msgstr ""
+
+#: charonifc/translator.py:1268
+msgid "Core Set Vertical"
+msgstr ""
+
+#: charonifc/translator.py:1269
+msgid "Has Integral Control"
+msgstr ""
+
+#: charonifc/translator.py:1270
+msgid "Flow Control Type"
+msgstr ""
+
+#: charonifc/translator.py:1272
+msgid "Has Sound Attenuator"
+msgstr ""
+
+#: charonifc/translator.py:1273
+msgid "Has Thermal Insulation"
+msgstr ""
+
+#: charonifc/translator.py:1274
+msgid "Neck Area"
+msgstr ""
+
+#: charonifc/translator.py:1275
+msgid "Effective Area"
+msgstr ""
+
+#: charonifc/translator.py:1276 charonifc/translator.py:1280
+msgid "Nominal Height"
+msgstr ""
+
+#: charonifc/translator.py:1278
+msgid "Weight"
+msgstr ""
+
+#: charonifc/translator.py:1279
+msgid "Air Flowrate Versus Flow Control Element"
+msgstr ""
+
+#: charonifc/translator.py:1281
+msgid "Number of Sources"
+msgstr ""
+
+#: charonifc/translator.py:1282
+msgid "Valve Pattern"
+msgstr ""
+
+#: charonifc/translator.py:1283
+msgid "Valve Operation"
+msgstr ""
+
+#: charonifc/translator.py:1284
+msgid "Valve Mechanism"
+msgstr ""
+
+#: charonifc/translator.py:1285
+msgid "Nominal Voltage"
+msgstr ""
+
+#: charonifc/translator.py:1286
+msgid "Nominal Frequency Range"
+msgstr ""
+
+#: charonifc/translator.py:1287
+msgid "Rated Current"
+msgstr ""
+
+#: charonifc/translator.py:1288
+msgid "Rated Voltage"
+msgstr ""
+
+#: charonifc/translator.py:1289
+msgid "Nominal Current"
+msgstr ""
+
+#: charonifc/translator.py:1290
+msgid "Usage Current"
+msgstr ""
+
+#: charonifc/translator.py:1291
+msgid "Electrical Device NominalPower"
+msgstr ""
+
+#: charonifc/translator.py:1292
+msgid "Number Of Poles"
+msgstr ""
+
+#: charonifc/translator.py:1293
+msgid "Has Protective Earth"
+msgstr ""
+
+#: charonifc/translator.py:1294
+msgid "Power Factor"
+msgstr ""
+
+#: charonifc/translator.py:1295
+msgid "IP Protection"
+msgstr ""
+
+#: charonifc/translator.py:1296
+msgid "IK Protection"
+msgstr ""
+
+#: charonifc/translator.py:1297
+msgid "Insulation Standard Class"
+msgstr ""
+
+#: charonifc/translator.py:1298
+msgid "Phase Reference"
+msgstr ""
+
+#: charonifc/translator.py:1299
+msgid "Is Pluggable Outlet"
+msgstr ""
+
+#: charonifc/translator.py:1300
+msgid "Number Of Sockets"
+msgstr ""
+
+#: charonifc/translator.py:1301
+msgid "Notes"
+msgstr ""
+
+#: charonifc/translator.py:1302
+msgid "Voltage"
+msgstr ""
+
+#: charonifc/translator.py:1304
+msgid "Additonal Load"
+msgstr ""
+
+#: charonifc/translator.py:1305
+msgid "Air Conditioning"
+msgstr ""
+
+#: charonifc/translator.py:1306
+msgid "Air Conditioning Central"
+msgstr ""
+
+#: charonifc/translator.py:1307
+msgid "Air Pressurization"
+msgstr ""
+
+#: charonifc/translator.py:1308
+msgid "Architectural Space"
+msgstr ""
+
+#: charonifc/translator.py:1309
+msgid "Area Per Occupant"
+msgstr ""
+
+#: charonifc/translator.py:1310
+msgid "Artificial Lighting"
+msgstr ""
+
+#: charonifc/translator.py:1311
+msgid "Ballast"
+msgstr ""
+
+#: charonifc/translator.py:1312
+msgid "Case Weight"
+msgstr ""
+
+#: charonifc/translator.py:1313
+msgid "Concealed Ceiling"
+msgstr ""
+
+#: charonifc/translator.py:1314
+msgid "Concealed Ceiling Offset"
+msgstr ""
+
+#: charonifc/translator.py:1315
+msgid "ConcealedFlooring"
+msgstr ""
+
+#: charonifc/translator.py:1316
+msgid "Concealed Flooring Offset"
+msgstr ""
+
+#: charonifc/translator.py:1317
+msgid "Control Type"
+msgstr ""
+
+#: charonifc/translator.py:1318
+msgid "Cos Phi"
+msgstr ""
+
+#: charonifc/translator.py:1319
+msgid "Demand Factor"
+msgstr ""
+
+#: charonifc/translator.py:1320
+msgid "Derivative Constant"
+msgstr ""
+
+#: charonifc/translator.py:1322
+msgid "Discipline"
+msgstr ""
+
+#: charonifc/translator.py:1323
+msgid "Discontinued Heating"
+msgstr ""
+
+#: charonifc/translator.py:1324
+msgid "Earth Fault 1 Pole Maximum State"
+msgstr ""
+
+#: charonifc/translator.py:1325
+msgid "Earth Fault 1 Pole Minimum State"
+msgstr ""
+
+#: charonifc/translator.py:1326
+msgid "Earth Fault 1 Pole Power Factor Maximum State"
+msgstr ""
+
+#: charonifc/translator.py:1327
+msgid "Earth Fault 1 Pole Power Factor Minimum State"
+msgstr ""
+
+#: charonifc/translator.py:1328
+msgid "Electric Actuator Type"
+msgstr ""
+
+#: charonifc/translator.py:1329
+msgid "Fire Exit"
+msgstr ""
+
+#: charonifc/translator.py:1330
+msgid "Flammable Storage"
+msgstr ""
+
+#: charonifc/translator.py:1331
+msgid "Gross Planned Area"
+msgstr ""
+
+#: charonifc/translator.py:1332
+msgid "Handicap Accessible"
+msgstr ""
+
+#: charonifc/translator.py:1333
+msgid "Has Lock"
+msgstr ""
+
+#: charonifc/translator.py:1334
+msgid "Illuminance"
+msgstr ""
+
+#: charonifc/translator.py:1335
+msgid "Integral Constant"
+msgstr ""
+
+#: charonifc/translator.py:1336
+msgid "Is External"
+msgstr ""
+
+#: charonifc/translator.py:1337
+msgid "Is Illuminated"
+msgstr ""
+
+#: charonifc/translator.py:1338
+msgid "Is Main"
+msgstr ""
+
+#: charonifc/translator.py:1339
+msgid "Is Outlook Desirable"
+msgstr ""
+
+#: charonifc/translator.py:1340
+msgid "Is Skilled Operator"
+msgstr ""
+
+#: charonifc/translator.py:1341
+msgid "Is Switch"
+msgstr ""
+
+#: charonifc/translator.py:1342
+msgid "Load Disconnection Type"
+msgstr ""
+
+#: charonifc/translator.py:1343
+msgid "Load ElecLoad-Secondary"
+msgstr ""
+
+#: charonifc/translator.py:1344
+msgid "Load ElecLoad Fan"
+msgstr ""
+
+#: charonifc/translator.py:1345
+msgid "Mechanical Ventilation Rate"
+msgstr ""
+
+#: charonifc/translator.py:1346
+msgid "Minimum Headroom"
+msgstr ""
+
+#: charonifc/translator.py:1347
+msgid "Natural Ventilation"
+msgstr ""
+
+#: charonifc/translator.py:1348
+msgid "Natural Ventilation Rate"
+msgstr ""
+
+#: charonifc/translator.py:1349
+msgid "Net Planned Area"
+msgstr ""
+
+#: charonifc/translator.py:1350
+msgid "Nominal Frequency"
+msgstr ""
+
+#: charonifc/translator.py:1351
+msgid "Nominal Supply Voltage"
+msgstr ""
+
+#: charonifc/translator.py:1352
+msgid "Nominal Supply Voltage Offset"
+msgstr ""
+
+#: charonifc/translator.py:1353
+msgid "Number Of Doors"
+msgstr ""
+
+#: charonifc/translator.py:1354
+msgid "Number Of Gangs"
+msgstr ""
+
+#: charonifc/translator.py:1355
+msgid "Number Of Openings"
+msgstr ""
+
+#: charonifc/translator.py:1356
+msgid "Object Classification"
+msgstr ""
+
+#: charonifc/translator.py:1357
+msgid "Object Discipline"
+msgstr ""
+
+#: charonifc/translator.py:1358
+msgid "Object Material"
+msgstr ""
+
+#: charonifc/translator.py:1359
+msgid "Occupancy Number"
+msgstr ""
+
+#: charonifc/translator.py:1360
+msgid "Occupancy Number Peak"
+msgstr ""
+
+#: charonifc/translator.py:1361
+msgid "Occupancy Time Per Day"
+msgstr ""
+
+#: charonifc/translator.py:1362
+msgid "OmniClass"
+msgstr ""
+
+#: charonifc/translator.py:1363
+msgid "Phase"
+msgstr ""
+
+#: charonifc/translator.py:1365
+msgid "Proportional Constant"
+msgstr ""
+
+#: charonifc/translator.py:1366
+msgid "PubliclyAccessible"
+msgstr ""
+
+#: charonifc/translator.py:1367
+msgid "Range"
+msgstr ""
+
+#: charonifc/translator.py:1368
+msgid "Rating"
+msgstr ""
+
+#: charonifc/translator.py:1369
+msgid "Set Point Contact"
+msgstr ""
+
+#: charonifc/translator.py:1370
+msgid "Short Circuit 1 Pole Maximum State"
+msgstr ""
+
+#: charonifc/translator.py:1371
+msgid "Short Circuit 1 Pole Minimum State"
+msgstr ""
+
+#: charonifc/translator.py:1372
+msgid "Short Circuit 1 Pole Power Factor Maximum State"
+msgstr ""
+
+#: charonifc/translator.py:1373
+msgid "Short Circuit 1 Pole Power Factor Minimum State"
+msgstr ""
+
+#: charonifc/translator.py:1374
+msgid "Short Circuit 2 Pole Minimum State"
+msgstr ""
+
+#: charonifc/translator.py:1375
+msgid "Short Circuit 2 Pole Power Factor Minimum State"
+msgstr ""
+
+#: charonifc/translator.py:1376
+msgid "Short Circuit 3 Pole Maximum State"
+msgstr ""
+
+#: charonifc/translator.py:1377
+msgid "Short Circuit 3 Pole Power Factor Maximum State"
+msgstr ""
+
+#: charonifc/translator.py:1378
+msgid "Space Category"
+msgstr ""
+
+#: charonifc/translator.py:1379
+msgid "Space Energy Analysis"
+msgstr ""
+
+#: charonifc/translator.py:1380
+msgid "Space Humidity"
+msgstr ""
+
+#: charonifc/translator.py:1381
+msgid "Space Humidity Max"
+msgstr ""
+
+#: charonifc/translator.py:1382
+msgid "Space Humidity Min"
+msgstr ""
+
+#: charonifc/translator.py:1383
+msgid "Space Humidity Summer"
+msgstr ""
+
+#: charonifc/translator.py:1384
+msgid "Space Humidity Winter"
+msgstr ""
+
+#: charonifc/translator.py:1385
+msgid "Space Temperature"
+msgstr ""
+
+#: charonifc/translator.py:1386
+msgid "Space Temperature Max"
+msgstr ""
+
+#: charonifc/translator.py:1387
+msgid "Space Temperature Min"
+msgstr ""
+
+#: charonifc/translator.py:1388
+msgid "Space Temperature Summer Max"
+msgstr ""
+
+#: charonifc/translator.py:1389
+msgid "Space Temperature Summer Min"
+msgstr ""
+
+#: charonifc/translator.py:1390
+msgid "Space Temperature Winter Max"
+msgstr ""
+
+#: charonifc/translator.py:1391
+msgid "Space Temperature Winter Min"
+msgstr ""
+
+#: charonifc/translator.py:1392
+msgid "Sprinkler Protection"
+msgstr ""
+
+#: charonifc/translator.py:1393
+msgid "Sprinkler Protection Automatic"
+msgstr ""
+
+#: charonifc/translator.py:1394
+msgid "Switch Activation"
+msgstr ""
+
+#: charonifc/translator.py:1395
+msgid "Switch Disconnector Type"
+msgstr ""
+
+#: charonifc/translator.py:1396
+msgid "Switch Operation"
+msgstr ""
+
+#: charonifc/translator.py:1397
+msgid "Toggle Switch Type"
+msgstr ""
+
+#: charonifc/translator.py:1398
+msgid "Uniclass"
+msgstr ""
+
+#: charonifc/translator.py:1400
+msgid "Voltage_Level"
+msgstr ""
+
+#: charonifc/translator.py:1401
+msgid "Height"
+msgstr ""
+
+#: charonifc/translator.py:1403
+msgid "Perimeter"
+msgstr ""
+
+#: charonifc/translator.py:1404
+msgid "Base Quantities"
+msgstr ""
+
+#: charonifc/translator.py:1405
+msgid "Class"
+msgstr ""
+
+#: charonifc/translator.py:1406
+msgid "Control number"
+msgstr ""
+
+#: charonifc/translator.py:1407
+msgid "Cross Section Area"
+msgstr ""
+
+#: charonifc/translator.py:1408
+msgid "Finish"
+msgstr ""
+
+#: charonifc/translator.py:1409
+msgid "Gross Footprint Area"
+msgstr ""
+
+#: charonifc/translator.py:1410
+msgid "Gross Surface Area"
+msgstr ""
+
+#: charonifc/translator.py:1411
+msgid "Gross Volume"
+msgstr ""
+
+#: charonifc/translator.py:1412
+msgid "Gross Weight"
+msgstr ""
+
+#: charonifc/translator.py:1413
+msgid "Length"
+msgstr ""
+
+#: charonifc/translator.py:1414
+msgid "Load Bearing"
+msgstr ""
+
+#: charonifc/translator.py:1415
+msgid "Net Area"
+msgstr ""
+
+#: charonifc/translator.py:1416
+msgid "Net Volume"
+msgstr ""
+
+#: charonifc/translator.py:1417
+msgid "Net Weight"
+msgstr ""
+
+#: charonifc/translator.py:1418
+msgid "Outer Surface Area"
+msgstr ""
+
+#: charonifc/translator.py:1419
+msgid "Volume"
+msgstr ""
+
+#: charonifc/translator.py:1420
+msgid "Width"
+msgstr ""
+
+#: charonifc/translator.py:1422
+msgid "Buildable Area"
+msgstr ""
+
+#: charonifc/translator.py:1423
+msgid "Building Height Limit"
+msgstr ""
+
+#: charonifc/translator.py:1424
+msgid "Building Name"
+msgstr ""
+
+#: charonifc/translator.py:1425
+msgid "Ceiling Covering"
+msgstr ""
+
+#: charonifc/translator.py:1426
+msgid "Compartmentation"
+msgstr ""
+
+#: charonifc/translator.py:1428
+msgid "Depth"
+msgstr ""
+
+#: charonifc/translator.py:1430
+msgid "Direction Angle"
+msgstr ""
+
+#: charonifc/translator.py:1431
+msgid "Finished Floor Elevation"
+msgstr ""
+
+#: charonifc/translator.py:1432
+msgid "Fire Rating"
+msgstr ""
+
+#: charonifc/translator.py:1433
+msgid "Floor"
+msgstr ""
+
+#: charonifc/translator.py:1434
+msgid "Floor Name"
+msgstr ""
+
+#: charonifc/translator.py:1435
+msgid "Floor Covering"
+msgstr ""
+
+#: charonifc/translator.py:1436
+msgid "MasterFormat"
+msgstr ""
+
+#: charonifc/translator.py:1437
+msgid "Material Density"
+msgstr ""
+
+#: charonifc/translator.py:1438
+msgid "Net Area Planned"
+msgstr ""
+
+#: charonifc/translator.py:1439
+msgid "Net Side Area"
+msgstr ""
+
+#: charonifc/translator.py:1440
+msgid "Number Of Riser"
+msgstr ""
+
+#: charonifc/translator.py:1442
+msgid "ProjectName"
+msgstr ""
+
+#: charonifc/translator.py:1445
+msgid "Site Name"
+msgstr ""
+
+#: charonifc/translator.py:1446
+msgid "Slab Quantities"
+msgstr ""
+
+#: charonifc/translator.py:1448
+msgid "Space Type"
+msgstr ""
+
+#: charonifc/translator.py:1449
+msgid "Stair Height"
+msgstr ""
+
+#: charonifc/translator.py:1450
+msgid "Stair Quantities"
+msgstr ""
+
+#: charonifc/translator.py:1451
+msgid "Stair Slope"
+msgstr ""
+
+#: charonifc/translator.py:1453
+msgid "Structural Floor Common"
+msgstr ""
+
+#: charonifc/translator.py:1454
+msgid "Structural Framing Common"
+msgstr ""
+
+#: charonifc/translator.py:1455
+msgid "Structural Function"
+msgstr ""
+
+#: charonifc/translator.py:1456
+msgid "Structural Material"
+msgstr ""
+
+#: charonifc/translator.py:1457
+msgid "Structural Quantities"
+msgstr ""
+
+#: charonifc/translator.py:1458
+msgid "Thickness"
+msgstr ""

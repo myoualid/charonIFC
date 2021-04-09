@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_ProtectiveDeviceTypeEarthLeakageCircuitBreaker</Name>
+  <Definition>An earth failure device acts to protect people and equipment from the effects of current leakage.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcProtectiveDevice/EARTHLEAKAGECIRCUITBREAKER</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcProtectiveDevice/EARTHLEAKAGECIRCUITBREAKER</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="9634b94466494e11b2e42439b1269ee4">
+      <Name>EarthFailureDeviceType</Name>
+      <Definition>A list of the available types of circuit breaker from which that required may be selected where:
+
+Standard: Device that operates without a time delay.
+TimeDelayed: Device that operates after a time delay.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_EarthFailureDeviceType">
+            <EnumItem>STANDARD</EnumItem>
+            <EnumItem>TIMEDELAYED</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">漏電回路遮断機のタイプ</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">以下の中から選択が必要となる場合の遮断機タイプのリスト：
+
+スタンダード：遅延無しで動作する機器
+遅延：一定時間を経た後で動作する機器</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="514b3458b8fb4af594069efb257b885d">
+      <Name>Sensitivity</Name>
+      <Definition>The rated rms value of the vector sum of the instantaneous currents flowing in the main circuits of the device which causes the device to operate under specified conditions. (IEC 61008-1).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricCurrentMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">感度</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">装置のメイン回路を流れる瞬時電流の合計ベクトルの関連する rms 値、特定の条件になると機器が動作するようになる（IEC 61008-1)。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="ja-JP">漏電回路遮断機は、人々と器材を漏電電流の影響から保護する動作を行います。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

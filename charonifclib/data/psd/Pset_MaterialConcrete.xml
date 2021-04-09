@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_MaterialConcrete</Name>
+  <Definition>A set of extended mechanical properties related to concrete materials.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcMaterial/Concrete</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcMaterial/Concrete</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="f0a5142a24654032a393acc887ff5b05">
+      <Name>CompressiveStrength</Name>
+      <Definition>The compressive strength of the concrete.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPressureMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="b242da25a9654daabad719c394d884b6">
+      <Name>MaxAggregateSize</Name>
+      <Definition>The maximum aggregate size of the concrete.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="71fa0d8d715e4de2b7432d3d7df0a722">
+      <Name>AdmixturesDescription</Name>
+      <Definition>Description of the admixtures added to the concrete mix.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcText" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="30544d2e76a84057b16bf7cd17af3377">
+      <Name>Workability</Name>
+      <Definition>Description of the workability of the fresh concrete defined according to local standards.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcText" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="f40ec97f69f5445b8cc4930df9f12acc">
+      <Name>WaterImpermeability</Name>
+      <Definition>Description of the water impermeability denoting the water repelling properties.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcText" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="f1a497f6aa2d4e71aa25c361e6de7d35">
+      <Name>ProtectivePoreRatio</Name>
+      <Definition>The protective pore ratio indicating the frost-resistance of the concrete.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcNormalisedRatioMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases />
+</PropertySetDef>

@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_DamperTypeFireDamper</Name>
+  <Definition>Fire damper type attributes.
+Pset renamed from Pset_DamperTypeFire to Pset_DamperTypeFireDamper in IFC2x2 Pset Addendum.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcDamper/FIREDAMPER</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcDamper/FIREDAMPER</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="373985bd2ead4fc58ce93d3f55d5d6de">
+      <Name>ActuationType</Name>
+      <Definition>Enumeration that identifies the different types of dampers.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_FireDamperActuationType">
+            <EnumItem>GRAVITY</EnumItem>
+            <EnumItem>SPRING</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="e96eeac60e2a4f28942d51fa14a3904a">
+      <Name>ClosureRatingEnum</Name>
+      <Definition>Enumeration that identifies the closure rating for the damper.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_FireDamperClosureRating">
+            <EnumItem>DYNAMIC</EnumItem>
+            <EnumItem>STATIC</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="587efd9af9eb42019eb90153c87d38d9">
+      <Name>FireResistanceRating</Name>
+      <Definition>Measure of the fire resistance rating in hours (e.g., 1.5 hours, 2 hours, etc.).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="7ab630b12024481184d54f0d86e57575">
+      <Name>FusibleLinkTemperature</Name>
+      <Definition>The temperature that the fusible link melts.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases />
+</PropertySetDef>

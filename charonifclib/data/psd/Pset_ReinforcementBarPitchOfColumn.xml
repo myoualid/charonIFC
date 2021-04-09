@@ -1,0 +1,143 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_ReinforcementBarPitchOfColumn</Name>
+  <Definition>Definition from IAI: The pitch length information of reinforcement  bar with the column. The X and Y direction are based on the local coordinate system of building storey. The X and Y direction of the reinforcement bar are parallel to the X and Y axis of the IfcBuildingStorey's local coordinate system, respectively.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcColumn</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcColumn</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="289fe2870f3646af9083297589b9fd32">
+      <Name>Description</Name>
+      <Definition>Description of the reinforcement.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcText" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">説明</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">鉄筋の説明。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="be943fb1649c4cc8ac430a23cfaa195e">
+      <Name>Reference</Name>
+      <Definition>A descriptive label for the general reinforcement type.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">参照記号</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">一般的な鉄筋タイプの説明ラベル。
+（例えば、柱の柱頭・柱脚で帯筋や巾止筋の間隔・本数が異なる場合に、"Top","Bottom"を記述する）</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="3bace7fbd8d14909872bd347c87e58d9">
+      <Name>ReinforcementBarType</Name>
+      <Definition>Defines the type of the reinforcement bar.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_ReinforcementBarType">
+            <EnumItem>RING</EnumItem>
+            <EnumItem>SPIRAL</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>USERDEFINED</EnumItem>
+            <EnumItem>NOTDEFINED</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">補強筋タイプ</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">補強筋タイプの定義。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="e8ffd428d6d7439988f2c1c8666ebbba">
+      <Name>HoopBarPitch</Name>
+      <Definition>The pitch length of the hoop bar.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">帯筋間隔</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">帯筋の間隔。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="0f254fecb93e428380c2986c63c4eacb">
+      <Name>XDirectionTieHoopBarPitch</Name>
+      <Definition>The X direction pitch length of the tie hoop.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">Ｘ方向巾止め筋間隔</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">Ｘ方向巾止筋の間隔。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="ab19c2deec564706b2de0bbaa452d804">
+      <Name>XDirectionTieHoopCount</Name>
+      <Definition>The number of bars with X direction tie hoop bars.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcInteger" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">Ｘ方向巾止め筋本数</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">Ｘ方向巾止筋の本数。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="19ce5a3f995e4b7e8373cd09347ce29c">
+      <Name>YDirectionTieHoopBarPitch</Name>
+      <Definition>The Y direction pitch length of the tie hoop.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">Y方向巾止め筋間隔</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">Y方向巾止筋の間隔。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="7204de2cdf0643b39cc51eea5dcdb5db">
+      <Name>YDirectionTieHoopCount</Name>
+      <Definition>The number of bars with Y direction tie hoop bars.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcInteger" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">Y方向巾止め筋本数</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">Y方向巾止筋の本数。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="ja-JP">柱補強筋の間隔情報。
+X方向とY方向は建物のローカル座標系に基づいている。X方向とY方向の補強筋はIｆｃBuildingStoreyのローカル座標系のX軸、Y軸にそれぞれ平行である。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_ProtectiveDeviceTypeVaristor</Name>
+  <Definition>A high voltage surge protection device.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcProtectiveDevice/VARISTOR</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcProtectiveDevice/VARISTOR</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="62b5b32cba534d63b0cf2e5e16f0480e">
+      <Name>VaristorType</Name>
+      <Definition>A list of the available types of varistor  from which that required may be selected.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_VaristorType">
+            <EnumItem>METALOXIDE</EnumItem>
+            <EnumItem>ZINCOXIDE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">保護タイプ</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">選択が必要となる、バリスターの一覧リスト。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="ja-JP">高圧避雷装置。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

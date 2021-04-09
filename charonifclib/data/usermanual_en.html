@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CharonIFC User Manual</title>
+<meta name="generator" content="Bluefish 2.2.10" >
+<meta name="author" content="Davide Vescovini" >
+<meta name="date" content="2018-03-29T16:22:32+0200" >
+<meta name="copyright" content="Davide Vescovini">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="expires" content="0">
+</head>
+<body>
+
+<h1 id="SECTION0">1. Select an IFC Model</h1>
+
+<p>
+The first operation to perform before using any other function is to select an IFC file. Once selected it's possible to read and extract IFC data from the model to produce several type of documents including:
+
+<ul>
+<li>Bill of Quantities
+<li>Specifications
+<li>List of Objects and their related properties
+</ul>
+
+</p>
+
+
+<h1 id="SECTION1">1. Create Specifications</h1>
+
+<p>
+
+<h2 id="SECTION11">1.1 Document format</h2>
+
+<p>
+It's possible to select the document output format. The program UI support the following formats. 
+<ul>
+<li>Word
+<li>OpenDocument: the .odt file format can usually be opened by Openoffice, Libreoffice and Microsoft Word software 
+<li>HTML: the html file format, can be opened by using any web browser
+<li>Latex: the LaTex format can be compiled to produce high quality PDF formats 
+</ul>
+
+</p>
+
+<h2 id="SECTION12">1.2 List Pset Properties for every IfcObject</h2>
+
+<p>Instead of creating a list of IFCTYPE Objects with their related properties, the parser will create a list of every IfcObject found in the model and will list all their related Pset property.</p>
+
+
+<h2 id="SECTION13">1.3 Use custom title</h2>
+
+<p>The standard document’s title is "Technical Specification". By choosing this option the user can type a new title to use instead of the standard one.</p>
+
+<h2 id="SECTION14">1.4 Use a template</h2>
+
+<p>By choosing this option it's possible to select a pre-formatted file to use as a template. This way it's possible to create a "template" file using custom format and custom headers and footers and use this file to let the program format the Specifications using the chosen formatting.</p>
+
+</p>
+
+
+<h1 id="SECTION2">2. Create Bill of Quantity</h1>
+
+<p>
+
+<h2 id="SECTION21">1.1 File format</h2>
+
+<p>
+It's possible to select the Bill of Quantity file format. The program UI support the following formats: 
+<ul>
+<li>CSV (comma separate values): the program will output the bill of quantity in CSV format readable by any spreadsheet software.
+<li>Primus PWE: the .pwe is a text exchange file format readable and importable by Primus (ACCA software). This way the BoQ can be modified by this software. 
+<li>Dump SQL: this option create an text file format containing all SQL queries necessary to create a database with all BoQ informations. This dump file can be used to directly import in a MySQL database.
+</ul>
+
+</p>
+
+<h2 id="SECTION22">1.2 Add Concrete Forms and rebars</h2>
+
+<p>Choosing this option the software will automatically create Concrete Forms and Rebars unit price list and bill of quantities for all structural members in the choosen model.
+The calculation formula is based on Qto informations found inside the model (and so it requires the source application to export to IFC model including Qto quantity information).
+The calculation formula for every structural object (such as beams and columns) can be changed in the Preferences. 
+</p>
+
+<h2 id="SECTION23">1.3 Create a template for Tag association</h2>
+
+<p>
+
+By using this option the program will produce a configuration (text) file enlisting all unit price list extracted by the program. Each single unit price will create its own section in the file.
+
+Each section will look like this:
+
+<pre>
+<code>
+[14r2kiY2j86uBGQiggEPfn]
+description = Element description as found in the "Description" field of each IfcObjectType
+unita_misura = N (or the related measure of unit as set by Qto information)
+Tariff1 = 1
+</code>
+</pre>
+
+
+
+Each section starts below each alphanumeric string between square brackets ([14r2kiY2j86uBGQiggEPfn] in the example above). 
+The alphanumeric item between square brackets is the IfcObjectType GlobalID, and it is therefore a globally unique Identification string. 
+This item MUST NOT be changed for any reason. Should it happen the software will fail to recognize the GlobalID and will ignore this section.
+
+In order to change the unit price tag, unit of measure and eventually the description each section must be changed as follow (by using a text editor or the configuration file editor provided by the software)
+
+<pre>
+<code>
+[14r2kiY2j86uBGQiggEPfn]
+description = Type here the new description or left unchanged
+unita_misura = m
+1E.02.060.0015.i = 3
+</code>
+</pre>
+
+By changing the section as shown the program will create the unit price related to the IfcObjectType having a GlobalID [14r2kiY2j86uBGQiggEPfn] with the following changes:
+
+<ul>
+<li>The unit price will be created with a tag named "1E.02.060.0015.i" and each IfcObjectType will be counted as "3" item in the Bill of Quantity
+<li>the unit of measure will be set to "m" instead of the standard one.
+<li>the description will be changed to the match the new description field.
+</ul>
+
+On top of that if the user wants to create two bill of quantities items for each IfcObjectType, he can add any number of lines with their related quantity. 
+For example if the user would like to add 3 bill of quantities items called 
+
+<ul>
+<li>NP01 (with a quantity of 10)
+<li>NP02 (with a quantity of 4)
+<li>NP03 (with a quantity of 1)
+</ul>
+
+The section should be modified as follow:
+
+<pre>
+<code>
+[14r2kiY2j86uBGQiggEPfn]
+description = Type here the new description or left unchanged
+unita_misura = m
+NP01 = 10
+NP02 = 4
+NP03 = 1
+</code>
+</pre>
+
+</p>
+
+
+<h2 id="SECTION24">1.4 Use a template</h2>
+
+<p>By using a template the software can associate a template file produced by using the "Create template for Tag associations" option. 
+Instead of using the IfcObjectType GlobalID field to create the unit price list tag, the software will use the tag listed in the config file. 
+If there is more than one tag the software will add more than one unit price list for each associated  IfcObjectType. 
+If the tag has a quantity N associated (e.g. NP.01 = 3) the software will add n times the associated tag. 
+</p>
+
+<h2 id="SECTION25">1.5 Import Primus or SIX file</h2>
+
+<p>By using a template the software can import a a Primus pwe exchange file and use the unit price list from this file to instead of creating a brand new list of prices.</p>
+
+
+</p>
+
+<h1 id="SECTION3">3. Preferences</h1>
+
+<p>TODO</p>
+
+</body>
+</html>

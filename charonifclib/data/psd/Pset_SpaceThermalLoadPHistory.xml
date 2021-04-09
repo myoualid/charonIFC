@@ -1,0 +1,225 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_SpaceThermalLoadPHistory</Name>
+  <Definition>The space thermal load IfcSpaceThermalLoadProperties defines actual measured thermal losses and gains occurring within a space or zone. The thermal load source attribute defines an enumeration of possible sources of the thermal load.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcSpace</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSpace</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="85bd527ff0514d38b7cffda9ba7824e6">
+      <Name>People</Name>
+      <Definition>Heat gains and losses from people.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcPowerMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">人員</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">人員からの熱取得。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="33f90295d6634fc0a96f70b83cfb5ef4">
+      <Name>Lighting</Name>
+      <Definition>Lighting loads.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcPowerMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">照明</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">照明負荷。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="0ec92137f40646e4939b60348ddd458b">
+      <Name>EquipmentSensible</Name>
+      <Definition>Heat gains and losses from equipment.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcPowerMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">事務機器の顕熱</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">事務機器からの熱取得と熱ロス。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="3002ab87ee5d403fbb0f04e464ec579f">
+      <Name>VentilationIndoorAir</Name>
+      <Definition>Ventilation loads from indoor air.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcPowerMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">室内の換気量</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">室内の換気による熱負荷。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="285e35b5dc1e4c92a85bdcba28be2064">
+      <Name>VentilationOutdoorAir</Name>
+      <Definition>Ventilation loads from outdoor air.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcPowerMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">外気量</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">外気による熱負荷。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="250a1be0d1334fe18d268c199e15840b">
+      <Name>RecirculatedAir</Name>
+      <Definition>Loads from recirculated air.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcPowerMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">循環空気</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">循環空気による熱負荷。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="d5fe5df7ad5b4b8cbe62e855a42e85fb">
+      <Name>ExhaustAir</Name>
+      <Definition>Loads from exhaust air.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcPowerMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">排気</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">排気による熱負荷。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="00d1da927f1a4979bd9c6b5225970a90">
+      <Name>AirExchangeRate</Name>
+      <Definition>Loads from the air exchange rate.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcPowerMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">換気回数</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">換気による熱負荷。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="1ad1f339ccc649e0ae39f3f93138e572">
+      <Name>DryBulbTemperature</Name>
+      <Definition>Loads from the dry bulb temperature.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcPowerMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">乾球温度</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">乾球温度による熱負荷。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="158f53f424bf484e969c4691b46c3d10">
+      <Name>RelativeHumidity</Name>
+      <Definition>Loads from the relative humidity.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcPowerMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">相対湿度</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">相対湿度による熱負荷。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="d050d2ca14b44672bdf01ad850bf8ec9">
+      <Name>InfiltrationSensible</Name>
+      <Definition>Heat gains and losses from infiltration.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcPowerMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">すき間風の顕熱</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">すき間風からの熱負荷と熱ロス。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="d3f440f5d9cb4da8bf5fe4c07df6bfd9">
+      <Name>TotalSensibleLoad</Name>
+      <Definition>Total energy added or removed from air that affects its temperature.  If a value is less than zero (negative), then the thermal load is lost from the space. If a value is greater than zero (positive), then the thermal load is a gain to the space.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcPowerMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">顕熱負荷の合計</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">空気温度を上昇・下降させる取得・損失の熱量の合計。ゼロより小さい（－）場合、室内が熱損失となる。ゼロより大きい（＋）場合、室内が熱取得となる。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="f4e179d4fe0f4a78a7789ffce4c61685">
+      <Name>TotalLatentLoad</Name>
+      <Definition>Total energy added or removed from air that affects its humidity or concentration of water vapor.  If a value is less than zero (negative), then the thermal load is lost from the space. If a value is greater than zero (positive), then the thermal load is a gain to the space.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcPowerMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">潜熱負荷の合計</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">空気湿度（水蒸気量）を上昇・下降させる取得・損失の熱量の合計。ゼロより小さい（－）場合、室内の水蒸気が減少となる。ゼロより大きい（＋）場合、室内の水蒸気が増大となる。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="1987593e875546eeb8c72736fb2bd5bd">
+      <Name>TotalRadiantLoad</Name>
+      <Definition>Total electromagnetic energy added or removed by emission or absorption.  If a value is less than zero (negative), then the thermal load is lost from the space. If a value is greater than zero (positive), then the thermal load is a gain to the space.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcPowerMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">放射熱負荷の合計</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">放射や吸収による放射エネルギーの増加、或いは減少の合計。ゼロより小さい（－）場合、放射エネルギーが減少となる。ゼロより大きい（＋）場合、放射エネルギーが増大となる。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="ja-JP">室内熱負荷属性IfcSpaceThermalLoadProperties はある居室或いはゾーンの実際の熱ロスと熱取得を定義する。熱取得の要因属性は熱負荷の各因子を示している。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

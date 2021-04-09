@@ -1,0 +1,196 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_AudioVisualApplianceTypeCamera</Name>
+  <Definition>An audio-visual camera is a device that captures video, such as for security.  HISTORY: Added in IFC2x4.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcAudioVisualAppliance/CAMERA</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcAudioVisualAppliance/CAMERA</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="11a3fb46c3f24147ac4846b103dd5e24">
+      <Name>CameraType</Name>
+      <Definition>Indicates the type of camera.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_AudioVisualCameraType">
+            <EnumItem>PHOTO</EnumItem>
+            <EnumItem>VIDEO</EnumItem>
+            <EnumItem>AUDIOVIDEO</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET.</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">カメラ形式</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">カメラの形式を示す。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="619595f1f34848b5bafda1beb8a494e9">
+      <Name>IsOutdoors</Name>
+      <Definition>Indicates if camera is designed to be used outdoors.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">屋外対応の可否</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">屋外利用が可能かどうかを示す。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="f67f9f1a6adf48b9bfca30f6ced6b9c2">
+      <Name>VideoResolutionWidth</Name>
+      <Definition>Indicates the number of horizontal pixels (the largest native video resolution width).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcInteger" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">水平解像度</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">水平方向のピクセル数。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="2c7423db504345e3a14c46b4661a1511">
+      <Name>VideoResolutionHeight</Name>
+      <Definition>Indicates the number of vertical pixels (the largest native video resolution height).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcInteger" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">垂直解像度</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">垂直方向のピクセル数。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="443ebc74bb454967a452be7a117d9782">
+      <Name>VideoResolutionMode</Name>
+      <Definition>Indicates video resolution modes.</Definition>
+      <PropertyType>
+        <TypePropertyTableValue />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">ビデオ解像度モード</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">ビデオ解像度モードを示す。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="63ba76232f5a484b8db3c162057afefd">
+      <Name>VideoCaptureInterval</Name>
+      <Definition>Indicates video frame capture time intervals.</Definition>
+      <PropertyType>
+        <TypePropertyTableValue />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">撮影間隔</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">撮影間隔を示す。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="dc746ca658804ee390e340d4393ce70e">
+      <Name>PanTiltZoomPreset</Name>
+      <Definition>Indicates pan/tilt/zoom position presets.</Definition>
+      <PropertyType>
+        <TypePropertyTableValue />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">パン・チルト・ズーム初期設定</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">パン・チルト・ズーム機能の初期設定。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="6af26851fc7d445c9ba5b445539d09f2">
+      <Name>PanHorizontal</Name>
+      <Definition>Indicates horizontal range for panning.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcLengthMeasure" />
+        </TypePropertyBoundedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">パン水平方向可動範囲</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">水平方向の可動範囲を示す。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="c9bf583d3ab141a79be020f2b52202ec">
+      <Name>PanVertical</Name>
+      <Definition>Indicates vertical range for panning.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcLengthMeasure" />
+        </TypePropertyBoundedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">パン垂直方向可動範囲</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">垂直方向の可動範囲を示す。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="331012cf6ff748a59643e6844ef1356a">
+      <Name>TiltHorizontal</Name>
+      <Definition>Indicates horizontal range for pivoting, where positive values indicate the camera rotating clockwise,</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcPlaneAngleMeasure" />
+        </TypePropertyBoundedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">チルト水平方向可動角度</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">チルト水平の可動角度を示す。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="056a932c481e435ebaf161cbfcfe4f62">
+      <Name>TiltVertical</Name>
+      <Definition>Indicates vertical range for pivoting, where 0.0 is level, +90 degrees is looking up, -90 degrees is looking down.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcPlaneAngleMeasure" />
+        </TypePropertyBoundedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">チルト垂直方向可動角度</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">チルト垂直の可動角度を示す。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="c4ad2c8390d6472eb03988233de4b22d">
+      <Name>Zoom</Name>
+      <Definition>Indicates the zoom range.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertyBoundedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">ズーム</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">ズーム可能範囲（倍率）を示す。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="ja-JP">セキュリティシステム向けの映像を撮影する装置。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

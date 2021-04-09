@@ -1,0 +1,178 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_ProfileArbitraryDoubleT</Name>
+  <Definition>This is a collection of geometric properties of double-T section profiles of precast concrete elements, to be used in conjunction with IfcArbitraryProfileDef when profile designation alone does not fulfill the information requirements.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcArbitraryClosedProfileDef</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcArbitraryClosedProfileDef</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="2771ee46b0bc49279994ce5f7683e32e">
+      <Name>OverallWidth</Name>
+      <Definition>Overall width of the profile.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="c7a440a06efc41b0ac6b2fef8df6cfbc">
+      <Name>LeftFlangeWidth</Name>
+      <Definition>Left flange width of the profile.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="64f462fba29d4fd3935e3fdf0d100e04">
+      <Name>RightFlangeWidth</Name>
+      <Definition>Right flange width of the profile.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="7dedb8eddcb9434b9d490e031f9c5446">
+      <Name>OverallDepth</Name>
+      <Definition>Overall depth of the profile.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="e5aa584b9bb34048afeb9881b25461bc">
+      <Name>FlangeDepth</Name>
+      <Definition>Flange depth of the profile.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="f27f5860438a4f97a5896a7a53f801b2">
+      <Name>FlangeDraft</Name>
+      <Definition>Flange draft of the profile.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcNonNegativeLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="4fa03006b23a45d681bcc1ca266f5dd0">
+      <Name>FlangeChamfer</Name>
+      <Definition>Flange chamfer of the profile.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcNonNegativeLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="b5947a8fc84b4c0187c33750587c7ef3">
+      <Name>FlangeBaseFillet</Name>
+      <Definition>Flange base fillet of the profile.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcNonNegativeLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="1663e8a38d8e412f9749cee6df1d99ab">
+      <Name>FlangeTopFillet</Name>
+      <Definition>Flange top fillet of the profile.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcNonNegativeLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="697b4f0c45d048b1985767d14f210f33">
+      <Name>StemBaseWidth</Name>
+      <Definition>Stem base width of the profile.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="b0f70657fd1546e892201790d2de8921">
+      <Name>StemTopWidth</Name>
+      <Definition>Stem top width of the profile.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="fceb79aaf7c8488f841a42a266bdcd67">
+      <Name>StemBaseChamfer</Name>
+      <Definition>Stem base chamfer of the profile.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcNonNegativeLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="04b1f79db5f64f6a93ce2f66fda35631">
+      <Name>StemTopChamfer</Name>
+      <Definition>Stem top chamfer of the profile.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcNonNegativeLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="c7aa98c1e8494b15a6c606399eeeaca9">
+      <Name>StemBaseFillet</Name>
+      <Definition>Stem base fillet of the profile.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcNonNegativeLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="be0211026ac24df29247fbf1ba0a41f4">
+      <Name>StemTopFillet</Name>
+      <Definition>Stem top fillet of the profile.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcNonNegativeLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases />
+</PropertySetDef>

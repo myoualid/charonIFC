@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_ProtectiveDeviceTrippingUnitTypeElectronic</Name>
+  <Definition>Information on tripping units that are electronically tripped.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcProtectiveDeviceTrippingUnit/ELECTRONIC</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcProtectiveDeviceTrippingUnit/ELECTRONIC</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="2a39bf626c704813bc9b04aa86561dce">
+      <Name>ElectronicTrippingUnitType</Name>
+      <Definition>A list of the available types of electronic tripping unit  from which that required may be selected.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_ElectronicTrippingUnitType">
+            <EnumItem>EP_BM</EnumItem>
+            <EnumItem>EP_MP</EnumItem>
+            <EnumItem>EP_SC</EnumItem>
+            <EnumItem>EP_STD</EnumItem>
+            <EnumItem>EP_TIMEDELAYED</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">電磁式の装置タイプ</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">電磁式の装置タイプをリストから選択。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="5f21ebd95b14469a8e99ca8a810430c4">
+      <Name>NominalCurrents</Name>
+      <Definition>A set of values providing information on available modules (chips) for setting the nominal current of the protective device. If
+the set is empty, no nominal current modules are available for the tripping unit.</Definition>
+      <PropertyType>
+        <TypePropertyListValue>
+          <ListValue>
+            <DataType type="IfcElectricCurrentMeasure" />
+          </ListValue>
+        </TypePropertyListValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">定格電流</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">トリップ装置が対応する定格電流。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="7897624ed5674aacb44e127bf65018c3">
+      <Name>N_Protection</Name>
+      <Definition>An indication whether the electronic tripping unit has separate protection for the N conductor, or not.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">N_Protection</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">電磁式トリップ装置がN個の導体を保護するか否かの設定。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="c3161abef1974c3aa547635ba8b6b038">
+      <Name>N_Protection_50</Name>
+      <Definition>An indication whether the electronic tripping unit is tripping if the current in the N conductor is more than 50% of that of the phase conductors. The property is only asserted if the property N_Protection is asserted.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">N_Protection_50</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">電磁式トリップ装置がN導体の50％以上で保護するか否かの設定。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="62d3fab8587a4db7bea02e74ee937a05">
+      <Name>N_Protection_100</Name>
+      <Definition>An indication whether the electronic tripping unit is tripping if the current in the N conductor is more than 100% of that of the phase conductors. The property is only asserted if the property N_Protection is asserted.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">N_Protection_100</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">電磁式トリップ装置がN導体の100％以上で保護するか否かの設定。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="90a4c33513cb44ca953f0e99a9a0c7da">
+      <Name>N_Protection_Select</Name>
+      <Definition>An indication whether the use of the N_Protection can be selected by the user or not. If both the properties N_Protection_50 and N_Protection_100 are asserted, the value of N_Protection_Select property is set to TRUE. The property is only asserted if the property N_Protection is asserted.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">N_Protectionの選択</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">どのN_Protectionを使うかユーザが設定できるかどうかを指定する。
+N_Protection_50とN_Protection_100の両方が有効な場合は、TRUEにします。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="ja-JP">電気で遮断するトリップ装置の情報。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

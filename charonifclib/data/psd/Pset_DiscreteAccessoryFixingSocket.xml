@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_DiscreteAccessoryFixingSocket</Name>
+  <Definition>Properties common to fixing sockets.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcDiscreteAccessory/Fixing socket</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcDiscreteAccessory/Fixing socket</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="6caf1fbbf3cd4d61860e9131138ba198">
+      <Name>FixingSocketTypeReference</Name>
+      <Definition>Type reference for the fixing socket according to local standards.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="">
+          <DataType type="IfcExternalReference" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">参照基準</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">固定ソケットが参照するローカル標準。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="8ccd7cadce7343429299f7265cab7688">
+      <Name>FixingSocketHeight</Name>
+      <Definition>The overall height of the fixing socket.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">全体長さ</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">固定ソケットの全体長さ。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="397c3f7b4f1548d3af0c35c54c6c78a1">
+      <Name>FixingSocketThreadDiameter</Name>
+      <Definition>The nominal diameter of the thread.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">公称径</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">線の公称直径。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="a84de10ef08641ad956989e093ee5c97">
+      <Name>FixingSocketThreadLength</Name>
+      <Definition>The length of the threaded part of the fixing socket.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">ねじ部長さ</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">固定ソケットの全体長さねじ部の長さ。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="ja-JP">固定ソケットの共通特性。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

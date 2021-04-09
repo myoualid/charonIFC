@@ -1,0 +1,176 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_EvaporatorPHistory</Name>
+  <Definition>Evaporator performance history attributes.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcEvaporator</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcEvaporator</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="d0680c5bcff14227a0f17478156201e7">
+      <Name>HeatRejectionRate</Name>
+      <Definition>Sum of the refrigeration effect and the heat equivalent of the power input to the compressor.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcPowerMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">排熱量</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">冷凍効果と圧縮機への電源入力の相当熱量の合計</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="ed67a97e96904da2b1430468e3730ded">
+      <Name>ExteriorHeatTransferCoefficient</Name>
+      <Definition>Exterior heat transfer coefficient associated with exterior surface area.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcThermalTransmittanceMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">外表面熱交換係数</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">外表面に関連づけられた外表面熱交換係数</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="97d7e15cb23747cc8fd2bde29fc9e6e3">
+      <Name>InteriorHeatTransferCoefficient</Name>
+      <Definition>Interior heat transfer coefficient associated with interior surface area.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcThermalTransmittanceMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">内面熱交換係数</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">内面に関連づけられた内面熱交換係数</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="30df4bcc20af4470a3b38e3e4b035746">
+      <Name>RefrigerantFoulingResistance</Name>
+      <Definition>Fouling resistance on the refrigerant side.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcThermalResistanceMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="2887d17db57f48b183023df83c2d3d76">
+      <Name>EvaporatingTemperature</Name>
+      <Definition>Refrigerant evaporating temperature.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcThermodynamicTemperatureMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">蒸発温度</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">蒸発温度</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="952e61f678694c958efac26f7a0a8cbd">
+      <Name>LogarithmicMeanTemperatureDifference</Name>
+      <Definition>Logarithmic mean temperature difference between refrigerant and water or air.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcThermodynamicTemperatureMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">対数平均温度差</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">冷媒と水または空気の対数平均温度差</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="be2ae12b6baa413783b143dcbe6c0e20">
+      <Name>UAcurves</Name>
+      <Definition>UV = f (VExterior, VInterior), UV as a function of interior and exterior fluid flow velocity at the entrance.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">UA曲線</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">UV=ｆ（V外面、V内面）、UVは、入り口での内面・外面流体速度の関数</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="1419d7fb2e3d4004861814cf3ff222de">
+      <Name>CompressorEvaporatorHeatGain</Name>
+      <Definition>Heat gain between the evaporator outlet and the compressor inlet.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcThermodynamicTemperatureMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">圧縮機・蒸発器熱取得</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">蒸発器出口と圧縮機入口間の熱取得</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="3affc295747b47f485b5447231b6c25a">
+      <Name>CompressorEvaporatorPressureDrop</Name>
+      <Definition>Pressure drop between the evaporator outlet and the compressor inlet.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcPressureMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">圧縮機・蒸発器圧力降下</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">蒸発器出口と圧縮機入口間の圧力降下</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="4312486cf638454685394ef73e063c8a">
+      <Name>EvaporatorMeanVoidFraction</Name>
+      <Definition>Mean void fraction in evaporator.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcNormalisedRatioMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">蒸発器平均空隙率</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">蒸発器の平均の空隙率</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="b9b7083efcbb4fddab2473c6c96173e7">
+      <Name>WaterFoulingResistance</Name>
+      <Definition>Fouling resistance on water/air side.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcThermalResistanceMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">水側汚れ抵抗</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">水／空気面の汚れ抵抗</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="ja-JP">蒸発器性能履歴属性</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

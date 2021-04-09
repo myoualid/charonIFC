@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_PropertyAgreement</Name>
+  <Definition>A property agreement is an agreement that enables the occupation of a property for a period of time.
+
+The objective is to capture the information within an  agreement that is relevant to a facilities manager. Design and construction information associated with the property is not considered. A property agreement may be applied to an instance of IfcSpatialStructureElement including to compositions defined through the IfcSpatialStructureElement.Element.CompositionEnum.
+
+Note that the associated actors are captured by the IfcOccupant class.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcSpatialStructureElement</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSpatialStructureElement</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="6282fc172dc44a1b80181528c008c631">
+      <Name>AgreementType</Name>
+      <Definition>Identifies the predefined types of property agreement from which the type required may be set.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_PropertyAgreementType">
+            <EnumItem>ASSIGNMENT</EnumItem>
+            <EnumItem>LEASE</EnumItem>
+            <EnumItem>TENANT</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="372e8cda676942068d6630bc45ebd944">
+      <Name>Identifier</Name>
+      <Definition>The identifier assigned to the agreement for the purposes of tracking.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcIdentifier" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="166723a3288a4ecd934f8257ed64bcde">
+      <Name>Version</Name>
+      <Definition>The version number of the agreement that is identified.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="1015d72dc6d6426981e47e7fccda5141">
+      <Name>VersionDate</Name>
+      <Definition>The date on which the version of the agreement became applicable.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcDate" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="79953c75a3cc45f9bf193f734dfadc2f">
+      <Name>PropertyName</Name>
+      <Definition>Addressing details of the property as stated within the agreement.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="dc789f0c27f346818620578f620d3d5f">
+      <Name>CommencementDate</Name>
+      <Definition>Date on which the agreement commences.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcDate" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="16782f8e517a40fb96e0d46fd256ff67">
+      <Name>TerminationDate</Name>
+      <Definition>Date on which the agreement terminates.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcDate" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="d07fc930a48949708c6bbf32866fa589">
+      <Name>Duration</Name>
+      <Definition>The period of time for the lease.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcDuration" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="aeac20b37a2f44288f57698ec57edaae">
+      <Name>Options</Name>
+      <Definition>A statement of the options available in the agreement.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcText" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="a1e703ac4d64447a920bb0beb64d51fa">
+      <Name>ConditionCommencement</Name>
+      <Definition>Condition of property provided on commencement of the agreement e.g. cold shell, warm lit shell, broom clean, turn-key.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcText" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="fed6fd7d50c346549135173fcd2855f1">
+      <Name>Restrictions</Name>
+      <Definition>Restrictions that may be placed by a  competent authority.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcText" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="868ecd6708054411bcf0a5276f57eb10">
+      <Name>ConditionTermination</Name>
+      <Definition>Condition of property required on termination of the agreement e.g. cold shell, warm lit shell, broom clean, turn-key.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcText" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases />
+</PropertySetDef>

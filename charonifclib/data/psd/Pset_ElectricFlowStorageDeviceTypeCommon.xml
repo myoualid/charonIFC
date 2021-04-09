@@ -1,0 +1,303 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_ElectricFlowStorageDeviceTypeCommon</Name>
+  <Definition>The characteristics of the supply associated with an electrical device occurrence acting as a source of supply to an electrical distribution system NOTE: Properties within this property set should ONLY be used in circumstances when an electrical supply is applied. The property set, the properties contained and their values are not applicable to a circumstance where the sypply  is not being applied to the eletrical system or is temporarily disconnected. All properties within this property set are considered to represent a steady state situation.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcElectricFlowStorageDevice</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcElectricFlowStorageDevice</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="40c35d40821f456c8d8bab60a61cc260">
+      <Name>Reference</Name>
+      <Definition>Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcIdentifier" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">参照</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">当該プロジェクトで定義する形式の参照ID（例：A-1)、承認された分類に存在しないときに使用される。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="3922c16e47f3457b8f1a8b592404bb8d">
+      <Name>Status</Name>
+      <Definition>Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_Status">
+            <EnumItem>NEW</EnumItem>
+            <EnumItem>EXISTING</EnumItem>
+            <EnumItem>DEMOLISH</EnumItem>
+            <EnumItem>TEMPORARY</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">状態</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">要素（主にリノベーションまたは改修プロジェクトにおいて）の状態。 状態は、「新規(New)」－新しく追加される要素。「既存」－要素は存在し、かつ残りもの。「破壊」－要素は存在したが、廃棄されるもの。「一時的」－一時的に存在する要素（一時的にサポートしている構造のようなもの）。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="18e29816b5d249a68dc938cc58d7e3fc">
+      <Name>NominalSupplyVoltage</Name>
+      <Definition>The nominal voltage of the supply.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricVoltageMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">公称電圧</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">電源の公称電圧。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="cbbaca2b0b134ae880634370391fa37a">
+      <Name>NominalSupplyVoltageOffset</Name>
+      <Definition>The maximum and minimum allowed voltage of the supply e.g. boundaries of 380V/440V may be applied for a nominal voltage of 400V.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcElectricVoltageMeasure" />
+        </TypePropertyBoundedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">オフセット公称電圧</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">電源の最大値と最小許容電圧。たとえば380V/440Vの境界は400Vの公称電圧に適用される。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="25c800a2c27644a4bddc1df8414d7690">
+      <Name>NominalFrequency</Name>
+      <Definition>The nominal frequency of the supply.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcFrequencyMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">公称周波数</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">電源の公称周波数。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="43a7587501c14772b42168b5b1b65a6a">
+      <Name>ConnectedConductorFunction</Name>
+      <Definition>Function of the conductors to which the load is connected.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_ConductorFunctionEnum">
+            <EnumItem>PHASE_L1</EnumItem>
+            <EnumItem>PHASE_L2</EnumItem>
+            <EnumItem>PHASE_L3</EnumItem>
+            <EnumItem>NEUTRAL</EnumItem>
+            <EnumItem>PROTECTIVEEARTH</EnumItem>
+            <EnumItem>PROTECTIVEEARTHNEUTRAL</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">接続導体機能</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">導体の機能は負荷が接続された状態。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="895b072ac78945f59bfbaf078e7446ba">
+      <Name>ShortCircuit3PoleMaximumState</Name>
+      <Definition>Maximum 3 pole short circuit current provided at the point of supply.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricCurrentMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">3極最大短絡電流</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">電源供給時点の3極最大短絡電流。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="3de9836885a14ff08b1b303a296b1204">
+      <Name>ShortCircuit3PolePowerFactorMaximumState</Name>
+      <Definition>Power factor of the maximum 3 pole short circuit current provided at the point of supply.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcReal" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">3極最大短絡電流力率</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">電源供給時点の3極最大短絡電流力率。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="067b322e48df46af9cdfe3cd158f74e6">
+      <Name>ShortCircuit2PoleMinimumState</Name>
+      <Definition>Minimum 2 pole short circuit current provided at the point of supply.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricCurrentMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">2極最小短絡電流</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">電源供給時点の2極最小短絡電流。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="8ef1b7d29a744928b40a4febc7a527e5">
+      <Name>ShortCircuit2PolePowerFactorMinimumState</Name>
+      <Definition>Power factor of the minimum 2 pole short circuit current provided at the point of supply.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcReal" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">2極最小短絡電流力率</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">電源供給時点の2極最小短絡電流力率。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="6b4215062ada4585b4e6bc099836d4df">
+      <Name>ShortCircuit1PoleMaximumState</Name>
+      <Definition>Maximum 1 pole short circuit current provided at the point of supply i.e. the fault between 1 phase and N.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricCurrentMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">1極最大短絡電流</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">電源供給時点の点1相とN間の1極最大短絡電流。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="3596d1136932418eae2741df491fcd63">
+      <Name>ShortCircuit1PolePowerFactorMaximumState</Name>
+      <Definition>Power factor of the maximum 1 pole short circuit current provided at the point of supply i.e. the fault between 1 phase and N.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcReal" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">1極最大短絡電流力率</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">電源供給時点の点1相とN間の1極最大短絡電流力率。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="45c867ee27dd4b21924aa239a33dfccf">
+      <Name>ShortCircuit1PoleMinimumState</Name>
+      <Definition>Minimum 1 pole short circuit current provided at the point of supply i.e. the fault between 1 phase and N.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricCurrentMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">1極最小短絡電流</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">電源供給時点の点1相とN間の1極最小短絡電流。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="7f4719cea88c4821a3017ae32949b96e">
+      <Name>ShortCircuit1PolePowerFactorMinimumState</Name>
+      <Definition>Power factor of the minimum 1 pole short circuit current provided at the point of supply i.e. the fault between 1 phase and N.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcReal" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">1極最小短絡電流力率</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">電源供給時点の点1相とN間の1極最小短絡電流力率。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="fbcc87e6875f4735a9573d8c12edfbff">
+      <Name>EarthFault1PoleMaximumState</Name>
+      <Definition>Maximum 1 pole earth fault current provided at the point of supply i.e. the fault between 1 phase and PE/PEN.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricCurrentMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">1極最大地絡電流</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">電源供給時点の点1相とPE/PEN間の1極最大地絡電流。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="c0783ca069bf449a884d3367282d2ed5">
+      <Name>EarthFault1PolePowerFactorMaximumState</Name>
+      <Definition>Power factor of the maximum 1 pole earth fault  current provided at the point of supply i.e. the fault between 1 phase and PE/PEN.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcReal" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">1極最大地絡電流力率</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">電源供給時点の点1相とPE/PEN間の1極最大地絡電流力率。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="bbd96d6107d94d5cbe54719ea27733cd">
+      <Name>EarthFault1PoleMinimumState</Name>
+      <Definition>Minimum 1 pole earth fault current provided at the point of supply i.e. the fault between 1 phase and PE/PEN.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricCurrentMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">1極最小地絡電流</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">電源供給時点の点1相とPE/PEN間の1極最小地絡電流。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="c058db8f12074dabb06f7cb277173fcc">
+      <Name>EarthFault1PolePowerFactorMinimumState</Name>
+      <Definition>Power factor of the minimum 1 pole earth fault current provided at the point of supply i.e. the fault between 1 phase and PE/PEN.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcReal" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">1極最小地絡電流力率</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">電源供給時点の点1相とPE/PEN間の1極最小地絡電流力率。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="ja-JP">配電システムから電気機器への供給源として機能するために関連する電源の特性。電気供給が適用されるときのみ使用する必要がある場合このプロパティを設定する。プロパティセット、プロパティが含まれているそれらの値は電源、または電気システムに適用されていない一時的に切断されている状況には適用されない。このプロパティセットは定常状態の状況を表す。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

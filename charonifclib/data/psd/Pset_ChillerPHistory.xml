@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_ChillerPHistory</Name>
+  <Definition>Chiller performance history attributes.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcChiller</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcChiller</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="53d479018da341618dd0a2ca79d17718">
+      <Name>Capacity</Name>
+      <Definition>The product of the  ideal capacity and the overall volumetric efficiency of the compressor.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcPowerMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="8b18ffea61bb4e02bd10c02778e32e82">
+      <Name>EnergyEfficiencyRatio</Name>
+      <Definition>The Energy efficiency ratio (EER) is the ratio of net cooling capacity to the total input rate of electric power applied.  By definition, the units are BTU/hour per Watt.
+The input electric power may be obtained from Pset_DistributionPortPHistoryElectrical.RealPower on the 'Power' port of the IfcChiller.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcReal">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="2874e13a51d843fcb1d556759543f029">
+      <Name>CoefficientOfPerformance</Name>
+      <Definition>The Coefficient of performance (COP) is the ratio of heat removed to energy input. 
+The energy input may be obtained by multiplying 
+Pset_DistributionPortPHistoryGas.FlowRate on the 'Fuel' port of the IfcChiller by Pset_MaterialFuel.LowerHeatingValue.  
+The IfcDistributionPort for fuel has an associated IfcMaterial with fuel properties and is assigned to an IfcPerformanceHistory object nested within this IfcPerformanceHistory object.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcPositiveRatioMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases />
+</PropertySetDef>

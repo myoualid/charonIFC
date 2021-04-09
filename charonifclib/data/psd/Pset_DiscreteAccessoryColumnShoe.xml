@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_DiscreteAccessoryColumnShoe</Name>
+  <Definition>Definition from IAI: Shape properties common to column shoes.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcDiscreteAccessory/SHOE</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcDiscreteAccessory/SHOE</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="509750091c2045fbae74368120db521f">
+      <Name>ColumnShoeBasePlateThickness</Name>
+      <Definition>The thickness of the column shoe base plate.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">ベースプレート厚</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">柱脚ベースプレートの板厚。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="2b7c7d1b2dbd4f9b9157b358d0a4b652">
+      <Name>ColumnShoeBasePlateWidth</Name>
+      <Definition>The width of the column shoe base plate.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">ベースプレート幅</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">柱脚ベースプレートの幅。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="f8541d935b8b4081a9250cc2d4310ae9">
+      <Name>ColumnShoeBasePlateDepth</Name>
+      <Definition>The depth of the column shoe base plate.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">ベースプレート成</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">柱脚ベースプレートの成。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="0737d79a766f41049c73d1778461a7b8">
+      <Name>ColumnShoeCasingHeight</Name>
+      <Definition>The height of the column shoe casing.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">ケーシング厚</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">柱脚ケーシングの板厚。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="d3f71775abd04d8c85846921d7b48cfc">
+      <Name>ColumnShoeCasingWidth</Name>
+      <Definition>The width of the column shoe casing.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">ケーシング幅</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">柱脚ケーシングの幅。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="76ce9f0a7b4045ff979ca54b0837bfd1">
+      <Name>ColumnShoeCasingDepth</Name>
+      <Definition>The depth of the column shoe casing.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">ケーシング成</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">柱脚ケーシングの成。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="ja-JP">柱脚の共通形状特性。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

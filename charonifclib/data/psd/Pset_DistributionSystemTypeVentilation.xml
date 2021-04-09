@@ -1,0 +1,188 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_DistributionSystemTypeVentilation</Name>
+  <Definition>This property set is used to define the general characteristics of the duct design parameters within a system.
+HISTORY: New property set in IFC Release 2.0.  Renamed from Pset_DuctDesignCriteria in IFC 2x4.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcDistributionSystem/VENTILATION</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcDistributionSystem/VENTILATION</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="05d4bcc2fc6a44879d6fb4b982ef12bc">
+      <Name>DesignName</Name>
+      <Definition>A name for the design values.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">設計値名称</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">設計値の名称。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="943c1e6330e148b7bc0a52446159d10e">
+      <Name>DuctSizingMethod</Name>
+      <Definition>Enumeration that identifies the methodology to be used to size system components.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_DuctSizingMethod">
+            <EnumItem>CONSTANTFRICTION</EnumItem>
+            <EnumItem>CONSTANTPRESSURE</EnumItem>
+            <EnumItem>STATICREGAIN</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">ダクト寸法の決め方</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">ダクト寸法を決める計算方法。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="8294eaaa23d94e3ba33c15715bb8234e">
+      <Name>PressureClass</Name>
+      <Definition>Nominal pressure rating of the system components. (Data type = PressureMeasure)</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPressureMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">圧力等級</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">ダクトシステム各部位の圧力等級（計測した圧力）。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="c89a3ac85cf74f36a899f1ecf489034a">
+      <Name>LeakageClass</Name>
+      <Definition>Nominal leakage rating for the system components.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPressureMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">漏れ率</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">ダクトシステム各部位の漏れ率。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="331adebddb424a7e8c55871d02bff75e">
+      <Name>FrictionLoss</Name>
+      <Definition>The pressure loss due to friction per unit length. (Data type = PressureMeasure/LengthMeasure)</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcReal" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">摩擦損失</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">単位長さあたりの圧力損失（計測した圧力損失/ダクト長さ）。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="798f42a9d0994a48b75be9ec7aee77a7">
+      <Name>ScrapFactor</Name>
+      <Definition>Sheet metal scrap factor.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcReal" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">廃材率</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">金属板の廃材率。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="7b03d7cafe1a4aa69ca76ced0fcae803">
+      <Name>DuctSealant</Name>
+      <Definition>Type of sealant used on the duct and fittings.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="">
+          <DataType type="IfcMaterialDefinition" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">ダクトの密閉性</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">ダクトと継ぎ手の密閉形式。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="aba3b59bded143f09c841e9ef1e82612">
+      <Name>MaximumVelocity</Name>
+      <Definition>The maximum design velocity of the air in the duct or fitting.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLinearVelocityMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">最大速度</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">ダクト或いは継ぎ手の最大設計風速。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="ff551f5aca5644ba9b067ebbe4b19f9c">
+      <Name>AspectRatio</Name>
+      <Definition>The default aspect ratio.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcReal" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">アスペクト比</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">デフォルトアスペクト比。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="7ad6ff04ec744ced894f0fe634054b08">
+      <Name>MinimumHeight</Name>
+      <Definition>The minimum duct height for rectangular, oval or round duct.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">最小高さ</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">矩形、円形或いは楕円形ダクトの最小高さ。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="8862a68d53b5495696ad47c611fef909">
+      <Name>MinimumWidth</Name>
+      <Definition>The minimum duct width for oval or rectangular duct.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">最小幅</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">矩形、円形或いは楕円形ダクトの最小幅。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="ja-JP">ダクトシステムの一般的な特徴、パラメーターの属性。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

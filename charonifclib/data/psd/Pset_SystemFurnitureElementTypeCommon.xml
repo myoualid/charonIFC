@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_SystemFurnitureElementTypeCommon</Name>
+  <Definition>Common properties for all systems furniture (I.e. modular furniture) element types (e.g. vertical panels, work surfaces, and storage). HISTORY: First issued in IFC Release R1.5. Renamed from Pset_FurnitureElementCommon</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcSystemFurnitureElement</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSystemFurnitureElement</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="782a8bea41f542a89b6dd680f12e8e0f">
+      <Name>IsUsed</Name>
+      <Definition>Indicates whether the element is being used in a workstation (= TRUE) or not.(= FALSE).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="0d7a2b6b4e394513bb9f53fbbfd13ed2">
+      <Name>GroupCode</Name>
+      <Definition>e.g. panels, worksurfaces, storage, etc.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcIdentifier" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="5e159961b7bc475d8c7a0eb19c775558">
+      <Name>NominalWidth</Name>
+      <Definition>The nominal width of the system furniture elements of this type. The size information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the size properties, provided in the attached property set, the geometric parameters take precedence.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="ec780e8a882f45b8883eb1188ae8f49f">
+      <Name>NominalHeight</Name>
+      <Definition>The nominal height of the system furniture elements of this type. The size information is provided in addition to the shape representation and the geometric parameters used within. In cases of inconsistency between the geometric parameters and the size properties, provided in the attached property set, the geometric parameters take precedence.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="bc0c6f95422d47d9a62c08446f3abbaf">
+      <Name>Finishing</Name>
+      <Definition>The finishing applied to system furniture elements of this type e.g. walnut, fabric.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases />
+</PropertySetDef>

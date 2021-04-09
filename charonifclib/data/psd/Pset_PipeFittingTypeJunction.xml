@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_PipeFittingTypeJunction</Name>
+  <Definition>Pipe fitting type attributes for junction shapes.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcPipeFitting/JUNCTION</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcPipeFitting/JUNCTION</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="e36130af65da46e4a067b85e413347c1">
+      <Name>JunctionType</Name>
+      <Definition>The type of junction. TEE=3 ports, CROSS = 4 ports.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_PipeFittingJunctionType">
+            <EnumItem>TEE</EnumItem>
+            <EnumItem>CROSS</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">継ぎ手タイプ</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">接合のタイプ　(T継ぎ手は3本　十字継ぎ手は4本)</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="036d55e7823445fba83aaa615a133e2d">
+      <Name>JunctionLeftAngle</Name>
+      <Definition>The change of direction of flow for the left junction.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositivePlaneAngleMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">左継ぎ手角度</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">左継ぎ手の流れの方向の変化</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="d5f3e93f87864137bbc83727123c4dd0">
+      <Name>JunctionLeftRadius</Name>
+      <Definition>The radius of bending for the left junction.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">左継ぎ手半径</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">左継ぎ手の曲がりの半径</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="7be2bd9cdf1a45e791595eaa317c1eb7">
+      <Name>JunctionRightAngle</Name>
+      <Definition>The change of direction of flow for the right junction where 0 indicates straight segment.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositivePlaneAngleMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">右継ぎ手角度</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">右継ぎ手の流れの方向の変化</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="343da7b10d7e44859f2c8447bbd9b3e1">
+      <Name>JunctionRightRadius</Name>
+      <Definition>The radius of bending for the right junction where 0 indicates sharp bend.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">右継ぎ手半径</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">右継ぎ手の曲がりの半径(ゼロは鋭い曲がりを意味する)</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases />
+</PropertySetDef>

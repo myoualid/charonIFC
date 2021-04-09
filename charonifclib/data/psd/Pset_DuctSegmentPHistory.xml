@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_DuctSegmentPHistory</Name>
+  <Definition>Duct segment performance history common attributes.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcDuctSegment</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcDuctSegment</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="10f773e1bb8a40cabb363e0682c852f6">
+      <Name>LossCoefficient</Name>
+      <Definition>Dimensionless loss coefficient used for calculating fluid resistance representing the ratio of total pressure loss to velocity pressure at a referenced cross-section.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcReal">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">損失係数</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">参照された断面での動圧に対する全圧損失の比を表わす流体抵抗の計算に使用される無次元の損失係数</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="a7d37ef0243e42dc891911128d3bdf37">
+      <Name>AtmosphericPressure</Name>
+      <Definition>Ambient atmospheric pressure.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcPressureMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">大気圧</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">周囲の大気圧</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="8e8511e387844f6d8a3bddab3f16c018">
+      <Name>LeakageCurve</Name>
+      <Definition>Leakage per unit length curve versus working pressure. If a scalar is expressed then it represents LeakageClass which is flowrate per unit area at a specified pressure rating (e.g., ASHRAE Fundamentals 2001 34.16.).</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">漏れ曲線</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">作動圧力に対する単位長さあたりの漏れ曲線。
+スカラー値が表現されている場合は、所定の圧力（例えば、ASHRAE　Fundamentals 200134.16）における単位面積当たりの流量である漏れクラスを表す。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="27d0d86cf2a8444692668f9eb78979d0">
+      <Name>FluidFlowLeakage</Name>
+      <Definition>Volumetric leakage flow rate.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcVolumetricFlowRateMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">漏れ量</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">体積漏れ流量</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="ja-JP">ダクト直管性能履歴共通属性。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

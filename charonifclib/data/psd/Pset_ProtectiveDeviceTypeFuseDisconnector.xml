@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_ProtectiveDeviceTypeFuseDisconnector</Name>
+  <Definition>A coherent set of attributes representing the breakeing capacity of a fuse, defined in accordance with IEC 60269. Note - A protective device may be associated with different instances of this pSet providing information related to different  basic characteristics.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcProtectiveDevice/FUSEDISCONNECTOR</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcProtectiveDevice/FUSEDISCONNECTOR</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="f26d5909fb1b4180b4b9b918a2980390">
+      <Name>FuseDisconnectorType</Name>
+      <Definition>A list of the available types of fuse disconnector from which that required may be selected where:
+
+EngineProtectionDevice: A fuse whose characteristic is specifically designed for the protection of a motor or generator.
+FuseSwitchDisconnector: A switch disconnector in which a fuse link or a fuse carrier with fuse link forms the moving contact,
+HRC: A standard fuse (High Rupturing Capacity)
+OverloadProtectionDevice: A device that disconnects the supply when the operating conditions in an electrically undamaged circuit causes an overcurrent,
+SemiconductorFuse: A fuse whose characteristic is specifically designed for the protection of sem-conductor devices.
+SwitchDisconnectorFuse: A switch disconnector in which one or more poles have a fuse in series in a composite unit.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_FuseDisconnectorType">
+            <EnumItem>ENGINEPROTECTIONDEVICE</EnumItem>
+            <EnumItem>FUSEDSWITCH</EnumItem>
+            <EnumItem>HRC</EnumItem>
+            <EnumItem>OVERLOADPROTECTIONDEVICE</EnumItem>
+            <EnumItem>SWITCHDISCONNECTORFUSE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">ヒューズ遮断機のタイプ</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">自家用発電連携側：モータや発電機の保護のために設計されているヒューズ。
+ 地絡保護装置：これでヒューズリンクまたはヒューズリンクヒューズキャリアは、可動接点を形成するスイッチ断路器、
+ HRC：標準ヒューズ（高連動破壊容量）
+ 漏電保護装置：電気的に破損して回路の動作条件は、過電流が発生する電源を切断装置
+ 欠相保護付：その特性を具体的にsemが芯デバイスの保護のために設計されているヒューズ。
+ 複合ヒューズ保護装置：その内の1つまたは複数の極は、複合ユニットに直列にヒューズを持っているスイッチ断路器。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="3e745becac0c4aa999d3ab3ced0d3b01">
+      <Name>VoltageLevel</Name>
+      <Definition>The voltage levels for which the data of the instance is valid. More than one value may be selected in the enumeration.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_VoltageLevels">
+            <EnumItem>U230</EnumItem>
+            <EnumItem>U400</EnumItem>
+            <EnumItem>U440</EnumItem>
+            <EnumItem>U525</EnumItem>
+            <EnumItem>U690</EnumItem>
+            <EnumItem>U1000</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">電圧レベル</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">電圧レベルを選択。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="20a406a77d10415697d7a12a5b314518">
+      <Name>IC60269</Name>
+      <Definition>The breaking capacity in [A] for fuses in accordance with the IEC 60269 series.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricCurrentMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">IC60269</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">IECの60269シリーズに応じたヒューズの遮断容量[A]。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="634fc40a2c014eadb07ef046346383b3">
+      <Name>PowerLoss</Name>
+      <Definition>The power loss in [W] of the fuse when the nominal current is flowing through the fuse.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPowerMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">電力損失</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">定格電流がヒューズに流れる時の電力損失[W]。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="ja-JP">ヒューズのbreakeing容量を表す属性の一貫したセットは、IEC60269に基づいて定義されています。
+ 注-保護デバイスが別の基本的な特性に関連する情報を提供し、このプロセッサセットの別のインスタンスに関連付けられている可能性があります。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_ReinforcementBarCountOfIndependentFooting</Name>
+  <Definition>Reinforcement Concrete parameter [ST-2]: The amount number information of reinforcement  bar with the independent footing. The X and Y direction are based on the local coordinate system of building storey. The X and Y direction of the reinforcement bar are parallel to the X and Y axis of the IfcBuildingStorey's local coordinate system, respectively.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcFooting</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcFooting</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="6249515add1e412db47e26b9ef2459a0">
+      <Name>Description</Name>
+      <Definition>Description of the reinforcement.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcText" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">説明</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">鉄筋の説明。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="961abeef0bf9486292c9e97403b34e3d">
+      <Name>Reference</Name>
+      <Definition>A descriptive label for the general reinforcement type.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">参照記号</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">一般的な鉄筋タイプの説明ラベル。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="4e5ce26235fc4e01ac115fb0e16c8689">
+      <Name>XDirectionLowerBarCount</Name>
+      <Definition>The number of bars with X direction lower bar.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcInteger" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">X方向下端筋本数</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">X方向の下端筋本数。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="8f952708d388469bbdd63a4600fb8f00">
+      <Name>YDirectionLowerBarCount</Name>
+      <Definition>The number of bars with Y direction lower bar.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcInteger" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">Y方向下端筋本数</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">Y方向の下端筋本数。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="23c2efbab1c64adcaa5b790f48590962">
+      <Name>XDirectionUpperBarCount</Name>
+      <Definition>The number of bars with X direction upper bar.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcInteger" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">X方向上端筋本数</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">X方向の上端筋本数。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="99019bd3027749a8bfeb2969c68ba009">
+      <Name>YDirectionUpperBarCount</Name>
+      <Definition>The number of bars with Y direction upper bar.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcInteger" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">Y方向上端筋本数</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">Y方向の上端筋本数。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="ja-JP">鉄筋コンクリートパラメータ[ST-2]：独立基礎の鉄筋本数情報。
+X方向とY方向は建物のローカル座標系に基づいている。X方向とY方向の鉄筋はIｆｃBuildingStoreyのローカル座標系のX軸、Y軸にそれぞれ平行である。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

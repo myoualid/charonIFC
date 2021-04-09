@@ -1,0 +1,206 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_SpaceThermalDesign</Name>
+  <Definition>Space or zone HVAC design requirements. HISTORY: New property set in IFC Release 1.0 (Pset_SpaceHvacInformation); renamed to Pset_SpaceThermalDesign and revised in IFC2x2.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcSpace</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSpace</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="de5a5ceddc4b46468246b8a7081fa957">
+      <Name>CoolingDesignAirflow</Name>
+      <Definition>The air flowrate required during the peak cooling conditions.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcVolumetricFlowRateMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">冷房設計吸気量</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">ピーク時の冷房条件で要求される給気量。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="2e036934d0c94d23991878582ba4cbe5">
+      <Name>HeatingDesignAirflow</Name>
+      <Definition>The air flowrate required during the peak heating conditions, but could also be determined by minimum ventilation requirement or minimum air change requirements.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcVolumetricFlowRateMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="b8f110a5dc6c474a98b7ddc6f1b57d67">
+      <Name>TotalSensibleHeatGain</Name>
+      <Definition>The total sensible heat or energy gained by the space during the peak cooling conditions.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPowerMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">顕熱負荷の合計</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">ピーク時の冷房条件で取得した顕熱或いはエネルギー。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="d3098713a7a44cb99d43e16892adc6a3">
+      <Name>TotalHeatGain</Name>
+      <Definition>The total amount of heat or energy gained by the space at the time of the space's peak cooling conditions.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPowerMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">熱取得の合計</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">ピーク時の室内最大冷房負荷時に取得した顕熱或いはエネルギー。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="0423147245214b8b9303c3065df2ab3f">
+      <Name>TotalHeatLoss</Name>
+      <Definition>The total amount of heat or energy lost by the space at the time of the space's peak heating conditions.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPowerMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">熱ロスの合計</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">ピーク時の室内最大暖房負荷時に取得・損失した熱或いはエネルギー。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="b1e5c89069f74ac09830617cfd1b3dba">
+      <Name>CoolingDryBulb</Name>
+      <Definition>Inside dry bulb temperature for cooling design.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">冷房設計温度</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">冷房設計における室内設計乾球温度。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="80d98c803ebe4dd0961d426f92d34a1a">
+      <Name>CoolingRelativeHumidity</Name>
+      <Definition>Inside relative humidity for cooling design.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">冷房設計相対湿度</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">冷房設計における室内設計相対湿度。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="56045cec95c044c3916e13be2932c066">
+      <Name>HeatingDryBulb</Name>
+      <Definition>Inside dry bulb temperature for heating design.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">暖房設計温度</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">暖房設計における室内設計乾球温度。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="4719e090186f42798049203a3f21a732">
+      <Name>HeatingRelativeHumidity</Name>
+      <Definition>Inside relative humidity for heating design.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">暖房設計相対湿度</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">暖房設計における室内設計相対湿度。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="a1e92424dad546b2933b97a605de9fae">
+      <Name>VentilationAirFlowrate</Name>
+      <Definition>Ventilation outside air requirement for the space.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcVolumetricFlowRateMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">外気量</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">必要外気量。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="1e5b249d071d433595dc36e5a0c616b2">
+      <Name>ExhaustAirFlowrate</Name>
+      <Definition>Design exhaust air flow rate for the space.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcVolumetricFlowRateMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">排気量</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">設計排気量。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="af9dcc70817447f893bbb446bca10f8f">
+      <Name>CeilingRAPlenum</Name>
+      <Definition>Ceiling plenum used for return air or not. TRUE = Yes, FALSE = No.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">天井裏還気</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">天井裏還気（リタンあり・なし）　TRUE=あり、FALSE=なし。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="2c7ea1259463456aaaad939ca00db0c9">
+      <Name>BoundaryAreaHeatLoss</Name>
+      <Definition>Heat loss per unit area for the boundary object. This is a design input value for use in the absence of calculated load data.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcHeatFluxDensityMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">周辺関連設備の熱ロス</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">単位面積ありた周辺関連設備の熱ロス。空調負荷計算値以外の設計設定値。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="ja-JP">室内或いはゾーンの空調設計要求。履歴：IFC1.0の新PropertySet（Pset_SpaceHvacInformation)、：IFC2ｘ２にPset_SpaceThermalDesignと再定義された。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

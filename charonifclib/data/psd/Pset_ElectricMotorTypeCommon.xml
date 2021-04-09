@@ -1,0 +1,213 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_ElectricMotorTypeCommon</Name>
+  <Definition>Defines a particular type of engine that is a machine for converting electrical energy into mechanical energy. Note that in cases where a close coupled or monobloc pump or close coupled fan is being driven by the motor, the motor may itself be considered to be directly part of the pump or fan. In this case , motor information may need to be specified directly at the pump or fan and not througfh separate motor/motor connection entities. NOTE: StartingTime and TeTime added at IFC 2x4</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcElectricMotor</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcElectricMotor</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="e4bb1a28307149b382d2bb6723a50a59">
+      <Name>Reference</Name>
+      <Definition>Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcIdentifier" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">参照</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">当該プロジェクトで定義する形式の参照ID（例：A-1)、承認された分類に存在しないときに使用される。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="e770f53296064739a36ce9bebe8083ea">
+      <Name>Status</Name>
+      <Definition>Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_Status">
+            <EnumItem>NEW</EnumItem>
+            <EnumItem>EXISTING</EnumItem>
+            <EnumItem>DEMOLISH</EnumItem>
+            <EnumItem>TEMPORARY</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">状態</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">要素（主にリノベーションまたは改修プロジェクトにおいて）の状態。 状態は、「新規(New)」－新しく追加される要素。「既存」－要素は存在し、かつ残りもの。「破壊」－要素は存在したが、廃棄されるもの。「一時的」－一時的に存在する要素（一時的にサポートしている構造のようなもの）。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="048e56ab13d64213ab970a25298abe25">
+      <Name>MaximumPowerOutput</Name>
+      <Definition>The maximum output power rating of the engine.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPowerMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">最大出力</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">エンジンの最大出力定格。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="3f6615fd6d0945d088c4000732ee5f58">
+      <Name>ElectricMotorEfficiency</Name>
+      <Definition>The ratio of output capacity to intake capacity.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveRatioMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">出力効率</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">出力容量と入力容量の比率。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="9aeaa648b67342d6b21e814c65a7644b">
+      <Name>StartCurrentFactor</Name>
+      <Definition>IEC. Start current factor defines how large the peak starting current will become on the engine. StartCurrentFactor is multiplied to NominalCurrent and to give the start current.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcReal" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">始動電流係数</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">始動電流係数はエンジンが動き始めた時のピーク始動電流を定義。始動電流係数は定格電流と始動時の電流を掛け合わせたもの。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="923002a806854e9299da3a8da4a1dc7b">
+      <Name>StartingTime</Name>
+      <Definition>The time (in s) needed for the motor to reach its rated speed with its driven equipment attached, starting from standstill and at the nominal voltage applied at its terminals.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcTimeMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">始動時間</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">モーターが停止状態から定格電圧を印加し定格速度に到達するまでに必要な時間。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="96a14b397ca14f5cb214d98766ac6223">
+      <Name>TeTime</Name>
+      <Definition>The maximum time (in s) at which the motor could run with locked rotor when the motor is used in an EX-environment. The time indicates that a protective device should trip before this time when the starting current of the motor is slowing through the device.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcTimeMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">最大時間</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">モーターがEX環境でローターロックされて使用きる最大時間。
+モーター始動電流が機器を介して減速している時間より前に保護装置で停止する時間を示す。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="f9983a483de6480987f3991d92a252af">
+      <Name>LockedRotorCurrent</Name>
+      <Definition>Input current when a motor armature is energized but not rotating.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricCurrentMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">拘束ロータ電流</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">モーターの電機子に電圧を印加しロータが回っていない時の入力電流。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="b0096fddf3af48a392fbd27fe96ee719">
+      <Name>MotorEnclosureType</Name>
+      <Definition>A list of the available types of motor enclosure from which that required may be selected.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_MotorEnclosureType">
+            <EnumItem>OPENDRIPPROOF</EnumItem>
+            <EnumItem>TOTALLYENCLOSEDAIROVER</EnumItem>
+            <EnumItem>TOTALLYENCLOSEDFANCOOLED</EnumItem>
+            <EnumItem>TOTALLYENCLOSEDNONVENTILATED</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">モーター保護構造</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">モーターに必要な筐体を使用可能なタイプのリストから選択。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="108068829a2944a192b7705d8d0fe31d">
+      <Name>FrameSize</Name>
+      <Definition>Designation of the frame size according to the named range of frame sizes designated at the place of use or according to a given standard.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">フレームサイズ</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">フレームサイズの意味が実際の大きさを表示しているのか、規格表記なのかを指定。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="c26f917f5a1c425b95be59b835d997b2">
+      <Name>IsGuarded</Name>
+      <Definition>Indication of whether the motor enclosure is guarded (= TRUE) or not (= FALSE).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">保護</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">モーターの筐体が守られているかどうかを示す。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="f63559be8eef49608574eb31db02e742">
+      <Name>HasPartWinding</Name>
+      <Definition>Indication of whether the motor is single speed, i.e. has a single winding (= FALSE) or multi-speed i.e.has part winding (= TRUE) .</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">巻線　</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">モータが単一の速度であるかどうかを示す。例えば、単巻線、マルチスピード、分割巻線。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="ja-JP">電気エネルギーを機械エネルギーに変換するエンジンを定義。一体型ポンプやファンの近くで接続した場合は、モーター自体が直接ポンプやファンの一部とみなされる可能性があるので、モーターで駆動されている時は注意。この場合、モーターの情報はモーター/モーターの接続実態を経由せずにポンプやファンで直接指定する必要がある。
+StartingTimeとTeTimeは IFC2x4で追加。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

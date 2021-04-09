@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_ProtectiveDeviceBreakerUnitTypeMCB</Name>
+  <Definition>A coherent set of attributes representing the breaking capacities of an MCB. Note - A protective device may be associated with different instances of this property set providing information related to different  basic characteristics.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcProtectiveDevice/CIRCUITBREAKER</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcProtectiveDevice/CIRCUITBREAKER</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="193e7b5830ba435099755974a593ce45">
+      <Name>PowerLoss</Name>
+      <Definition>The power loss in [W] per pole of the MCB  when the nominal current is flowing through the MCB.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPowerMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">電力損失</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">定格電流がMCBに流れている時のMCBの極当たりの電力損失[W]。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="0123647c5ad9433a88a513ae073f54db">
+      <Name>VoltageLevel</Name>
+      <Definition>The voltage levels for which the data of the instance is valid. More than one value may be selected in the enumeration.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_VoltageLevels">
+            <EnumItem>U230</EnumItem>
+            <EnumItem>U400</EnumItem>
+            <EnumItem>U440</EnumItem>
+            <EnumItem>U525</EnumItem>
+            <EnumItem>U690</EnumItem>
+            <EnumItem>U1000</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">電圧レベル</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">電圧レベルを選択。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="86073bf45d684fd1ae2a476ce1eda914">
+      <Name>NominalCurrents</Name>
+      <Definition>A set of nominal currents in [A] for which the data of this instance is valid. At least one value shall be provided. Any value in the set shall not exceed the value of the 
+UltimateRatedCurrent associated with the same breaker unit.</Definition>
+      <PropertyType>
+        <TypePropertyListValue>
+          <ListValue>
+            <DataType type="IfcElectricCurrentMeasure" />
+          </ListValue>
+        </TypePropertyListValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">定格電流</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">定格電流[A]を少なくても1つ値をセットしなければならない。
+ セット内の任意の値の値を超えてはならない。
+ 定格電流は、同じブレーカ部に関連付けられている。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="ebb8126a9b7240b2be0e6ced01110b6d">
+      <Name>ICU60947</Name>
+      <Definition>The ultimate breaking capacity in [A] for an MCB tested in accordance with the IEC 60947 series.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricCurrentMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">定格限界短絡遮断容量</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">IECの60947シリーズに基づいてテストされたMCBの定格限界短絡遮断容量を[A]で設定。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="04e786462fc5434782a8086d3861d54d">
+      <Name>ICS60947</Name>
+      <Definition>The service breaking capacity in [A] for an MCB tested in accordance with the IEC 60947 series.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricCurrentMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">定格使用短絡遮断容量</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">IECの60947シリーズに基づいてテストされたMCBの定格使用短絡遮断容量を[A]で設定。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="a735a3788c884e558f33ba7053059ada">
+      <Name>ICN60898</Name>
+      <Definition>The nominal breaking capacity in [A] for an MCB tested in accordance with the IEC 60898 series.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricCurrentMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">ICN60898</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">IECの60898シリーズに基づいてテストされたMCBの定格遮断容量を[A]で設定。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="7c0312dc6b384610be8fb0d2248350af">
+      <Name>ICS60898</Name>
+      <Definition>The service breaking capacity in [A] for an MCB tested in accordance with the IEC 60898 series.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcElectricCurrentMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">ICS60898</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">IECの60898シリーズに基づいてテストされたMCBの遮断使用容量を[A]で設定。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases />
+</PropertySetDef>

@@ -1,0 +1,285 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_CooledBeamTypeCommon</Name>
+  <Definition>Cooled beam common attributes.
+SoundLevel and SoundAttenuation attributes deleted in IFC2x2 Pset Addendum: Use IfcSoundProperties instead.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcCooledBeam</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcCooledBeam</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="a4dd931e4b044534b70e6eea6aff5fda">
+      <Name>Reference</Name>
+      <Definition>Reference ID for this specified type in this project (e.g. type 'A-1'), provided, if there is no classification reference to a recognized classification system used.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcIdentifier" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">参照記号</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">このプロジェクトにおける参照記号(例：A-1)。分類コードではなく内部で使用されるプロジェクトタイプとして使用されるもの。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="974141050732425596b37ffa9ae1b9f1">
+      <Name>Status</Name>
+      <Definition>Status of the element, predominately used in renovation or retrofitting projects. The status can be assigned to as "New" - element designed as new addition, "Existing" - element exists and remains, "Demolish" - element existed but is to be demolished,  "Temporary" - element will exists only temporary (like a temporary support structure).</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_Status">
+            <EnumItem>NEW</EnumItem>
+            <EnumItem>EXISTING</EnumItem>
+            <EnumItem>DEMOLISH</EnumItem>
+            <EnumItem>TEMPORARY</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">状態</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">要素（主にリノベーションまたは改修プロジェクトにおいて）の状態。 状態は、「新規(New)」－新しく追加される要素。「既存」－要素は存在し、かつ残りもの。「破壊」－要素は存在したが、廃棄されるもの。「一時的」－一時的に存在する要素（一時的にサポートしている構造のようなもの）。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="f47eeebaed3743f18b4d1943395bcf60">
+      <Name>IsFreeHanging</Name>
+      <Definition>Is it free hanging type (not mounted in a false ceiling)?</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcBoolean" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="4a91721194e44fc58c097812cbbb8f01">
+      <Name>WaterFlowControlSystemType</Name>
+      <Definition>Factory fitted waterflow control system.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_CooledBeamWaterFlowControlSystemType">
+            <EnumItem>NONE</EnumItem>
+            <EnumItem>ONOFFVALVE</EnumItem>
+            <EnumItem>2WAYVALVE</EnumItem>
+            <EnumItem>3WAYVALVE</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="f5bf191cfdf748a4b9fbac8976ab8a5a">
+      <Name>WaterPressureRange</Name>
+      <Definition>Allowable water circuit working pressure range.</Definition>
+      <PropertyType>
+        <TypePropertyBoundedValue>
+          <DataType type="IfcPressureMeasure" />
+        </TypePropertyBoundedValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="0f5f43f0c0764dfb8878b83a18657f71">
+      <Name>NominalCoolingCapacity</Name>
+      <Definition>Nominal cooling capacity.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPowerMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="5fee5e8357ad48b6b9ce702318655260">
+      <Name>NominalSurroundingTemperatureCooling</Name>
+      <Definition>Nominal surrounding temperature (refers to nominal cooling capacity).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="5287f429b1e14886971a0afd488c4a3e">
+      <Name>NominalSurroundingHumidityCooling</Name>
+      <Definition>Nominal surrounding humidity (refers to nominal cooling capacity).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcNormalisedRatioMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="3886d338c9e14280a097cc5853a1855a">
+      <Name>NominalSupplyWaterTemperatureCooling</Name>
+      <Definition>Nominal supply water temperature (refers to nominal cooling capacity).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="470360b9da69407bbdcdfaca8144cb76">
+      <Name>NominalReturnWaterTemperatureCooling</Name>
+      <Definition>Nominal return water temperature (refers to nominal cooling capacity).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="1a92acbfe10c416fb522c63039bb8450">
+      <Name>NominalWaterFlowCooling</Name>
+      <Definition>Nominal water flow (refers to nominal cooling capacity).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcVolumetricFlowRateMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="4c0592d5fc2d43f9bcfece4720cdd950">
+      <Name>NominalHeatingCapacity</Name>
+      <Definition>Nominal heating capacity.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPowerMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="838157a52bac43fc8e6dfc2400543614">
+      <Name>NominalSurroundingTemperatureHeating</Name>
+      <Definition>Nominal surrounding temperature (refers to nominal heating capacity).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="aa32dda4307943349b8227e510ca346f">
+      <Name>NominalSupplyWaterTemperatureHeating</Name>
+      <Definition>Nominal supply water temperature (refers to nominal heating capacity).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="3755f37df97c45dea654570a1c7c8b5f">
+      <Name>NominalReturnWaterTemperatureHeating</Name>
+      <Definition>Nominal return water temperature (refers to nominal heating capacity).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcThermodynamicTemperatureMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="6a9d8848a2374e3eb9d7cf89c38eb98a">
+      <Name>NominalWaterFlowHeating</Name>
+      <Definition>Nominal water flow (refers to nominal heating capacity).</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcVolumetricFlowRateMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="5f67f8317fe94c19b73d556e215d9f91">
+      <Name>IntegratedLightingType</Name>
+      <Definition>Integrated lighting in cooled beam.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_CooledBeamIntegratedLightingType">
+            <EnumItem>NONE</EnumItem>
+            <EnumItem>DIRECT</EnumItem>
+            <EnumItem>INDIRECT</EnumItem>
+            <EnumItem>DIRECTANDINDIRECT</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="516f4189b6f44714a60c63597bd48e0c">
+      <Name>PipeConnectionEnum</Name>
+      <Definition>The manner in which the pipe connection is made to the cooled beam.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_CooledBeamPipeConnection">
+            <EnumItem>STRAIGHT</EnumItem>
+            <EnumItem>RIGHT</EnumItem>
+            <EnumItem>LEFT</EnumItem>
+            <EnumItem>TOP</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="e85828d9cdb84d55a6f4b18dca72d7c1">
+      <Name>FinishColor</Name>
+      <Definition>Finish color for cooled beam.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcLabel" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="572d77ba97ae43d4b355c2785e620d74">
+      <Name>CoilLength</Name>
+      <Definition>Length of coil.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="af111522ae93433dab1abd11a90156a5">
+      <Name>CoilWidth</Name>
+      <Definition>Width of coil.</Definition>
+      <PropertyType>
+        <TypePropertySingleValue>
+          <DataType type="IfcPositiveLengthMeasure" />
+        </TypePropertySingleValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases />
+</PropertySetDef>

@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_SwitchingDeviceTypeContactor</Name>
+  <Definition>An electrical device used to control the flow of power in a circuit on or off.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcSwitchingDevice/CONTACTOR</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcSwitchingDevice/CONTACTOR</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="b914c7dc080b4a4ab34fe5be7c0d1728">
+      <Name>ContactorType</Name>
+      <Definition>A list of the available types of contactor from which that required may be selected where:
+
+CapacitorSwitching: for switching 3 phase single or multi-step capacitor banks.
+LowCurrent: requires the use of low resistance contacts.
+MagneticLatching: enables the contactor to remain in the on position when the coil is no longer energized.
+MechanicalLatching: requires that the contactor is mechanically retained in the on position.
+Modular: are totally enclosed and self contained.
+Reversing: has a double set of contactors that are prewired.
+Standard: is a generic device that controls the flow of power in a circuit on or off.</Definition>
+      <PropertyType>
+        <TypePropertyEnumeratedValue>
+          <EnumList name="PEnum_ContactorType">
+            <EnumItem>CAPACITORSWITCHING</EnumItem>
+            <EnumItem>LOWCURRENT</EnumItem>
+            <EnumItem>MAGNETICLATCHING</EnumItem>
+            <EnumItem>MECHANICALLATCHING</EnumItem>
+            <EnumItem>MODULAR</EnumItem>
+            <EnumItem>REVERSING</EnumItem>
+            <EnumItem>STANDARD</EnumItem>
+            <EnumItem>OTHER</EnumItem>
+            <EnumItem>NOTKNOWN</EnumItem>
+            <EnumItem>UNSET</EnumItem>
+          </EnumList>
+        </TypePropertyEnumeratedValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">接触器タイプ</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">以下より選択が必要となる、接触器の一覧リスト：
+
+コンデンサスイッチ：3つのシングルフェーズまたは複数のコンデンサバンクで切り替える。
+低流：低い抵抗接触の使用が必要
+マグネット式：コイルのエネルギーが無くなった時に切替をONポジションにして有効にする
+MechanicalLatching：切替器がONポジションを維持するために機械的な仕組みが必要。
+モジュール式：閉鎖されている自働型切替器。
+リバース：2つの切替器をワイヤーで接続したもの。
+標準：回路で電力潮流をオンまたはオフでコントロールする一般的な装置。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="ja-JP">電力機器の起動・停止のために、電力回路を開閉する電力機器。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>

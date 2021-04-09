@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_CooledBeamPHistoryActive</Name>
+  <Definition>Performance history attributes for an active cooled beam.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcCooledBeam/ACTIVE</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcCooledBeam/ACTIVE</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="d683d6745563488eb942cdb76943929e">
+      <Name>AirFlowRate</Name>
+      <Definition>Air flow rate.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcVolumetricFlowRateMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="f6b0a19f81ef4381a12e1288a6d33930">
+      <Name>Throw</Name>
+      <Definition>Distance cooled beam throws the air.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcPositiveLengthMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+    <PropertyDef ifdguid="fddb6e7b79f144bea46d171e1b3b8fda">
+      <Name>AirPressureDropCurves</Name>
+      <Definition>Air pressure drop as function of air flow rate.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcPressureMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases />
+      <DefinitionAliases />
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases />
+</PropertySetDef>

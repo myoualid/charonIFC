@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<PropertySetDef xsi:noNamespaceSchemaLocation="http://buildingSMART-tech.org/xml/psd PSD_IFC4.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Pset_AirTerminalPHistory</Name>
+  <Definition>Air terminal performance history common attributes.</Definition>
+  <IfcVersion version="2x4" />
+  <ApplicableClasses>
+    <ClassName>IfcAirTerminal</ClassName>
+  </ApplicableClasses>
+  <ApplicableTypeValue>IfcAirTerminal</ApplicableTypeValue>
+  <PropertyDefs>
+    <PropertyDef ifdguid="a3ae4c1617d041d7bc51f5314d10e746">
+      <Name>AirFlowRate</Name>
+      <Definition>Volumetric flow rate.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcVolumetricFlowRateMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">風量</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">送風量</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="043eaa23a42e4219b9ce723c74abaa0f">
+      <Name>NeckAirVelocity</Name>
+      <Definition>Air velocity at the neck.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcLinearVelocityMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">ネック風速</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">ネックの風速</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="5e65290bbebc47f1bf00b0d5bc07c81b">
+      <Name>SupplyAirTemperatureHeating</Name>
+      <Definition>Supply air temperature in heating mode.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcThermodynamicTemperatureMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">暖房給気温度</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">暖房時の給気温度</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="405f477d8f5e405e8bfed64608ea167a">
+      <Name>SupplyAirTemperatureCooling</Name>
+      <Definition>Supply air temperature in cooling mode.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcThermodynamicTemperatureMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">冷房給気温度</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">冷房時の給気温度</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="5ab7920df75747e6bd39bc65b74aeda7">
+      <Name>PressureDrop</Name>
+      <Definition>Drop in total pressure between inlet and outlet at nominal air-flow rate.</Definition>
+      <PropertyType>
+        <TypePropertyReferenceValue reftype="IfcPressureMeasure">
+          <DataType type="IfcTimeSeries" />
+        </TypePropertyReferenceValue>
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">圧力降下</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">設定風量での入口/出口間の全圧降下</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="b21fe0de10d7461387705eb93e928334">
+      <Name>InductionRatio</Name>
+      <Definition>Induction ratio versus distance from the diffuser and its discharge direction; induction ratio (or entrainment ratio) is the ratio of the volumetric flow rate in the jet to the volumetric flow rate at the air terminal.</Definition>
+      <PropertyType>
+        <TypePropertyTableValue />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">誘引率</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">制気口からの距離とその排出方向に対する誘引比、
+誘導比（または同調比）は、エアターミナルでの体積流量に対する噴流の体積流量の比である。</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+    <PropertyDef ifdguid="46538b9255394ba5b1fac219ce12c84e">
+      <Name>CenterlineAirVelocity</Name>
+      <Definition>Centerline air velocity versus distance from the diffuser and temperature differential; a function of distance from diffuser and temperature difference between supply air and room air.</Definition>
+      <PropertyType>
+        <TypePropertyTableValue />
+      </PropertyType>
+      <NameAliases>
+        <NameAlias lang="ja-JP">中心空気速度</NameAlias>
+      </NameAliases>
+      <DefinitionAliases>
+        <DefinitionAlias lang="ja-JP">吹出口かからの距離と温度差に対する中心速度、
+給気と室内空気の間の吹出口かからの距離と温度差の関数</DefinitionAlias>
+      </DefinitionAliases>
+    </PropertyDef>
+  </PropertyDefs>
+  <PsetDefinitionAliases>
+    <PsetDefinitionAlias lang="ja-JP">エアターミナル性能履歴の共通属性を設定します。</PsetDefinitionAlias>
+  </PsetDefinitionAliases>
+</PropertySetDef>
