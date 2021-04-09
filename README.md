@@ -1,2 +1,2 @@
-# IFCcosting
-costing with IFX
+#charonIFC
+Automatic Costing with IFC
